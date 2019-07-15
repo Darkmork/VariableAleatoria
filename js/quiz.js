@@ -21,7 +21,6 @@ $(function(){
 
     $ans = 3;
 
-<<<<<<< HEAD
     $.fn.checking = function(ck) {
         if (ck != $ans)
             return 'INCORRECT';
@@ -136,4 +135,3 @@ function facebook(state, opts) {
 
 
 })(jQuery);
->>>>>>> parent of c30e51f... cambios mayores
