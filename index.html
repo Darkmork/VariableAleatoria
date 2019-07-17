@@ -14,7 +14,9 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="js/quiz"></script>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+  <script src="js/quiz"></script>
     <script src="js/sweet-alert.js"></script>
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -910,11 +912,8 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
    <div class="container-fluid">
     <div id="quiz"></div>
   </div>
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="sweet-alert.js"></script>
-  <script src="quiz.js"></script>
-  <script>
+  
+   <script>
     $(function() {
       $('#quiz').quiz("unicorns.json");
     });
