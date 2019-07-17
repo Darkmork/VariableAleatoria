@@ -7,16 +7,14 @@ var questions = [
 	"1,5",
 	"0,375",
 	"1,375",
-	"1,625",
 	1
 	],
 	[
-		"2)	Un juego consiste en lanzar dos monedas al aire. Se gana un punto por cada cara que sale, pero se pierden 5 si no aparece ninguna. ¿Cuál es el valor esperado al jugar varias veces?",
+		"Un juego consiste en lanzar dos monedas al aire. Se gana un punto por cada cara que sale, pero se pierden 5 si no aparece ninguna. ¿Cuál es el valor esperado al jugar varias veces?",
 	"-5",
 	"-2,5",
 	"-0,25",
 	"0"
-	"0,25",
 		0
 	],
 	[
@@ -32,7 +30,6 @@ var questions = [
 		"El menor valor que puede tomar la variable es 2",
 		"F(2) = P(X =2)",
 		"Al número 9 se le asocia el valor 3",
-		"Ninguno de los anteriores",
 		2
 	],
 	[
@@ -41,8 +38,6 @@ var questions = [
                 "La desviación estándar es la raíz cuadrada de la varianza",
                 "La varianza es la raíz cuadrada de la desviación estándar",
                 "La esperanza de una variable aleatoria no pertenece siempre al recorrido de la variable aleatoria X",
-                "Ninguna de las anteriores",
-
 		2
 	],
 ];
@@ -67,9 +62,7 @@ var questionTemplate = _.template(" \
           <input type='radio' name='question[<%= index %>]' value='3' id='q<%= index %>o4'> \
           <label for='q<%= index %>o4'><%= d %></label> \
         </li> \
-      </ul> \\n\
-      <input type='radio' name='question[<%= index %>]' value='4' id='q<%= index %>o5'> \
-          <label for='q<%= index %>o4'><%= d %></label> \
+      </ul> \
     </div> \
     ");
 
