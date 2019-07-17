@@ -2,19 +2,21 @@
 // 1
 var questions = [
 	[
-		"¿Que se utiliza para estilizar un sitio web?",
-		"Javascript",
-		"CSS",
-		"PHP",
-		"AngularJS",
-		1
+		"Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?",
+		"2",
+	"1,5",
+	"0,375",
+	"1,375",
+	"1,625",
+	1
 	],
 	[
-		"¿Qué tipo de lenguaje es PHP?",
-		"Interpretado",
-		"Compilado",
-		"Los 2 anteriores",
-		"Ninguno de los anteriores",
+		"2)	Un juego consiste en lanzar dos monedas al aire. Se gana un punto por cada cara que sale, pero se pierden 5 si no aparece ninguna. ¿Cuál es el valor esperado al jugar varias veces?",
+	"-5",
+	"-2,5",
+	"-0,25",
+	"0"
+	"0,25",
 		0
 	],
 	[
@@ -26,19 +28,21 @@ var questions = [
 		3
 	],
 	[
-		"¿Cómo se marca el inicio de código PHP?",
-		"&lt;?php",
-		"&lt;?",
-		"Los 2 anteriores",
+		"Se elige un número natural entre 5 y 10 inclusive ambos, y se define la V.A. X: número de vocales al escribir el número con palabras. Con respecto a esta variable, ¿cuáles de las siguientes afirmaciones son verdaderas?",
+		"El menor valor que puede tomar la variable es 2",
+		"F(2) = P(X =2)",
+		"Al número 9 se le asocia el valor 3",
 		"Ninguno de los anteriores",
 		2
 	],
 	[
-		"¿Quién diseño Javascript?",
-		"Mark Zuckerberg",
-		"Bill Gates",
-		"Brendan Eich",
-		"Rasmus Lerdorf",
+		"Señale cuál de las siguientes aseveraciones es FALSA",
+		"La desviación estándar representa la variabilidad de los datos con respecto a la mediaaritmética",
+                "La desviación estándar es la raíz cuadrada de la varianza",
+                "La varianza es la raíz cuadrada de la desviación estándar",
+                "La esperanza de una variable aleatoria no pertenece siempre al recorrido de la variable aleatoria X",
+                "Ninguna de las anteriores",
+
 		2
 	],
 ];
@@ -63,7 +67,9 @@ var questionTemplate = _.template(" \
           <input type='radio' name='question[<%= index %>]' value='3' id='q<%= index %>o4'> \
           <label for='q<%= index %>o4'><%= d %></label> \
         </li> \
-      </ul> \
+      </ul> \\n\
+      <input type='radio' name='question[<%= index %>]' value='4' id='q<%= index %>o5'> \
+          <label for='q<%= index %>o4'><%= d %></label> \
     </div> \
     ");
 
