@@ -14,10 +14,10 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+ <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/underscore-1.8.3.min.js"></script>
+<script src="js/quizzer.js"></script>
+ 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
 
@@ -908,77 +908,29 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-  <div class="container">
-        <div class="row"><br>
-            <span class="image-position"><a href="https://www.facebook.com/meuix/?ref=settings" target="_blank">
-	           <img src="https://lh4.googleusercontent.com/fLEIj3iQb7O1FhjOpLFbJtHmsMlLGmLynSWUvAP70qF0HLEBty-FANvwweg7Sv2XqSpzOKNI=w1366-h638"></a>
-	        </span>
-        </div>
-        <div class="row"><br><br> 
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="loader">
-                    <div class="col-xs-3 col-xs-offset-5">
-                        <div id="loadbar" style="display: none;">
-                            <img src="https://8finatics.s3.amazonaws.com/static/reload_emi.gif" alt="Loading" class="center-block loanParamsLoader" style="">
-                        </div>
-                    </div>
-
-                    <div id="quiz">
-                  
-                        <div class="question">
-                            <h3><span class="label label-warning" id="qid">1</span>
-                            <span id="question"> How can you add a single line comment in a JavaScript?</span>
-                            </h3>
-                        </div>
-                        <ul>
-                          <li>
-                            <input type="radio" id="f-option" name="selector" value="1">
-                            <label for="f-option" class="element-animation">/*-- comment --*/</label>
-                            <div class="check"></div>
-                          </li>
-                          
-                          <li>
-                            <input type="radio" id="s-option" name="selector" value="2">
-                            <label for="s-option" class="element-animation">comment //</label>
-                            <div class="check"><div class="inside"></div></div>
-                          </li>
-                          
-                          <li>
-                            <input type="radio" id="t-option" name="selector" value="3">
-                            <label for="t-option" class="element-animation">comment [ ]</label>
-                            <div class="check"><div class="inside"></div></div>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="text-muted">
-                    <span id="answer"></span>
-                </div>
+                <!-- Portfolio Modal - Image -->     
                 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div id="result-of-question" class="pulse animated" style="display: none;">
-                    <span id="totalCorrect" class="pull-right"></span>
-                    <table class="table table-hover table-responsive" >
-                        <thead>
-                            <tr>
-                                <th>Question No.</th>
-                                <th>Our answer</th>
-                                <th>Your answer</th>
-                                <th>Result</th>
-                            </tr>
-                        </thead>
-                        <tbody id="quizResult"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        <h2>¿Sabes tanto como creías?</h2>
+      <div class="countdown"><span class="time_left">12s</span></div>
+      <div class="points"><span class="points">0 points</span></div>
+    </header>
+    <div class="start">
+      <div class="card">
+        <p>¿Listo para comenzar?</p>
+        <button class="start">Comenzar</button>
+      </div>
     </div>
-    </div>      
-                
+    <div class="play">
+      <div class="questions"></div>
+    </div>
+    <div class="finish card">
+      <p class="times_up">¡Se acabó el tiempo!</p>
+      <p>Has obtenido</p>
+      <p class="final_points">8 puntos</p>
+      <div class="play_again">
+        <button>Volver a jugar</button>
+      </div>
+    </div>
              
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
