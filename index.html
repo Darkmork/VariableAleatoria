@@ -14,10 +14,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="js/jquery-2.2.0.min.js"></script>
-    <script src="js/underscore-1.8.3.min.js"></script>
-    <script src="js/quizzer.js"></script>  
- 
+    <script src="js/quiz"></script>
+    <script src="js/sweet-alert.js"></script>
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
 
@@ -909,25 +907,18 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-    <meta charset="utf-8">
-        <h2>¿Sabes tanto como creías?</h2>
-      <div class="countdown"><span class="time_left">12s</span></div>
-      <div class="points"><span class="points">0 points</span></div>
-    <div class="start">
-      <div class="card">
-        <p>¿Listo para comenzar?</p>
-        <button class="start">Comenzar</button>
-      </div>
-    </div>
-    <div class="play">
-      <div class="questions"></div>
-    </div>
-    <div class="finish card">
-      <p class="times_up">¡Se acabó el tiempo!</p>
-      <p>Has obtenido</p>
-      <p class="final_points">8 puntos</p>
-      <div class="play_again">
-        <button>Volver a jugar</button>
+   <div class="container-fluid">
+    <div id="quiz"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="sweet-alert.js"></script>
+  <script src="quiz.js"></script>
+  <script>
+    $(function() {
+      $('#quiz').quiz("unicorns.json");
+    });
+  </script>
       </div>
     </div>      
                 
