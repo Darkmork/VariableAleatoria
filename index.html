@@ -877,7 +877,7 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
                
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5" align="justify"><b>DEFINICIÓN</b></p>
-                 <p class="mb-5" align="justify">Para algún valor fijo x , a menudo se desea calcular la probabilidad de que el valor observado de X  será cuando mucho x, a dicha expresión la representaremos como F(x) y representa <img class="img-fluid rounded mb-5" src="img/portfolio/DEFFD.png" alt="">, es decir</p>
+                 <p class="mb-5" align="justify">Para algún valor fijo x , a menudo se desea calcular la probabilidad de que el valor observado de X  será cuando mucho x, a dicha expresión la representaremos como F(x) y representa P(X &le;x), es decir</p>
                  <img class="img-fluid rounded mb-5" src="img/portfolio/deffd2.png"  alt="">
                   <p class="mb-5" align="justify">Para cualquier número x , F (x) es la probabilidad de que el valor observado de X  será cuando mucho x .”</p> 
                  <p class="mb-5" align="justify"></p>
@@ -919,9 +919,55 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
                 <p class="mb-5" align="justify">Y la gráfica de dicha función es:</p> 
                  <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion1.png" width="350" height="350" alt="">
                  
+                  <p class="mb-5" align="justify"><b>PROPOSICIÓN</b></p>
+                 <p class="mb-5" align="justify"> Para 2 números cualesquiera a y b con  a &le; b, se cumple que:</p>
+                 <p class="mb-5" align="justify">P(a &le; x &le; b) = F(b) - F(a)</p>
+                 <p class="mb-5" align="justify"> Donde “a-“ representa el valor posible de X más grande que es estrictamente menor que a. En particular, si los únicos valores posibles son enteros y si a y b son enteros, entonces</p>
+                 <p class="mb-5" align="justify">P(a &le; x &le; b) = P(X = a 0 a +1 o a+2 o ... o b) = F(b) - F(a - 1)</p>
+                 <p class="mb-5" align="justify">Con a =b se obtiene P(X = a) =F(a) – F(a – 1)</p>
+                 <p class="mb-5" align="justify"></p>
+                 
+                 <p class="mb-5" align="justify"><b>EJEMPLO 3</b></p>
+                 <p class="mb-5" align="justify">Sea X :” el número de días de ausencia por enfermedad tomados por un empleado seleccionado al azar de una gran compañía durante un año particular. Si el número máximo de días de ausencia por enfermedad permisibles al año es de 10, los valores posibles de X  son:</p>
+                  <p class="mb-5" align="justify">Para este ejemplo se tiene que Rec: {0,1,2,3,4,5,6,7,8,9,10}</p> 
+                 <table border="2" align="center">
+  <tr>
+      <th>x</th>
+   <td>0</td>
+      <td>1</td>
+    <td>2</td>
+    <td>3</td>
+     <td>4</td>
+    <td>5</td>
+    <td>6</td>
+     <td>7</td>
+     <td>8</td>
+    <td>9</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <th>P(x)</th>
+   <td>0.58</td>
+    <td>0.72</td>
+    <td>0.76</td>
+    <td>0.81</td>
+     <td>0.88</td>
+    <td>0.93</td>
+    <td>0.95</td>
+    <td>0.96</td>
+     <td>0.97</td>
+    <td>0.99</td>
+    <td>1</td>
+  </tr>
+</table>
+                   <p class="mb-5" align="justify">Además su grafico de distribución correspondiente:</p>
+                   <img class="img-fluid" src="img/portfolio/grafico 4.png" width="350" height="350" alt=""> 
+                 
+                 <p class="mb-5" align="justify"></p>
+                 
                   <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
-                  Close Window
+                  Cerrar Ventana
                 </button>
               </div>
             </div>
