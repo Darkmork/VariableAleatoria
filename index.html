@@ -863,8 +863,8 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/esperanza.png" width="100" height="100"  alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ESPERANZA de una V.A.</h2>
+                 <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion.png" width="100" height="100"  alt="">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">función de distribución.</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -876,8 +876,50 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
                 <!-- Portfolio Modal - Image -->
                
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                <p class="mb-5" align="justify"><b>DEFINICIÓN</b></p>
+                 <p class="mb-5" align="justify">Para algún valor fijo x , a menudo se desea calcular la probabilidad de que el valor observado de X  será cuando mucho x, a dicha expresión la representaremos como F(x) y representa <img class="img-fluid rounded mb-5" src="img/portfolio/DEFFD.png" alt="">, es decir</p>
+                 <img class="img-fluid rounded mb-5" src="img/portfolio/deffd2.png"  alt="">
+                  <p class="mb-5" align="justify">Para cualquier número x , F (x) es la probabilidad de que el valor observado de X  será cuando mucho x .”</p> 
+                 <p class="mb-5" align="justify"></p>
+                  <p class="mb-5" align="justify"><b>EJEMPLO 1</b></p>
+                 <p class="mb-5" align="justify">Considere un grupo de cinco donadores de sangre potenciales, a , b , c , d  y e , de los cuales sólo a  y b  tienen sangre tipo O+ . Se determinará en orden aleatorio el tipo de sangre con cinco muestras, una de cada individuo hasta que se identifique un individuo O+ . Sea la variable aleatoria Y : “ número de exámenes de sangre para identificar un individuo O+” .</p>
+                 <p class="mb-5" align="justify">Entonces la función de probabilidad de Y  es:</p>
+                 
+                  <p class="mb-5" align="justify">P(1) =  P( Y = 1) = P( a o  b examinados primero) =2/5</p> 
+                  <p class="mb-5" align="justify">P(2) =  P( Y = 2) = P( c,  d o  e primero y luego  a o  b)=(3/5)·(2/4)=3/10</p> 
+                  <p class="mb-5" align="justify">P(3) =  P( Y = 3) = P( c,  d o  e primero y segundo y luego  a o  b)= (3/5)·(2/4)·(2/3)=1/5</p> 
+                  <p class="mb-5" align="justify">P(4) =  P( Y = 4) = P( c,  d y  e primero)= (3/5)·(2/4)·(1/3)=1/10</p> 
+                 
+                  <p class="mb-5" align="justify">En forma tabular, la función de probabilidad es</p>
+                <table border="2" align="center">
+  <tr>
+      <th>x</th>
+      <td>1</td>
+    <td>2</td>
+    <td>3</td>
+     <td>4</td>
+  </tr>
+  <tr>
+    <th>P(x)</th>
+   <td>0.40</td>
+    <td>0.30</td>
+    <td>0.20</td>
+    <td>0.10</td>
+  </tr>
+</table>
+          <p class="mb-5" align="justify">Primero se determina F (y ) para cada uno de los valores posibles del conjunto (1, 2, 3, 4):</p>
+                 
+                  <p class="mb-5" align="justify">F (1) = P (Y &le; 1) = P (Y =  1) = p (1) =  0.4</p> 
+                  <p class="mb-5" align="justify">F (2) = P (Y &le;  2) = P (Y =  1 o 2) = p (1) + p (2) =  0.7</p> 
+                  <p class="mb-5" align="justify">F (3) = P (Y &le;  3) = P (Y =  1 o 2 o 3) = p (1) + p (2) + p (3) =  0.9</p> 
+                  <p class="mb-5" align="justify">P (Y &le;  4) = P (Y =  1 o 2 o 3 o 4) =  1</p> 
+                 
+                  <p class="mb-5" align="justify">Ahora con cualquier otro número y , F (y ) será igual al valor de F  con el valor más próximo posible de Y  a la izquierda de y . Por ejemplo, F (2,7) = P (Y &le;  2.7) = P (Y =  2) =  0.7 y F (3.999) = F (3) =  0.9. La función de distribución acumulada es por lo tanto</p>         
+                 <img class="img-fluid rounded mb-5" src="img/portfolio/fddejemplo1.png"  alt="">
+                <p class="mb-5" align="justify">Y la gráfica de dicha función es:</p> 
+                 <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion1.png" width="350" height="350" alt="">
+                 
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
                 </button>
