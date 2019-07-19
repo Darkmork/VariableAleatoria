@@ -1168,7 +1168,221 @@ De un experimento aleatorio es posible definir más de una variable aleatoria.
                 <!-- Portfolio Modal - Image -->
                <title>Autoevaluacion</title>
 
+<head>
+<META NAME="DESCRIPTION" CONTENT="JavaScript">
+<META NAME="CLASSIFICATION" CONTENT="html,javascript,ejercicios,exercicios,exercise,example,exemplos,secundaria,profesor,profesores,teacher,enseñanza,ensino,Asturias,Galicia">
+<META NAME="KEYWORDS" CONTENT="html,javascript,ejercicios,exercicios,exercise,example,exemplos,secundaria,profesor,profesores,teacher,enseñanza,ensino,Asturias,Galicia">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="AUTHOR" content="lois vaamonde portas - cris díaz sordo">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Generador de Test</title>
+<script language="JavaScript"><!--
+/***************************************************************************
+ *   Copyright© 98-2000 GenerTest ver 2.0                                  *
+ *   crisdiaz@telecable.es y jvaamond@fresno.pntic.mec.es                  *
+ *   This program is free software.                                        *
+ *   You can redistribute it and/or modify it under the terms of the GNU   *
+ *   General Public License published by the Free Software Foundation.     *
+ *   http://www.gnu.org/copyleft/gpl.html                                  *
+ ***************************************************************************/
+var datos='<html><head></head><body>'+
+'<form name="meuform">'+
+'<table border="0" width="180" cellspacing="0" cellpadding="3">'+
+'<tr>'+
+'<td width="176"><center><font size="6"><font color="#33CC33">G</font><font color="#FF00FF">e</font><font color="#008080">n</font><font color="#FF8000">e</font><font color="#669999">r</font><font color="#6600FF">T</font><font color="#FF00FF">e</font><font color="#FF8000">s</font><font color="#CC66FF">t</font></font>'+
+'</center></td>'+
+'</tr>'+
+'<tr>'+
+'<td align="center" width="176" bgcolor="#DDDDFF">'+
+'<table border="0" cellpadding="3" cellspacing="0" bgcolor="#DDDDFF">'+
+'<tr>'+
+'<td>'+
+'<p align="center">Núm. preguntas:</p>'+
+'</td>'+
+'<td>'+
+'<p align="center"><input type="text" name="np"'+
+'          size="2" value="10" style="text-align: center"></p>'+
+'</td>'+
+'</tr>'+
+'<tr>'+
+'<td>'+
+'<p align="center">Núm. respuestas<br>'+
+'            por pregunta:</p>'+
+'</td>'+
+'<td><input type="text"'+
+'          name="nrpp" size="2" value="3" style="text-align: center"></td>'+
+'</tr>'+
+'</table>'+
+'</td>'+
+'</tr>'+
+'<tr>'+
+'<td width="176" bgcolor="#DDDDFF">'+
+'<p align="center"><input type="button"'+
+'          value="Generar Esquema" name="B1" onClick="parent.xenesq()"'+
+'          style="background-color: #FFCC66"></p>'+
+'</td>'+
+'</tr>'+
+'<tr>'+
+'<td width="176" align="center">'+
+'<table border="0" cellspacing="0" cellpadding="2">'+
+'<tr>'+
+'<td><font size="3" color="#FF9933">&nbsp;</font></td>'+
+'</tr>'+
+'<tr>'+
+'<td><font size="3" color="#FF9933">Pasos:</font></td>'+
+'</tr>'+
+'<tr>'+
+'<td bgcolor="#FFF0FF"><font size="3" color="#FF9933">1</font><font size="2">. Pulsa \"Generar Esquema\":<br>'+
+'        &nbsp;&nbsp;&nbsp;- Introduce texto, imágenes<br>'+
+'        &nbsp;&nbsp;&nbsp; o HTML directamente.<br>'+
+'        &nbsp;&nbsp;&nbsp;-<b>Selecciona las<br>'+
+'        &nbsp;&nbsp;&nbsp;&nbsp;respuestas correctas</b>.</font></td>'+
+'</tr>'+
+'<tr>'+
+'<td bgcolor="#FFFFF0"><font size="3" color="#FF9933">2</font><font size="2">.</font> '+
+'<font size="2">Pulsa \"Generar Test\"</font></td>'+
+'</tr>'+
+'<tr>'+
+'<td bgcolor="#EAFFFF"><font size="3" color="#FF9933">3</font><font size="2">. Guarda el'+
+'        Test:<br>'+
+'        &nbsp;&nbsp;&nbsp;<i>Archivo - Guardar Como,<br></i>'+
+'        &nbsp;&nbsp;&nbsp; pones<b> Nombre</b> del fichero<br>'+
+'        &nbsp;&nbsp;&nbsp; y,<font color="#FF0000"> MUY IMPORTANTE</font>,<br>'+
+'        &nbsp;&nbsp;&nbsp; seleccionas &quot;<b>Página Web,<br>'+
+'        &nbsp;&nbsp;&nbsp; solo HTML</b>&quot; y después<br>'+
+'        &nbsp;&nbsp;&nbsp; seleccionas&nbsp; &quot;<b>Unicode</b>&quot; .</font></td>'+
+'</tr>'+
+'</table>'+
+'</td>'+
+'</tr><tr><td align="center"><font size="2">Paso<font color="#FF9933"> 3</font> solo con IExplorer</font></td></tr>'+
+'</table>'+
+'</body></html>';
+var solucions="<html><head></head><body></body></html>";
+var alfa="abcdefghijklmnñopqrstuvxyz"
+//Función pre xenerar o esquema do test
+function xenesq(){
+parent.frames[1].document.open()
+numpreg=parent.frames[0].document.meuform.np.value
+nrporpreg=parent.frames[0].document.meuform.nrpp.value
+parent.frames[1].document.write("<form name='datos'><table>")
+parent.frames[1].document.write("Título:<input type='text' name='tiduo' size='70' value='TestMatrik'><br>")
+	for(i=1;i<=numpreg;i++){
+		parent.frames[1].document.write("<tr><td bgcolor='#F2FFF2'><br>"+i+". "+"<textarea rows='2' name='p"+i+"' cols='54'></textarea><br>")
+		for(j=1;j<=nrporpreg;j++){
+		parent.frames[1].document.write(alfa.substring(j-1,j)+") "+" <input type='radio' name='R"+i+"'><textarea rows='2' name='r"+i+j+"' cols='50'></textarea><br>")
+		}
+	parent.frames[1].document.write("<p></td></tr>")
+	}
+parent.frames[1].document.write("<tr><td align='center' height='50'><input type='button' value='Generar Test' name='facelo' onClick='parent.recolledat()' style='background-color: #FFCC66'></td></tr>")
+parent.frames[1].document.write("</table></form>")
+js='<SCRIPT LANGUAGE="JavaScript">\r'+
+'<!--\r'+
+'var alfab="abcdefghijklmnñopqrstuvxyz"\r'+
+'var nump='+numpreg+'\r'+
+'var nrp='+nrporpreg+'\r'+
+'function corrixe(){\r'+
+'var acertos=0\r'+
+'var sol=""\r'+
+'fiestrar=open("","novar","width=300,height=350,scrollbars")\r'+
+'fiestrar.document.write("<table border=\'0\' width=\'100%\' cellspacing=\'0\' cellpadding=\'4\' bgcolor=\'#FFFFF2\'><tr><td><p align=\'center\'>")\r'+
+'for(i=1;i<=nump;i++){var senresp=true \r'+
+'	for(j=1;j<=nrp;j++){\r'+
+'		if(eval("document.test.resp"+i+"["+(j-1)+"].checked")==true){\r'+
+'			sol+=alfab.substring(j-1,j);senresp=false;break\r'+
+'		}\r'+
+'}\r'+
+'if(senresp==true){sol+="-"}\r'+
+'}\r'+
+'var tempo= new Date()\r'+
+'fiestrar.document.write("<br>Hora: "+tempo.getHours()+":"+tempo.getMinutes())\r'+
+'fiestrar.document.write("<br>Fecha: "+tempo.getDate()+"/"+eval(tempo.getMonth()+1)+"/"+tempo.getYear())\r'+
+'fiestrar.document.write("<p align=\'center\'><table>")\r'+
+'fiestrar.document.write("<tr><td colspan=\'4\' align=\'center\'><font size=\'5\'>Resultados del test</font><p></td></tr>")\r'+
+'fiestrar.document.write("<tr><td width=\'33\' bgcolor=\'#FFF4F4\'>"+\r'+
+'"<p align=\'center\'>Preg</td><td width=\'35\' bgcolor=\'#FFF4F4\' align=\'center\'>"+\r'+
+'"Solu</td><td width=\'35\' bgcolor=\'#FFF4F4\' align=\'center\'>Resp</td>"+\r'+
+'"<td width=\'35\' bgcolor=\'#FFF4F4\'><p align=\'center\'>Resul</td></tr>")\r'+
+'for(i=1;i<=sol.length;i++){\r'+
+'	resposta=document.test.tras.value.substring(i-1,i)\r'+
+'	solucion=sol.substring(i-1,i)	\r'+
+'	if(resposta==solucion){\r'+
+'	acertos+=1\r'+
+'	fiestrar.document.write("<tr><td align=\'center\'>"+i+\r'+
+'	"</td><td align=\'center\'>"+resposta+"</td><td align=\'center\'>"+solucion+\r'+
+'	"</td><td align=\'center\'><font color=\'#009933\'>acierto</font></td></tr>")\r'+
+'	}\r'+
+'	else{\r'+
+'	fiestrar.document.write("<tr><td align=\'center\'>"+i+"</td><td align=\'center\'>"+resposta+\r'+
+'	"</td><td align=\'center\'>"+solucion+"</td><td align=\'center\'><font color=\'#FF0000\'>fallo</font></td></tr>")\r'+
+'	}\r'+
+'}\r'+
+'nota=10/nump*acertos;\r'+
+'if(Math.floor(nota)!=Math.ceil(nota)){cadea=""+nota;for(var i=0;i<=cadea.length;i++){\r'+
+'if(cadea.charAt(i)=="."){nota=cadea.substring(0,i+3);break;}}}\r'+
+'fiestrar.document.write("<tr><td colspan=\'4\' align=\'center\'>Aciertos: "+acertos+" de "+nump+"</td></tr>")\r'+
+'fiestrar.document.write("<tr><td colspan=\'4\' align=\'center\'>Nota: "+nota+"</td></tr>")\r'+
+'fiestrar.document.write("</td></tr><tr><td colspan=\'4\' align=\'center\'><p><form><input type=\'button\' value=\'Cerrar\' name=\'pecharf\' onClick=\'window.close()\' style=\'background-color: #FFCC66\'></form></td></tr></table></td></tr></table>")\r'+
+'fiestrar.document.write("</table>")\r'+
+'fiestrar.document.close()\r'+
+'}'
+js+='\r// -->\r'+
+	'</SC'+
+	'RIPT>';
+}
 
+//Función pra xenerar o test a partir do esquema
+function recolledat(){
+var tiduo=parent.frames[1].document.datos.tiduo.value
+cadeasolu=""
+for(i=1;i<=numpreg;i++){
+		for(j=1;j<=nrporpreg;j++){
+		if(eval('parent.frames[1].document.datos.R'+i+'['+(j-1)+'].checked')==true){
+		cadeasolu+=alfa.substring(j-1,j);break}
+		}
+}
+if(cadeasolu.length!=numpreg){alert("\n\n¡Se te olvidó\n\nseleccionar alguna\n\nde las soluciones!\n\n");return}
+fiestra=open("","nova","menubar,scrollbars,status")
+fiestra.document.open();
+fiestra.document.write('<html>\r'+
+'<meta http-equiv="AUTHOR" content="jvaamond@fresno.pntic.mec.es y crisdiaz@telecable.es">\r'+
+'<title>Test generado con GenerTest</title>\r'+
+'<head>\r')
+fiestra.document.write(js)
+fiestra.document.write('</head>\r'+
+								'<body>\r')
+fiestra.document.write('<form name="test">\r'+
+  '<table width="100%"><tr><td align="center"><table>\r'+
+    '<tr>\r'+
+      '<td>\r'+
+        '<p align="center">'+tiduo+'</td>\r'+
+    '</tr></table></td></tr><tr><td>\r')
+	for(i=1;i<=numpreg;i++){
+		fiestra.document.write('<table><tr><td><font size="4" color="#FF00FF">'+i+'. </font></td><td bgcolor="#F2FFF2" width="100%">'+eval('parent.frames[1].document.datos.p'+i+'.value')+'</td></tr></table>\r')
+		for(j=1;j<=nrporpreg;j++){
+			fiestra.document.write('<table><tr><td width="25">&nbsp;</td><td>'+alfa.substring(j-1,j)+') </td>'+'<td><input type="radio" name="resp'+i+'"></td><td>'+eval('parent.frames[1].document.datos.r'+i+j+'.value')+'</td></tr></table>\r')
+		}
+	}
+fiestra.document.write('</td></tr>\r'+
+'<tr><td align="center" height="50"><input type="hidden" value="'+cadeasolu+'" name="tras">\r'+
+'<input type="button" value="Puntuación" name="resultados" onClick="corrixe()" style="background-color: #FFCC66">\r'+	
+'<input type="reset" value="Limpiar" name="limpar" style="background-color: #FFCC66"></td></tr>\r'+
+									'</td></tr></table></form>\r')	
+fiestra.document.write('</body>\r'+
+									'</html>')
+parent.frames[1].document.close()
+fiestra.document.close()		
+}
+// --></script>
+</head>
+<frameset cols="205,*" frameborder="0">
+  <frame src="javascript:parent.datos" scrolling="auto" name="datos" >
+  <frame src="javascript:parent.solucions" scrolling="auto" name="solucions">
+  <noframes>
+  <body>
+  </body>
+  </noframes>
+</frameset>
+               
 <script language="JavaScript">
 
 
@@ -1352,9 +1566,7 @@ function Nivel () {
               <input name=1 onClick="Engine(1, this.value)" type=radio value=b>
 
               e. 1.625</font></p
-             <p><class="mb-5"><br>
- 
-            <br>
+             <p><class="mb-5">
               
 
               2. ¿La lógica de la computadora se basa en las reglas de?</font></p>
