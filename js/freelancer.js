@@ -62,3 +62,20 @@
 
 })(jQuery); // End of use strict
 
+$(document).ready(function () {
+    $(".js-hidden").addClass("d-none");
+});
+
+$(".feedback-toggler").click(function () {
+    $id = $(this).attr("id");
+    $idClass = "#sec-" + $id;
+    if ($($idClass).hasClass('d-none')) {
+        $($idClass).removeClass("d-none");
+        $($idClass).addClass("d-inline");
+    } else {
+        $($idClass).removeClass("d-inline");
+        $($idClass).addClass("d-none");
+    }
+
+
+})
