@@ -7,9 +7,7 @@
 // A $( document ).ready() block.
 $(document).ready(function () {
     $(".js-hidden").addClass("d-none");
-});
-
-$(".feedback-toggler").click(function () {
+    $(".feedback-toggler").click(function () {
     $id = $(this).attr("id");
     $idClass = "#sec-" + $id;
     if ($($idClass).hasClass('d-none')) {
@@ -19,6 +17,7 @@ $(".feedback-toggler").click(function () {
         $($idClass).removeClass("d-inline");
         $($idClass).addClass("d-none");
     }
+});
 
 
 })
