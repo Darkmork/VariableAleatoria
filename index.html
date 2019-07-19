@@ -1,1550 +1,1551 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <title>Variable Aleatoria Discreta</title>
+        <title>Variable Aleatoria Discreta</title>
 
-  <!-- Custom fonts for this theme -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
- <script src="js/jquery-2.2.0.min.js"></script>
-    <script src="js/underscore-1.8.3.min.js"></script>
-<script src="js/quizzer.js"></script>
-<script src="js/my_js.js"></script>
- 
-  <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+        <!-- Custom fonts for this theme -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <script src="js/jquery-2.2.0.min.js"></script>
+        <script src="js/underscore-1.8.3.min.js"></script>
+        <script src="js/quizzer.js"></script>
+        <script src="js/my_js.js"></script>
 
-</head>
+        <!-- Theme CSS -->
+        <link href="css/freelancer.min.css" rel="stylesheet">
 
-<body id="page-top">
+    </head>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Variable Aleatoria Discreta</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">V.A. Discreta</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Bernoulli</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Binomial</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <body id="page-top">
 
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/titulo.png" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-4">Variable Aleatoria Discreta</h1>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Contenidos - Ejemplos - Ejercicios</p>
-
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
-
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">objetivos de esta página</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Con el fin de iniciar un nuevo aprendizaje te propongo participar de las instancias de este objeto interactivo.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">En primer lugar aprenderás acerca de las funciones de probabilidad. Para esto desarrollaras en forma secuencial diferentes módulos de aprendizaje secuenciales de contenido y actividades
- </p>
-        </div>
-      </div>
-
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://github.com/Darkmork/VariableAleatoria">
-          <i class="fas fa-download mr-2"></i>
-          Descargar este contenido
-        </a>
-      </div>
-
-    </div>
-  </section>
-  
-  <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
-
-      <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Variable Aleatoria Discreta</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Portfolio Grid Items -->
-      <div class="row">
-
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Variable Aleatoria Discreta</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">V.A. Discreta</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Bernoulli</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Binomial</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/definicion.png" alt="">
-          </div>
-        </div>
+        </nav>
 
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+        <!-- Masthead -->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+
+                <!-- Masthead Avatar Image -->
+                <img class="masthead-avatar mb-5" src="img/titulo.png" alt="">
+
+                <!-- Masthead Heading -->
+                <h1 class="masthead-heading text-uppercase mb-4">Variable Aleatoria Discreta</h1>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Masthead Subheading -->
+                <p class="masthead-subheading font-weight-light mb-0">Contenidos - Ejemplos - Ejercicios</p>
+
             </div>
-            <img class="img-fluid" src="img/portfolio/cerebro.png" alt="">
-          </div>
-        </div>
+        </header>
 
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+        <!-- About Section -->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+
+                <!-- About Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-white">objetivos de esta página</h2>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- About Section Content -->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="lead">Con el fin de iniciar un nuevo aprendizaje te propongo participar de las instancias de este objeto interactivo.</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="lead">En primer lugar aprenderás acerca de las funciones de probabilidad. Para esto desarrollaras en forma secuencial diferentes módulos de aprendizaje secuenciales de contenido y actividades
+                        </p>
+                    </div>
+                </div>
+
+                <!-- About Section Button -->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://github.com/Darkmork/VariableAleatoria">
+                        <i class="fas fa-download mr-2"></i>
+                        Descargar este contenido
+                    </a>
+                </div>
+
             </div>
-            <img class="img-fluid" src="img/portfolio/funcion.png" alt="">
-          </div>
-        </div>
+        </section>
 
-        <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tarea1.png" alt="">
-          </div>
-        </div>
+        <!-- Portfolio Section -->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
 
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/distribucion.png" alt="">
-          </div>
-        </div>
+                <!-- Portfolio Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Variable Aleatoria Discreta</h2>
 
-        <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/esperanza.png" alt="">
-          </div>
-        </div>
- <!-- Portfolio Item 7 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/definicion.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 8 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/varianza.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 9 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tarea2.png" alt="">
-          </div>
-        </div>
-        
-      </div>
-      <!-- /.row -->
-
-    </div>
-  </section>
-
-  
-
-  !-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
-
-      <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Bernoulli</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Portfolio Grid Items -->
-      <div class="row">
-
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/definicion.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cerebro.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/funcion.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tarea1.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tarea2.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/varianza.png" alt="">
-          </div>
-        </div>
-      <!-- Portfolio Item 7 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tarea1.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 8 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tarea2.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 9 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/video.png" alt="">
-          </div>
-        </div>
-
-      </div>
-
-      <!-- /.row -->
-
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
-
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-        </div>
-      </div>
-
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
-      </div>
-
-    </div>
-  </section>
-  
-  
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-
-      <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Contact Section Form -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Email Address</label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-
-        <!-- Footer Location -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
-        </div>
-
-        <!-- Footer Social Icons -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
-          </a>
-        </div>
-
-        <!-- Footer About Text -->
-        <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-  <!-- Copyright Section -->
-  <section class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
-    </div>
-  </section>
-
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                 <img class="img-fluid rounded mb-1" src="img/portfolio/definicion.png" width="100" height="100" alt="">
-                <h3 class="portfolio-modal-title text-secondary text-uppercase mb-5">DEFINICIÓN</h3>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-moon"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-               
-                <!-- Portfolio Modal - Text -->
-                <div>
-                <p class="mb-5" align="justify"> Una variable aleatoria es una función que asigna a cada valor del espacio muestral un valor numérico real.
-La V.A. asigna un número a cada suceso elemental del espacio muestral, es decir, cuantifica una característica. Dichos valores forman el recorrido de la variable.
-Normalmente se usan letras mayúsculas, y del final de abecedario, (X, Y, o Z) para denotar variables aleatorias.
-De un experimento aleatorio es posible definir más de una variable aleatoria.
-                </p>
+
+                <!-- Portfolio Grid Items -->
+                <div class="row">
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/definicion.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/cerebro.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/funcion.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/tarea1.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/distribucion.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/esperanza.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 7 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/definicion.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 8 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/varianza.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 9 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/tarea2.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+        </section>
+
+
+
+        !-- Portfolio Section -->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+
+                <!-- Portfolio Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Bernoulli</h2>
+
+                <!-- Icon Divider -->
                 <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Portfolio Grid Items -->
+                <div class="row">
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/definicion.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/cerebro.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/funcion.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/tarea1.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/tarea2.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/varianza.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 7 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/tarea1.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 8 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/tarea2.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 9 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/video.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- /.row -->
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+
+                <!-- About Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- About Section Content -->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                    </div>
+                </div>
+
+                <!-- About Section Button -->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+                        <i class="fas fa-download mr-2"></i>
+                        Free Download!
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="page-section" id="contact">
+            <div class="container">
+
+                <!-- Contact Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Contact Section Form -->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Name</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email Address</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Phone Number</label>
+                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Location -->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">2215 John Daniel Drive
+                            <br>Clark, MO 65243</p>
+                    </div>
+
+                    <!-- Footer Social Icons -->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#">
+                            <i class="fab fa-fw fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#">
+                            <i class="fab fa-fw fa-dribbble"></i>
+                        </a>
+                    </div>
+
+                    <!-- Footer About Text -->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copyright Section -->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>Copyright &copy; Your Website 2019</small>
+            </div>
+        </section>
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-to-top d-lg-none position-fixed ">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
         </div>
-        <div class="divider-custom-line"></div>
-      </div>
-<p class="mb-5" align="justify"> Ejemplo 1</p>
-<p class="mb-5" align="justify"> Considere el experimento aleatorio “Lanzar 4 monedas” y la variable aleatoria  X: Cantidad de caras obtenidas, entonces:</p>
-<img class="img-fluid" src="img/portfolio/monedas.png" alt=""width="200" height="250" alt="">
-<p class="mb-5" align="justify"> Dom X= { CCCC, CCCS, CCSC, CCSS, CSCC, CSCS, CSSC, CSSS, SCCC, SCCS, SCSC, SCSS, SSCC, SSCS, SSSC, SSSS}</p>
-<p class="mb-5" align="justify">Rec X:{0, 1, 2, 3, 4}</p>
-</div>
-<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id01">
-                                    <div class="iDevice emphasis1" >
-                                        <header class="iDevice_header"><h3 class="iDeviceTitle">ejemplos practicos</h3></header>
-                                        <div class="iDevice_inner">
-                                            <div class="iDevice_content_wrapper">
-                                                <section id="ta19_94" class="block iDevice_content">
-                                                    <p>Un restaurante tiene una carta que consta de cuatro primeros platos y tres segundos. ¿Cuántos menús formados por dos platos, uno del primer grupo y otro del segundo, se pueden confeccionar?</p>
-                                                </section>
-                                                <section id="taquesQuestion0b01" class="block iDevice_content">
-                                                   <img class="img-fluid" src="img/portfolio/game.png" alt=""width="200" height="200" alt="">
-                                                </section>
-                                                <form name="feedback-form-quesFeedback0b01" action="#" onsubmit="return false" class="feedback-form">
-                                                    <div class="block iDevice_buttons feedback-button js-required">
-                                                        <p><script type="text/javascript">var feedbackquesFeedback0b01text = "Retroalimentación";</script>
-                                                           
-                                                            <!-- Ejemplo de id para ocultar Jorge -->
-                                                            <input type="button" id="feedback-quesFeedback0b01" name="toggle-feedback-quesFeedback0b01" value="Retroalimentación" class="feedbackbutton feedback-toggler" /></p>
-                                                    </div>
-                                                    <section id="sec-feedback-quesFeedback0b01" class="feedback js-feedback js-hidden">
-                                                        <h3 class="js-sr-av">Retroalimentación</h3>
-                                                        <p>Denotemos por 1,2,3 y 4 los primeros platos de la carta y por A, B y C los segundos platos. Construyamos el siguiente diagrama de árbol:</p>
-                                                        <p><img src="img/menus_PM.png" alt="menus" title="menus" width="499" height="574" /></p>
-                                                        <p>Se pueden formar 12 platos diferentes.</p></section>
-                                                </form>
+
+        <!-- Portfolio Modals -->
+
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-1" src="img/portfolio/definicion.png" width="100" height="100" alt="">
+                                    <h3 class="portfolio-modal-title text-secondary text-uppercase mb-5">DEFINICIÓN</h3>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+
+                                    <!-- Portfolio Modal - Text -->
+                                    <div>
+                                        <p class="mb-5" align="justify"> Una variable aleatoria es una función que asigna a cada valor del espacio muestral un valor numérico real.
+                                            La V.A. asigna un número a cada suceso elemental del espacio muestral, es decir, cuantifica una característica. Dichos valores forman el recorrido de la variable.
+                                            Normalmente se usan letras mayúsculas, y del final de abecedario, (X, Y, o Z) para denotar variables aleatorias.
+                                            De un experimento aleatorio es posible definir más de una variable aleatoria.
+                                        </p>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon">
+                                                <i class="fas fa-moon"></i>
+                                            </div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <p class="mb-5" align="justify"> Ejemplo 1</p>
+                                        <p class="mb-5" align="justify"> Considere el experimento aleatorio “Lanzar 4 monedas” y la variable aleatoria  X: Cantidad de caras obtenidas, entonces:</p>
+                                        <img class="img-fluid" src="img/portfolio/monedas.png" alt=""width="200" height="250" alt="">
+                                        <p class="mb-5" align="justify"> Dom X= { CCCC, CCCS, CCSC, CCSS, CSCC, CSCS, CSSC, CSSS, SCCC, SCCS, SCSC, SCSS, SSCC, SSCS, SSSC, SSSS}</p>
+                                        <p class="mb-5" align="justify">Rec X:{0, 1, 2, 3, 4}</p>
+                                    </div>
+
+                                    <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id01">
+                                        <div class="iDevice emphasis1" >
+                                            <header class="iDevice_header"><h3 class="iDeviceTitle">ejemplo practico</h3></header>
+                                            <div class="iDevice_inner">
+                                                <div class="iDevice_content_wrapper">
+                                                    <section id="ta19_94" class="block iDevice_content">
+                                                        <p>Un restaurante tiene una carta que consta de cuatro primeros platos y tres segundos. ¿Cuántos menús formados por dos platos, uno del primer grupo y otro del segundo, se pueden confeccionar?</p>
+                                                    </section>
+                                                    <section id="taquesQuestion0b01" class="block iDevice_content">
+                                                        <img class="img-fluid" src="img/portfolio/game.png" alt=""width="200" height="200" alt="">
+                                                    </section>
+                                                    <form name="feedback-form-quesFeedback0b01" action="#" onsubmit="return false" class="feedback-form">
+                                                        <div class="block iDevice_buttons feedback-button js-required">
+                                                            <p><script type="text/javascript">var feedbackquesFeedback0b01text = "Retroalimentación";</script>
+
+                                                                <!-- Ejemplo de id para ocultar Jorge -->
+                                                                <input type="button" id="feedback-quesFeedback0b01" name="toggle-feedback-quesFeedback0b01" value="Retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+                                                        </div>
+                                                        <section id="sec-feedback-quesFeedback0b01" class="feedback js-feedback js-hidden">
+                                                            <h3 class="js-sr-av">Retroalimentación</h3>
+                                                            <p>Denotemos por 1,2,3 y 4 los primeros platos de la carta y por A, B y C los segundos platos. Construyamos el siguiente diagrama de árbol:</p>
+                                                            <p><img src="img/menus_PM.png" alt="menus" title="menus" width="499" height="574" /></p>
+                                                            <p>Se pueden formar 12 platos diferentes.</p></section>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
+                                    </article>
+
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/cerebro.png" width="100" height="100"alt="">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ejemplos</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
                                     </div>
-</article>
+                                    <!-- Portfolio Modal - Image -->
 
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar Ventana
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                                    <!-- Portfolio Modal - Text -->
+                                    <p class="mb-5" align="justify">Ejemplo 2</p>
+                                    <p class="mb-5" align="justify">Sea el experimento aleatorio “Lanzar 2 dados” y la variable aleatoria X: "Diferencia positiva de las caras superiores de ambos dados"</p>
+                                    <img class="img-fluid" src="img/portfolio/Espaciomuestral2dados.png" alt="">
 
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/cerebro.png" width="100" height="100"alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ejemplos</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-moon"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+                                    <p class="mb-5" align="justify">Dom: {Todos los pares de dados que se puedan generar, 36 en total}</p>
+                                    <p class="mb-5" align="justify">Rec X: {0, 1, 2, 3, 4, 5}</p>
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify">Ejemplo 3</p>
+                                    <p class="mb-5" align="justify">Sea el experimento aleatorio “Sacar un huevo de una caja de 12 huevos” y la variable aleatoria X: “el número de huevos no quebrados en una caja de 12 huevos seleccionada al azar”</p>
+                                    <img class="img-fluid" src="img/portfolio/huevos.png" alt="">
+
+                                    <p class="mb-5" align="justify">Rec X: {0,1,2,3,4,5,6,7,8,9,10,11,12}</p>
+
+
+                                    <!-- preguntas - Text -->
+                                    <div>
+
+                                    </div>
+                                    <!-- termino preguntas - Text -->
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-               
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" align="justify">Ejemplo 2</p>
-                <p class="mb-5" align="justify">Sea el experimento aleatorio “Lanzar 2 dados” y la variable aleatoria X: "Diferencia positiva de las caras superiores de ambos dados"</p>
-                <img class="img-fluid" src="img/portfolio/Espaciomuestral2dados.png" alt="">
-                
-                <p class="mb-5" align="justify">Dom: {Todos los pares de dados que se puedan generar, 36 en total}</p>
-                <p class="mb-5" align="justify">Rec X: {0, 1, 2, 3, 4, 5}</p>
-
-                <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
+            </div>
         </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                 <p class="mb-5" align="justify">Ejemplo 3</p>
-                <p class="mb-5" align="justify">Sea el experimento aleatorio “Sacar un huevo de una caja de 12 huevos” y la variable aleatoria X: “el número de huevos no quebrados en una caja de 12 huevos seleccionada al azar”</p>
-                <img class="img-fluid" src="img/portfolio/huevos.png" alt="">
-                
-                <p class="mb-5" align="justify">Rec X: {0,1,2,3,4,5,6,7,8,9,10,11,12}</p>
- 
-                
-                <!-- preguntas - Text -->
-                <div>
 
+        <!-- Portfolio Modal 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/funcion.png" width="100" height="100" alt="">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Función de probabilidad</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div LINE-HEIGHT:10px>
+                                    <!-- Portfolio Modal - Image -->
+                                    <p class="mb-5" align="justify">Situación Inicial</p>
+                                    <p class="mb-5" align="justify">vamos a determinar la estrecha relación que existe entre las probabilidades y las funciones. Para ello, vamos a suponer que tenemos un dado cargado cuyas probabilidades son las siguientes:</p>
+                                    <table border="1" align="center">
+                                        <tr><th>Nº del dado</th><th>Probabilidad</th></tr>
+                                        <tr><td>1</td><td>0.20</td></tr>
+                                        <tr><td>2</td><td>0.10</td></tr>
+                                        <tr><td>3</td><td>0.05</td></tr>
+                                        <tr><td>4</td><td>0.30</td></tr>
+                                        <tr><td>5</td><td>0.25</td></tr>
+                                        <tr><td>6</td><td>0.10</td></tr>
+                                    </table>
+
+                                    <p class="mb-5" align="justify">Podríamos definir una función que relacione la variable aleatoria “número de la cara mostrada por este dado al lanzarlo” con su probabilidad. Esta sería una función pues todos los números del dado tienen una y solo una probabilidad asignada. Podríamos representarla de la siguiente manera:</p>
+                                    <img class="img-fluid" src="img/portfolio/funcion1.png" width="200" height="200" alt="">
+                                    <p class="mb-5" align="justify">A esta función se le llama Función de masa de  probabilidad</p>
+                                    <p class="mb-5" align="justify">Podemos definir formalmente, una función de probabilidad como aquella función que asocia a cada elemento del espacio muestral (x), una variable aleatoria (X) la probabilidad que este tenga.</p>
+                                    <p class="mb-5" align="justify">Entonces, f(x), será una función de probabilidad de tal manera que f(x):R→[0,1], tal que </p>
+                                    <img class="img-fluid" src="img/portfolio/def1.png" alt="">
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify">EJEMPLO 1</p>
+                                    <p class="mb-5" align="justify">Si se define la variable aleatoria “el número de hijos hombres que una pareja puede tener si tienen dos hijos”, ¿cuál sería la función de probabilidad?</p>
+                                    <p class="mb-5" align="justify">El espacio muestral correspondiente a esta situación es:</p>
+                                    <p class="mb-5" align="justify"> &Omega; =  { HH, HM, MH, MM } , donde H corresponde a un niño y M corresponde a una niña.</p>
+                                    <img class="img-fluid" src="img/portfolio/def2.png" alt=""> 
+                                    <p class="mb-5" align="justify">Además podemos graficarla también de la siguiente manera:</p>
+                                    <img class="img-fluid" src="img/portfolio/funcion de masa 1.png" width="350" height="350" alt=""> 
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify">EJEMPLO 2</p>
+                                    <p class="mb-5" align="justify">Una bolsa contiene 6 bolitas: 4 rojas, 2 verdes, si se considera el experimento “extraer 3 bolitas”, y la variable aleatoria X:”Número de bolitas rojas” ¿cuál sería su función de probabilidad?</p>
+                                    <img class="img-fluid" src="img/portfolio/bolas.png" width="250" height="250" alt="">  
+                                    <p class="mb-5" align="justify"> &Omega; =  { VVR, VRV, VRR, RVV, RVR, RRV, RRR }</p>
+                                    <p class="mb-5" align="justify">Rec X= {1, 2, 3}:</p>
+                                    <img class="img-fluid" src="img/portfolio/def3.png" alt=""> 
+                                    <p class="mb-5" align="justify">Además su grafico correspondiente:</p>
+                                    <img class="img-fluid" src="img/portfolio/funcion masa 2.png" width="350" height="350" alt=""> 
+
+                                    <p class="mb-5" align="justify">A veces la variable aleatoria discreta la podemos expresar como una lista de valores posibles de la variable y la proporción de veces que esperamos que ocurran, como se muestra en la tabla siguiente</p>
+                                    <table border="1" align="center">
+                                        <tr>
+                                            <th>x<sub>i</sub></th>
+                                            <td>x<sub>1</sub></td>
+                                            <td>x<sub>2</sub></td>
+                                            <td>...</td>
+                                            <td>x<sub>n</sub></td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(xi)</th>
+                                            <td>P(x<sub>1</sub>)</td>
+                                            <td>P(x<sub>2</sub>)</td>
+                                            <td>...</td>
+                                            <td>P(x<sub>n</sub>)</td>
+                                        </tr>
+                                    </table>
+                                    <p class="mb-5" align="justify">En nuestro ejemplo anterior, quedaría de la siguiente manera:</p>
+                                    <table border="1" align="center">
+                                        <tr>
+                                            <th>x</th>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(xi)</th>
+                                            <td>0.2</td>
+                                            <td>0.6</td>
+                                            <td>0.2</td>
+                                        </tr>
+                                    </table>
+
+                                    <p class="mb-5" align="justify">En la siguiente pestaña veremos sus propiedades y ejemplos variados:</p>                
+
+                                    <!-- Portfolio Modal - Text -->
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                 <!-- termino preguntas - Text -->
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar Ventana
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/funcion.png" width="100" height="100" alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Función de probabilidad</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div LINE-HEIGHT:10px>
-                <!-- Portfolio Modal - Image -->
-                <p class="mb-5" align="justify">Situación Inicial</p>
-                <p class="mb-5" align="justify">vamos a determinar la estrecha relación que existe entre las probabilidades y las funciones. Para ello, vamos a suponer que tenemos un dado cargado cuyas probabilidades son las siguientes:</p>
-                    <table border="1" align="center">
-    <tr><th>Nº del dado</th><th>Probabilidad</th></tr>
-    <tr><td>1</td><td>0.20</td></tr>
-    <tr><td>2</td><td>0.10</td></tr>
-    <tr><td>3</td><td>0.05</td></tr>
-    <tr><td>4</td><td>0.30</td></tr>
-    <tr><td>5</td><td>0.25</td></tr>
-    <tr><td>6</td><td>0.10</td></tr>
-    </table>
-                
-                <p class="mb-5" align="justify">Podríamos definir una función que relacione la variable aleatoria “número de la cara mostrada por este dado al lanzarlo” con su probabilidad. Esta sería una función pues todos los números del dado tienen una y solo una probabilidad asignada. Podríamos representarla de la siguiente manera:</p>
-                <img class="img-fluid" src="img/portfolio/funcion1.png" width="200" height="200" alt="">
-                <p class="mb-5" align="justify">A esta función se le llama Función de masa de  probabilidad</p>
-                <p class="mb-5" align="justify">Podemos definir formalmente, una función de probabilidad como aquella función que asocia a cada elemento del espacio muestral (x), una variable aleatoria (X) la probabilidad que este tenga.</p>
-                <p class="mb-5" align="justify">Entonces, f(x), será una función de probabilidad de tal manera que f(x):R→[0,1], tal que </p>
-                                <img class="img-fluid" src="img/portfolio/def1.png" alt="">
+        <!-- Portfolio Modal 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/tarea1.png" width="100" height="100" alt="">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Propiedades y ejemplos de un funcion de probabilidad</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+                                    <p class="mb-5" align="justify">La función de probabilidades de una variable aleatoria discreta X es una función (tabla o regla), denotada por p(x) o P(X=x), que asigna una probabilidad a cada valor posible de la variable aleatoria X.</p>
+                                    <p class="mb-5" align="justify"><b> Propiedades de una función de distribución:</b></p>
+                                    <p class="mb-5" align="justify"><b> 1)</b>los valores de las probabilidades están entre 0 y 1, es decir,<img class="img-fluid" src="img/portfolio/propiedad1masa.png" alt="">para todo x </p>
+                                    <p class="mb-5" align="justify"><b> 2)</b>2)	la suma de las probabilidades es igual a 1 , es decir,<img class="img-fluid" src="img/portfolio/propiedadmasa2.png" alt=""> </p>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify"><b>EJEMPLO 1</b></p>
+                                    <p class="mb-5" align="justify">Al lanzar una moneda 3 veces, se obtiene el espacio muestra</p>
+                                    <p class="mb-5" align="justify"> &Omega; =  { CCC, CCS, CSS, CSC, SSS, SSC, SCC, SCS }</p>
+                                    <p class="mb-5" align="justify">Escriba la distribución de probabilidades para la variable aleatoria X =  “número de caras”</p> 
+                                    <p class="mb-5" align="justify">Solución  Rec X= {0, 1, 2, 3}:</p>
+                                    <table border="1" align="center">
+                                        <tr>
+                                            <th>x</th>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(xi)</th>
+                                            <td>0.125</td>
+                                            <td>0.375</td>
+                                            <td>0.375</td>
+                                            <td>0.125</td>
+                                        </tr>
+                                    </table>
+                                    <p class="mb-5" align="justify">Además su grafico correspondiente:</p>
+                                    <img class="img-fluid" src="img/portfolio/funcion de masa 3.png" width="350" height="350" alt=""> 
 
-                                <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                <p class="mb-5" align="justify">EJEMPLO 1</p>
-                 <p class="mb-5" align="justify">Si se define la variable aleatoria “el número de hijos hombres que una pareja puede tener si tienen dos hijos”, ¿cuál sería la función de probabilidad?</p>
-                  <p class="mb-5" align="justify">El espacio muestral correspondiente a esta situación es:</p>
-                  <p class="mb-5" align="justify"> &Omega; =  { HH, HM, MH, MM } , donde H corresponde a un niño y M corresponde a una niña.</p>
-                    <img class="img-fluid" src="img/portfolio/def2.png" alt=""> 
-                   <p class="mb-5" align="justify">Además podemos graficarla también de la siguiente manera:</p>
-                   <img class="img-fluid" src="img/portfolio/funcion de masa 1.png" width="350" height="350" alt=""> 
-                   
-                   <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                   <p class="mb-5" align="justify">EJEMPLO 2</p>
-                 <p class="mb-5" align="justify">Una bolsa contiene 6 bolitas: 4 rojas, 2 verdes, si se considera el experimento “extraer 3 bolitas”, y la variable aleatoria X:”Número de bolitas rojas” ¿cuál sería su función de probabilidad?</p>
-                  <img class="img-fluid" src="img/portfolio/bolas.png" width="250" height="250" alt="">  
-                 <p class="mb-5" align="justify"> &Omega; =  { VVR, VRV, VRR, RVV, RVR, RRV, RRR }</p>
-                   <p class="mb-5" align="justify">Rec X= {1, 2, 3}:</p>
-                   <img class="img-fluid" src="img/portfolio/def3.png" alt=""> 
-                   <p class="mb-5" align="justify">Además su grafico correspondiente:</p>
-                   <img class="img-fluid" src="img/portfolio/funcion masa 2.png" width="350" height="350" alt=""> 
-                   
-                   <p class="mb-5" align="justify">A veces la variable aleatoria discreta la podemos expresar como una lista de valores posibles de la variable y la proporción de veces que esperamos que ocurran, como se muestra en la tabla siguiente</p>
-                   <table border="1" align="center">
-  <tr>
-      <th>x<sub>i</sub></th>
-    <td>x<sub>1</sub></td>
-    <td>x<sub>2</sub></td>
-    <td>...</td>
-     <td>x<sub>n</sub></td>
-  </tr>
-  <tr>
-    <th>P(xi)</th>
-   <td>P(x<sub>1</sub>)</td>
-    <td>P(x<sub>2</sub>)</td>
-    <td>...</td>
-     <td>P(x<sub>n</sub>)</td>
-  </tr>
-</table>
-                   <p class="mb-5" align="justify">En nuestro ejemplo anterior, quedaría de la siguiente manera:</p>
-                   <table border="1" align="center">
-  <tr>
-      <th>x</th>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <th>P(xi)</th>
-   <td>0.2</td>
-    <td>0.6</td>
-    <td>0.2</td>
-  </tr>
-</table>
-                   
-     <p class="mb-5" align="justify">En la siguiente pestaña veremos sus propiedades y ejemplos variados:</p>                
-                
-                <!-- Portfolio Modal - Text -->
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar Ventana
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                                    <p></p>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify"><b>EJEMPLO 2</b></p>
+                                    <p class="mb-5" align="justify">Una cierta gasolinería tiene seis bombas. Sea X  el número de bombas que están en servicio a una hora particular del día. Suponga que la distribución de probabilidad de X  es como se da en la tabla siguiente; la primera fila de la tabla contiene los posibles valores de X  y la segunda da la probabilidad de dicho valor.</p>
+                                    <table border="2" align="center">
+                                        <tr>
+                                            <th>x</th>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(x)</th>
+                                            <td>0.05</td>
+                                            <td>0.10</td>
+                                            <td>0.15</td>
+                                            <td>0.25</td>
+                                            <td>0.20</td>
+                                            <td>0.15</td>
+                                            <td>0.10</td>
+                                        </tr>
+                                    </table>
+                                    <p class="mb-5" align="justify">Además su grafico correspondiente:</p>
+                                    <img class="img-fluid" src="img/portfolio/grafico de masa 4.png" width="350" height="350" alt=""> 
+                                    <p class="mb-5" align="justify">Ahora se pueden usar propiedades de probabilidad elemental para calcular otras probabilidades de interés. Por ejemplo, la probabilidad de que cuando mucho dos bombas estén en servicio es:</p>  
+                                    <img class="img-fluid" src="img/portfolio/probmenorque2.png" alt=""> 
 
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/tarea1.png" width="100" height="100" alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Propiedades y ejemplos de un funcion de probabilidad</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+                                    <p></p> 
+                                    <p class="mb-5" align="justify">A partir del problema anterior introduciremos en la siguiente pestaña el concepto de Función de Distribución</p>
+                                    <!-- Portfolio Modal - Text -->
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-               <p class="mb-5" align="justify">La función de probabilidades de una variable aleatoria discreta X es una función (tabla o regla), denotada por p(x) o P(X=x), que asigna una probabilidad a cada valor posible de la variable aleatoria X.</p>
-               <p class="mb-5" align="justify"><b> Propiedades de una función de distribución:</b></p>
-                  <p class="mb-5" align="justify"><b> 1)</b>los valores de las probabilidades están entre 0 y 1, es decir,<img class="img-fluid" src="img/portfolio/propiedad1masa.png" alt="">para todo x </p>
-                   <p class="mb-5" align="justify"><b> 2)</b>2)	la suma de las probabilidades es igual a 1 , es decir,<img class="img-fluid" src="img/portfolio/propiedadmasa2.png" alt=""> </p>
-                   <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                  <p class="mb-5" align="justify"><b>EJEMPLO 1</b></p>
-                 <p class="mb-5" align="justify">Al lanzar una moneda 3 veces, se obtiene el espacio muestra</p>
-                 <p class="mb-5" align="justify"> &Omega; =  { CCC, CCS, CSS, CSC, SSS, SSC, SCC, SCS }</p>
-                  <p class="mb-5" align="justify">Escriba la distribución de probabilidades para la variable aleatoria X =  “número de caras”</p> 
-                 <p class="mb-5" align="justify">Solución  Rec X= {0, 1, 2, 3}:</p>
-                   <table border="1" align="center">
-  <tr>
-      <th>x</th>
-   <td>0</td>
-      <td>1</td>
-    <td>2</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <th>P(xi)</th>
-   <td>0.125</td>
-    <td>0.375</td>
-    <td>0.375</td>
-    <td>0.125</td>
-  </tr>
-</table>
-                   <p class="mb-5" align="justify">Además su grafico correspondiente:</p>
-                   <img class="img-fluid" src="img/portfolio/funcion de masa 3.png" width="350" height="350" alt=""> 
-                   
-                   <p></p>
-                   <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                   <p class="mb-5" align="justify"><b>EJEMPLO 2</b></p>
-                 <p class="mb-5" align="justify">Una cierta gasolinería tiene seis bombas. Sea X  el número de bombas que están en servicio a una hora particular del día. Suponga que la distribución de probabilidad de X  es como se da en la tabla siguiente; la primera fila de la tabla contiene los posibles valores de X  y la segunda da la probabilidad de dicho valor.</p>
-                   <table border="2" align="center">
-  <tr>
-      <th>x</th>
-   <td>0</td>
-      <td>1</td>
-    <td>2</td>
-    <td>3</td>
-     <td>4</td>
-    <td>5</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <th>P(x)</th>
-   <td>0.05</td>
-    <td>0.10</td>
-    <td>0.15</td>
-    <td>0.25</td>
-     <td>0.20</td>
-    <td>0.15</td>
-    <td>0.10</td>
-  </tr>
-</table>
-                   <p class="mb-5" align="justify">Además su grafico correspondiente:</p>
-                   <img class="img-fluid" src="img/portfolio/grafico de masa 4.png" width="350" height="350" alt=""> 
-                 <p class="mb-5" align="justify">Ahora se pueden usar propiedades de probabilidad elemental para calcular otras probabilidades de interés. Por ejemplo, la probabilidad de que cuando mucho dos bombas estén en servicio es:</p>  
-                   <img class="img-fluid" src="img/portfolio/probmenorque2.png" alt=""> 
-                   
-                 <p></p> 
-                  <p class="mb-5" align="justify">A partir del problema anterior introduciremos en la siguiente pestaña el concepto de Función de Distribución</p>
-                <!-- Portfolio Modal - Text -->
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar Ventana
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion.png" width="100" height="100"  alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">función de distribución.</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+        <!-- Portfolio Modal 5 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion.png" width="100" height="100"  alt="">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">función de distribución.</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+
+                                    <!-- Portfolio Modal - Text -->
+                                    <p class="mb-5" align="justify"><b>DEFINICIÓN</b></p>
+                                    <p class="mb-5" align="justify">Para algún valor fijo x , a menudo se desea calcular la probabilidad de que el valor observado de X  será cuando mucho x, a dicha expresión la representaremos como F(x) y representa P(X &le;x), es decir</p>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/deffd2.png"  alt="">
+                                    <p class="mb-5" align="justify">Para cualquier número x , F (x) es la probabilidad de que el valor observado de X  será cuando mucho x .”</p> 
+                                    <p class="mb-5" align="justify"></p>
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify"><b>EJEMPLO 1</b></p>
+                                    <p class="mb-5" align="justify">Considere un grupo de cinco donadores de sangre potenciales, a , b , c , d  y e , de los cuales sólo a  y b  tienen sangre tipo O+ . Se determinará en orden aleatorio el tipo de sangre con cinco muestras, una de cada individuo hasta que se identifique un individuo O+ . Sea la variable aleatoria Y : “ número de exámenes de sangre para identificar un individuo O+” .</p>
+                                    <p class="mb-5" align="justify">Entonces la función de probabilidad de Y  es:</p>
+
+                                    <p class="mb-5" align="justify">P(1) =  P( Y = 1) = P( a o  b examinados primero) =2/5</p> 
+                                    <p class="mb-5" align="justify">P(2) =  P( Y = 2) = P( c,  d o  e primero y luego  a o  b)=(3/5)·(2/4)=3/10</p> 
+                                    <p class="mb-5" align="justify">P(3) =  P( Y = 3) = P( c,  d o  e primero y segundo y luego  a o  b)= (3/5)·(2/4)·(2/3)=1/5</p> 
+                                    <p class="mb-5" align="justify">P(4) =  P( Y = 4) = P( c,  d y  e primero)= (3/5)·(2/4)·(1/3)=1/10</p> 
+
+                                    <p class="mb-5" align="justify">En forma tabular, la función de probabilidad es</p>
+                                    <table border="2" align="center">
+                                        <tr>
+                                            <th>x</th>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(x)</th>
+                                            <td>0.40</td>
+                                            <td>0.30</td>
+                                            <td>0.20</td>
+                                            <td>0.10</td>
+                                        </tr>
+                                    </table>
+                                    <p class="mb-5" align="justify">Primero se determina F (y ) para cada uno de los valores posibles del conjunto (1, 2, 3, 4):</p>
+
+                                    <p class="mb-5" align="justify">F (1) = P (Y &le; 1) = P (Y =  1) = p (1) =  0.4</p> 
+                                    <p class="mb-5" align="justify">F (2) = P (Y &le;  2) = P (Y =  1 o 2) = p (1) + p (2) =  0.7</p> 
+                                    <p class="mb-5" align="justify">F (3) = P (Y &le;  3) = P (Y =  1 o 2 o 3) = p (1) + p (2) + p (3) =  0.9</p> 
+                                    <p class="mb-5" align="justify">P (Y &le;  4) = P (Y =  1 o 2 o 3 o 4) =  1</p> 
+
+                                    <p class="mb-5" align="justify">Ahora con cualquier otro número y , F (y ) será igual al valor de F  con el valor más próximo posible de Y  a la izquierda de y . Por ejemplo, F (2,7) = P (Y &le;  2.7) = P (Y =  2) =  0.7 y F (3.999) = F (3) =  0.9. La función de distribución acumulada es por lo tanto</p>         
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/fddejemplo1.png"  alt="">
+                                    <p class="mb-5" align="justify">Y la gráfica de dicha función es:</p> 
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion1.png" width="350" height="350" alt="">
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify"><b>PROPOSICIÓN</b></p>
+                                    <p class="mb-5" align="justify"> Para 2 números cualesquiera a y b con  a &le; b, se cumple que:</p>
+                                    <p class="mb-5" align="justify">P(a &le; x &le; b) = F(b) - F(a)</p>
+                                    <p class="mb-5" align="justify"> Donde “a-“ representa el valor posible de X más grande que es estrictamente menor que a. En particular, si los únicos valores posibles son enteros y si a y b son enteros, entonces</p>
+                                    <p class="mb-5" align="justify">P(a &le; x &le; b) = P(X = a 0 a +1 o a+2 o ... o b) = F(b) - F(a - 1)</p>
+                                    <p class="mb-5" align="justify">Con a =b se obtiene P(X = a) =F(a) – F(a – 1)</p>
+                                    <p class="mb-5" align="justify"></p>
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify"><b>EJEMPLO 3</b></p>
+                                    <p class="mb-5" align="justify">Sea X :” el número de días de ausencia por enfermedad tomados por un empleado seleccionado al azar de una gran compañía durante un año particular. Si el número máximo de días de ausencia por enfermedad permisibles al año es de 10, los valores posibles de X  son:</p>
+                                    <p class="mb-5" align="justify">Para este ejemplo se tiene que Rec: {0,1,2,3,4,5,6,7,8,9,10}</p> 
+                                    <table border="2" align="center">
+                                        <tr>
+                                            <th>x</th>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(x)</th>
+                                            <td>0.58</td>
+                                            <td>0.72</td>
+                                            <td>0.76</td>
+                                            <td>0.81</td>
+                                            <td>0.88</td>
+                                            <td>0.93</td>
+                                            <td>0.95</td>
+                                            <td>0.96</td>
+                                            <td>0.97</td>
+                                            <td>0.99</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                    <p class="mb-5" align="justify">Además su grafico de distribución correspondiente:</p>
+                                    <img class="img-fluid" src="img/portfolio/grafico 4.png" width="350" height="350" alt=""> 
+
+                                    <p class="mb-5" align="justify"></p>
+
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-               
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" align="justify"><b>DEFINICIÓN</b></p>
-                 <p class="mb-5" align="justify">Para algún valor fijo x , a menudo se desea calcular la probabilidad de que el valor observado de X  será cuando mucho x, a dicha expresión la representaremos como F(x) y representa P(X &le;x), es decir</p>
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/deffd2.png"  alt="">
-                  <p class="mb-5" align="justify">Para cualquier número x , F (x) es la probabilidad de que el valor observado de X  será cuando mucho x .”</p> 
-                 <p class="mb-5" align="justify"></p>
-                 
-                 <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                  <p class="mb-5" align="justify"><b>EJEMPLO 1</b></p>
-                 <p class="mb-5" align="justify">Considere un grupo de cinco donadores de sangre potenciales, a , b , c , d  y e , de los cuales sólo a  y b  tienen sangre tipo O+ . Se determinará en orden aleatorio el tipo de sangre con cinco muestras, una de cada individuo hasta que se identifique un individuo O+ . Sea la variable aleatoria Y : “ número de exámenes de sangre para identificar un individuo O+” .</p>
-                 <p class="mb-5" align="justify">Entonces la función de probabilidad de Y  es:</p>
-                 
-                  <p class="mb-5" align="justify">P(1) =  P( Y = 1) = P( a o  b examinados primero) =2/5</p> 
-                  <p class="mb-5" align="justify">P(2) =  P( Y = 2) = P( c,  d o  e primero y luego  a o  b)=(3/5)·(2/4)=3/10</p> 
-                  <p class="mb-5" align="justify">P(3) =  P( Y = 3) = P( c,  d o  e primero y segundo y luego  a o  b)= (3/5)·(2/4)·(2/3)=1/5</p> 
-                  <p class="mb-5" align="justify">P(4) =  P( Y = 4) = P( c,  d y  e primero)= (3/5)·(2/4)·(1/3)=1/10</p> 
-                 
-                  <p class="mb-5" align="justify">En forma tabular, la función de probabilidad es</p>
-                <table border="2" align="center">
-  <tr>
-      <th>x</th>
-      <td>1</td>
-    <td>2</td>
-    <td>3</td>
-     <td>4</td>
-  </tr>
-  <tr>
-    <th>P(x)</th>
-   <td>0.40</td>
-    <td>0.30</td>
-    <td>0.20</td>
-    <td>0.10</td>
-  </tr>
-</table>
-          <p class="mb-5" align="justify">Primero se determina F (y ) para cada uno de los valores posibles del conjunto (1, 2, 3, 4):</p>
-                 
-                  <p class="mb-5" align="justify">F (1) = P (Y &le; 1) = P (Y =  1) = p (1) =  0.4</p> 
-                  <p class="mb-5" align="justify">F (2) = P (Y &le;  2) = P (Y =  1 o 2) = p (1) + p (2) =  0.7</p> 
-                  <p class="mb-5" align="justify">F (3) = P (Y &le;  3) = P (Y =  1 o 2 o 3) = p (1) + p (2) + p (3) =  0.9</p> 
-                  <p class="mb-5" align="justify">P (Y &le;  4) = P (Y =  1 o 2 o 3 o 4) =  1</p> 
-                 
-                  <p class="mb-5" align="justify">Ahora con cualquier otro número y , F (y ) será igual al valor de F  con el valor más próximo posible de Y  a la izquierda de y . Por ejemplo, F (2,7) = P (Y &le;  2.7) = P (Y =  2) =  0.7 y F (3.999) = F (3) =  0.9. La función de distribución acumulada es por lo tanto</p>         
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/fddejemplo1.png"  alt="">
-                <p class="mb-5" align="justify">Y la gráfica de dicha función es:</p> 
-                 <img class="img-fluid rounded mb-5" src="img/portfolio/distribucion1.png" width="350" height="350" alt="">
-                 
-                 <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                  <p class="mb-5" align="justify"><b>PROPOSICIÓN</b></p>
-                 <p class="mb-5" align="justify"> Para 2 números cualesquiera a y b con  a &le; b, se cumple que:</p>
-                 <p class="mb-5" align="justify">P(a &le; x &le; b) = F(b) - F(a)</p>
-                 <p class="mb-5" align="justify"> Donde “a-“ representa el valor posible de X más grande que es estrictamente menor que a. En particular, si los únicos valores posibles son enteros y si a y b son enteros, entonces</p>
-                 <p class="mb-5" align="justify">P(a &le; x &le; b) = P(X = a 0 a +1 o a+2 o ... o b) = F(b) - F(a - 1)</p>
-                 <p class="mb-5" align="justify">Con a =b se obtiene P(X = a) =F(a) – F(a – 1)</p>
-                 <p class="mb-5" align="justify"></p>
-                 
-                 <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-                 <p class="mb-5" align="justify"><b>EJEMPLO 3</b></p>
-                 <p class="mb-5" align="justify">Sea X :” el número de días de ausencia por enfermedad tomados por un empleado seleccionado al azar de una gran compañía durante un año particular. Si el número máximo de días de ausencia por enfermedad permisibles al año es de 10, los valores posibles de X  son:</p>
-                  <p class="mb-5" align="justify">Para este ejemplo se tiene que Rec: {0,1,2,3,4,5,6,7,8,9,10}</p> 
-                 <table border="2" align="center">
-  <tr>
-      <th>x</th>
-   <td>0</td>
-      <td>1</td>
-    <td>2</td>
-    <td>3</td>
-     <td>4</td>
-    <td>5</td>
-    <td>6</td>
-     <td>7</td>
-     <td>8</td>
-    <td>9</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <th>P(x)</th>
-   <td>0.58</td>
-    <td>0.72</td>
-    <td>0.76</td>
-    <td>0.81</td>
-     <td>0.88</td>
-    <td>0.93</td>
-    <td>0.95</td>
-    <td>0.96</td>
-     <td>0.97</td>
-    <td>0.99</td>
-    <td>1</td>
-  </tr>
-</table>
-                   <p class="mb-5" align="justify">Además su grafico de distribución correspondiente:</p>
-                   <img class="img-fluid" src="img/portfolio/grafico 4.png" width="350" height="350" alt=""> 
-                 
-                 <p class="mb-5" align="justify"></p>
-                 
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar Ventana
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/esperanza.png" width="100" height="100" alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Esperanza de una V.A.</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+        <!-- Portfolio Modal 6 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/esperanza.png" width="100" height="100" alt="">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Esperanza de una V.A.</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+                                    <!-- Portfolio Modal - Text -->
+                                    <p class="mb-5" align="justify"> Considérese una universidad que tiene 10 000 estudiantes y sea X : “ el número de cursos en los cuales está inscrito un estudiante seleccionado al azar”. La función de masa de probabilidad de X  se determina como sigue. Como p (1) = 0.01, se sabe que (0.01) ·  (10000) = 100 de los estudiantes están inscritos en un curso y asimismo con los demás valores de x.</p>
+                                    <table border="2" align="center">
+                                        <tr>
+                                            <th>x</th>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <th>P(x)</th>
+                                            <td>0.01</td>
+                                            <td>0.03</td>
+                                            <td>0.13</td>
+                                            <td>0.25</td>
+                                            <td>0.39</td>
+                                            <td>0.17</td>
+                                            <td>0.02</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Nº de inscritos</th>
+                                            <td>100</td>
+                                            <td>300</td>
+                                            <td>1300</td>
+                                            <td>2500</td>
+                                            <td>3900</td>
+                                            <td>1700</td>
+                                            <td>200</td>
+                                        </tr>
+                                    </table> 
+
+
+                                    <p class="mb-5" align="justify">El número promedio de cursos por estudiante o el valor promedio de X  en la población se obtiene al calcular el número total de cursos tomados por todos los estudiantes y al dividir entre el número total de estudiantes. Como cada uno de los 150 estudiantes está tomando un curso, estos 100 contribuyen con 100 cursos al total. Asimismo, 300 estudiantes contribuyen con 2·(300) cursos, y así sucesivamente. El valor promedio de la población de X  es entonces</p>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/promesp.png"  alt="">
+                                    <p class="mb-5" align="justify">Como 100/10000 = 0.01 = P(1), 300/10000 =0.03 =P(2), y asi sucesivamente, una expresión alternativa para realizar el mismo calculo anterior es:</p>
+                                    <p class="mb-5" align="justify">1·P(1) + 2·P(2) + 3·P(3) + 4·P(4) + 5·P(5) + 6·P(6) + 7·P(7) </p>
+                                    <p class="mb-5" align="justify">Nos podemos dar cuenta que para calcular el valor promedio de X, sólo se necesitan los valores posibles de X junto con sus probabilidades.</p>
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5" align="justify"><b>Valor esperado de X</b></p>
+
+
+                                    <p class="mb-5" align="justify"><b>Definición:</b> Si X es una variable aleatoria discreta que toma valores x<SUB>1</SUB>, x<SUB>2</SUB>, ... x<SUB>k</SUB>, con probabilidad p(x<SUB>1</SUB>), p(x<SUB>2</SUB>),... p(x<SUB>k</SUB>), entonces la media o el valor esperado de X está dado por:</p>   
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/defesp.png"  alt="">
+                                    <p class="mb-5" align="justify">En el ejemplo anterior,</p>
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <!-- Portfolio Modal - Text -->
-         <p class="mb-5" align="justify"> Considérese una universidad que tiene 10 000 estudiantes y sea X : “ el número de cursos en los cuales está inscrito un estudiante seleccionado al azar”. La función de masa de probabilidad de X  se determina como sigue. Como p (1) = 0.01, se sabe que (0.01) ·  (10000) = 100 de los estudiantes están inscritos en un curso y asimismo con los demás valores de x.</p>
-               <table border="2" align="center">
-  <tr>
-      <th>x</th>
-      <td>1</td>
-    <td>2</td>
-    <td>3</td>
-     <td>4</td>
-    <td>5</td>
-    <td>6</td>
-     <td>7</td>
-  </tr>
-  <tr>
-    <th>P(x)</th>
-   <td>0.01</td>
-    <td>0.03</td>
-    <td>0.13</td>
-    <td>0.25</td>
-     <td>0.39</td>
-    <td>0.17</td>
-    <td>0.02</td>
-  </tr>
-   <tr>
-      <th>Nº de inscritos</th>
-      <td>100</td>
-    <td>300</td>
-    <td>1300</td>
-     <td>2500</td>
-    <td>3900</td>
-    <td>1700</td>
-     <td>200</td>
-  </tr>
-</table> 
-         
-         
-         <p class="mb-5" align="justify">El número promedio de cursos por estudiante o el valor promedio de X  en la población se obtiene al calcular el número total de cursos tomados por todos los estudiantes y al dividir entre el número total de estudiantes. Como cada uno de los 150 estudiantes está tomando un curso, estos 100 contribuyen con 100 cursos al total. Asimismo, 300 estudiantes contribuyen con 2·(300) cursos, y así sucesivamente. El valor promedio de la población de X  es entonces</p>
-                  <img class="img-fluid rounded mb-5" src="img/portfolio/promesp.png"  alt="">
-            <p class="mb-5" align="justify">Como 100/10000 = 0.01 = P(1), 300/10000 =0.03 =P(2), y asi sucesivamente, una expresión alternativa para realizar el mismo calculo anterior es:</p>
-             <p class="mb-5" align="justify">1·P(1) + 2·P(2) + 3·P(3) + 4·P(4) + 5·P(5) + 6·P(6) + 7·P(7) </p>
-              <p class="mb-5" align="justify">Nos podemos dar cuenta que para calcular el valor promedio de X, sólo se necesitan los valores posibles de X junto con sus probabilidades.</p>
- 
-                   <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-moon"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-              <p class="mb-5" align="justify"><b>Valor esperado de X</b></p>
-              
-              
-                <p class="mb-5" align="justify"><b>Definición:</b> Si X es una variable aleatoria discreta que toma valores x<SUB>1</SUB>, x<SUB>2</SUB>, ... x<SUB>k</SUB>, con probabilidad p(x<SUB>1</SUB>), p(x<SUB>2</SUB>),... p(x<SUB>k</SUB>), entonces la media o el valor esperado de X está dado por:</p>   
-                                  <img class="img-fluid rounded mb-5" src="img/portfolio/defesp.png"  alt="">
- <p class="mb-5" align="justify">En el ejemplo anterior,</p>
- <p class="mb-5" align="justify"></p>
- <p class="mb-5" align="justify"></p>
- <p class="mb-5" align="justify"></p>
- <p class="mb-5" align="justify"></p>
- <p class="mb-5" align="justify"></p>
-                
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-    <!-- Portfolio Modal 7 -->
+        <!-- Portfolio Modal 7 -->
 
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Video</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-               <title>Autoevaluacion</title>
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Video</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+                                    <title>Autoevaluacion</title>
 
 
-               
-<script language="JavaScript">
 
+                                    <script language="JavaScript">
 
-var resp = new Array;
 
-var faite = new Array;
+                                        var resp = new Array;
 
-var score = 0;
+                                        var faite = new Array;
 
+                                        var score = 0;
 
-resp[1] = "a";
 
-resp[2] = "a";
+                                        resp[1] = "a";
 
-resp[3] = "a";
+                                        resp[2] = "a";
 
-resp[4] = "a";
+                                        resp[3] = "a";
 
-resp[5] = "a";
+                                        resp[4] = "a";
 
-resp[6] = "c";
+                                        resp[5] = "a";
 
-resp[7] = "b";
+                                        resp[6] = "c";
 
-resp[8] = "c";
+                                        resp[7] = "b";
 
-resp[9] = "b";
+                                        resp[8] = "c";
 
-resp[10] = "a";
+                                        resp[9] = "b";
 
+                                        resp[10] = "a";
 
-function Engine(question, repose) 
 
-{
+                                        function Engine(question, repose)
 
-   if (repose != resp[question])
+                                        {
 
-	 {
+                                            if (repose != resp[question])
 
-             if (!faite[question])
+                                            {
 
-			        {faite[question] = -1;}
+                                                if (!faite[question])
 
-                }
+                                                {
+                                                    faite[question] = -1;
+                                                }
 
-        else {
+                                            } else {
 
 
-                if (!faite[question]) {
+                                                if (!faite[question]) {
 
-                        faite[question] = -1;
+                                                    faite[question] = -1;
 
-                        score++;
+                                                    score++;
 
-                        alert("¡Correcto! Tu puntuación es : " + score );
+                                                    alert("¡Correcto! Tu puntuación es : " + score);
 
-                        }
+                                                }
 
 
-                }
+                                            }
 
-}
+                                        }
 
 
-function Nivel () {
+                                        function Nivel() {
 
-      
 
-        if (score >= 9 && score < 10) {
 
-                alert(score + "/10 " + "Muy bien, prueba a superarlo");
+                                            if (score >= 9 && score < 10) {
 
-                }
+                                                alert(score + "/10 " + "Muy bien, prueba a superarlo");
 
-        if (score >= 7 && score < 8) {
+                                            }
 
-                alert(score + "/10 " + "Bien, pero puedes hacerlo mejor");
+                                            if (score >= 7 && score < 8) {
 
-                }
+                                                alert(score + "/10 " + "Bien, pero puedes hacerlo mejor");
 
-        if (score >= 5 && score < 6) {
+                                            }
 
-                alert(score + "/10 " + "Aprobado por los pelos. No te fíes");
+                                            if (score >= 5 && score < 6) {
 
-                }
+                                                alert(score + "/10 " + "Aprobado por los pelos. No te fíes");
 
-        if (score >= 3 && score < 4) {
+                                            }
 
-                alert(score + "/10 " + "Insuficiente. Has de estudiar más");
+                                            if (score >= 3 && score < 4) {
 
-                }
+                                                alert(score + "/10 " + "Insuficiente. Has de estudiar más");
 
-        if (score < 2) {
+                                            }
 
-                alert("Su puntuación es: "+ score 
+                                            if (score < 2) {
 
-				+"\nLa puntuación máxima que podía obtener es 10" 
+                                                alert("Su puntuación es: " + score
 
-				+"\nTiene que reviazar nuevamente sus lecciones" 
+                                                        + "\nLa puntuación máxima que podía obtener es 10"
 
-				+"\nSu porcentaje de aciertos es menos del 10%");
+                                                        + "\nTiene que reviazar nuevamente sus lecciones"
 
-                }
+                                                        + "\nSu porcentaje de aciertos es menos del 10%");
 
-}
+                                            }
 
+                                        }
 
-</script>
 
-</head>
+                                    </script>
 
+                                    </head>
 
-<body bgcolor="#FFFFFF" text="#000000">
 
-<table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+                                    <body bgcolor="#FFFFFF" text="#000000">
 
-  <tr> 
+                                        <table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
 
-    <td width="50" rowspan="2"><img src="../../imagen/desafio.gif" width="50" height="50"></td>
+                                            <tr> 
 
-    <td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Prueba relativa a Variable aleatoria discreta</b></font></td>
+                                                <td width="50" rowspan="2"><img src="../../imagen/desafio.gif" width="50" height="50"></td>
 
-  </tr>
+                                                <td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Prueba relativa a Variable aleatoria discreta</b></font></td>
 
-  <tr> 
+                                            </tr>
 
-    <td width="515" bgcolor="#336699"> </td>
+                                            <tr> 
 
-  </tr>
+                                                <td width="515" bgcolor="#336699"> </td>
 
-  <tr bgcolor="#FFFFFF"> 
+                                            </tr>
 
-    <td> </td>
+                                            <tr bgcolor="#FFFFFF"> 
 
-    <td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Primer 
+                                                <td> </td>
 
-      mes </font></td>
+                                                <td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Primer 
 
-  </tr>
+                                                    mes </font></td>
 
-  <tr> 
+                                            </tr>
 
-    <td height="521"> </td>
+                                            <tr> 
 
-    <td height="521"> 
+                                                <td height="521"> </td>
 
-      <div align="center">
+                                                <td height="521"> 
 
-<div align="left">
+                                                    <div align="center">
 
-<FORM NAME="formulario" ACTION="">
+                                                        <div align="left">
 
-            <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
-            <p> <class="mb-5"> <input name=1 onClick="Engine(1, this.value)" type=radio value=a>a. 2</font></p>
-            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>b. 1.5</font></p>
-            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=c>c. 0.375</font></p>
-            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=a> d. 1.375</font></p>
-            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>e. 1.625</font></p>
-            <p><class="mb-5">
-              
-<p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
-            <p> <class="mb-5"> <input name=2 onClick="Engine(2, this.value)" type=radio value=a>a. 2</font></p>
-            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>b. 1.5</font></p>
-            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=c>c. 0.375</font></p>
-            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=a> d. 1.375</font></p>
-            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>e. 1.625</font></p>
-            <p><class="mb-5">
+                                                            <FORM NAME="formulario" ACTION="">
 
-                <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
-            <p> <class="mb-5"> <input name=3 onClick="Engine(3, this.value)" type=radio value=a>a. 2</font></p>
-            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>b. 1.5</font></p>
-            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=c>c. 0.375</font></p>
-            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=a> d. 1.375</font></p>
-            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>e. 1.625</font></p>
-                <p><class="mb-5">
-                   
-                    <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
-            <p> <class="mb-5"> <input name=4 onClick="Engine(4, this.value)" type=radio value=a>a. 2</font></p>
-            <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=b>b. 1.5</font></p>
-            <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=c>c. 0.375</font></p>
-            <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=a> d. 1.375</font></p>
-            <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=b>e. 1.625</font></p>
-            <p><class="mb-5">
-               
-               <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
-            <p> <class="mb-5"> <input name=5 onClick="Engine(5, this.value)" type=radio value=a>a. 2</font></p>
-            <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=b>b. 1.5</font></p>
-            <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=c>c. 0.375</font></p>
-            <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=a> d. 1.375</font></p>
-            <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=b>e. 1.625</font></p>
-            <p><class="mb-5">
-                
-                <input name=Resulta onClick=Nivel() type=button value=Resultados>
+                                                                <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                    <p> <class="mb-5"> <input name=1 onClick="Engine(1, this.value)" type=radio value=a>a. 2</font></p>
+                                                                        <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                    <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                        <p><class="mb-5">
 
-              <input type="button" name="repose" value="Respuestas Correctas"
+                                                                                            <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                                                <p> <class="mb-5"> <input name=2 onClick="Engine(2, this.value)" type=radio value=a>a. 2</font></p>
+                                                                                                    <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                                                        <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                                            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                                                <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                                                    <p><class="mb-5">
 
-	             onClick="alert('reposes Correctas \n\n 1A  6A  11B\n\n 2B  7B  12A\n\n 3B  8A  13B\n\n 4C  9A  14C\n\n 5B 10C  15C')">
+                                                                                                                        <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                                                                            <p> <class="mb-5"> <input name=3 onClick="Engine(3, this.value)" type=radio value=a>a. 2</font></p>
+                                                                                                                                <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                                                                                    <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                                                                        <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                                                                            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                                                                                <p><class="mb-5">
 
-              <input type="reset" value="Borrar resultados" name="reset">
+                                                                                                                                                    <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                                                                                                        <p> <class="mb-5"> <input name=4 onClick="Engine(4, this.value)" type=radio value=a>a. 2</font></p>
+                                                                                                                                                            <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                                                                                                                <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                                                                                                    <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                                                                                                        <p> <class="mb-5"><input name=4 onClick="Engine(4, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                                                                                                            <p><class="mb-5">
 
-            </p>
+                                                                                                                                                                                <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                                                                                                                                    <p> <class="mb-5"> <input name=5 onClick="Engine(5, this.value)" type=radio value=a>a. 2</font></p>
+                                                                                                                                                                                        <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                                                                                                                                            <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                                                                                                                                <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                                                                                                                                    <p> <class="mb-5"><input name=5 onClick="Engine(5, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                                                                                                                                        <p><class="mb-5">
 
-            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación presione el botón 'F5' </font></p>
-
-            </FORM> 
-
-  </div>
-
-      </div>
-
-    </td>
-
-  </tr>
-
-</table>
-
-<p> </p>
-            
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- Portfolio Modal 8 -->
-
-   <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Preguntas</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->     
-                
-        <h2>¿Sabes tanto como creías?</h2>
-      <div class="countdown"><span class="time_left">12s</span></div>
-      <div class="points"><span class="points">0 points</span></div>
-    </header>
-    <div class="start">
-      <div class="card">
-        <p>¿Listo para comenzar?</p>
-        <button class="start">Comenzar</button>
-      </div>
-    </div>
-    <div class="play">
-      <div class="questions"></div>
-    </div>
-    <div class="finish card">
-      <p class="times_up">¡Se acabó el tiempo!</p>
-      <p>Has obtenido</p>
-      <p class="final_points">8 puntos</p>
-      <div class="play_again">
-        <button>Volver a jugar</button>
-      </div>
-    </div>
-             
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- Portfolio Modal 9 -->
-
-   <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Video</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <iframe width="640" height="401" src="https://www.powtoon.com/embed/d6VnR7GLasQ/" frameborder="0"></iframe>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
-</body>
-
-</html>
+                                                                                                                                                                                                        <input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+                                                                                                                                                                                                        <input type="button" name="repose" value="Respuestas Correctas"
+
+                                                                                                                                                                                                        onClick="alert('reposes Correctas \n\n 1A  6A  11B\n\n 2B  7B  12A\n\n 3B  8A  13B\n\n 4C  9A  14C\n\n 5B 10C  15C')">
+
+                                                                                                                                                                                                        <input type="reset" value="Borrar resultados" name="reset">
+
+                                                                                                                                                                                                        </p>
+
+                                                                                                                                                                                                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación presione el botón 'F5' </font></p>
+
+                                                                                                                                                                                                        </FORM> 
+
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        </td>
+
+                                                                                                                                                                                                        </tr>
+
+                                                                                                                                                                                                        </table>
+
+                                                                                                                                                                                                        <p> </p>
+
+                                                                                                                                                                                                        <!-- Portfolio Modal - Text -->
+                                                                                                                                                                                                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                                                                                                                                                                                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                                                                                                                                                                                        <i class="fas fa-times fa-fw"></i>
+                                                                                                                                                                                                        Close Window
+                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Portfolio Modal 8 -->
+
+                                                                                                                                                                                                        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+                                                                                                                                                                                                        <div class="modal-dialog modal-xl" role="document">
+                                                                                                                                                                                                        <div class="modal-content">
+                                                                                                                                                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                                                                                                        <span aria-hidden="true">
+                                                                                                                                                                                                        <i class="fas fa-times"></i>
+                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                        <div class="modal-body text-center">
+                                                                                                                                                                                                        <div class="container">
+                                                                                                                                                                                                        <div class="row justify-content-center">
+                                                                                                                                                                                                        <div class="col-lg-8">
+                                                                                                                                                                                                        <!-- Portfolio Modal - Title -->
+                                                                                                                                                                                                        <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
+                                                                                                                                                                                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Preguntas</h2>
+                                                                                                                                                                                                        <!-- Icon Divider -->
+                                                                                                                                                                                                        <div class="divider-custom">
+                                                                                                                                                                                                        <div class="divider-custom-line"></div>
+                                                                                                                                                                                                        <div class="divider-custom-icon">
+                                                                                                                                                                                                        <i class="fas fa-star"></i>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="divider-custom-line"></div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Portfolio Modal - Image -->     
+
+                                                                                                                                                                                                        <h2>¿Sabes tanto como creías?</h2>
+                                                                                                                                                                                                        <div class="countdown"><span class="time_left">12s</span></div>
+                                                                                                                                                                                                        <div class="points"><span class="points">0 points</span></div>
+                                                                                                                                                                                                        </header>
+                                                                                                                                                                                                        <div class="start">
+                                                                                                                                                                                                        <div class="card">
+                                                                                                                                                                                                        <p>¿Listo para comenzar?</p>
+                                                                                                                                                                                                        <button class="start">Comenzar</button>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="play">
+                                                                                                                                                                                                        <div class="questions"></div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="finish card">
+                                                                                                                                                                                                        <p class="times_up">¡Se acabó el tiempo!</p>
+                                                                                                                                                                                                        <p>Has obtenido</p>
+                                                                                                                                                                                                        <p class="final_points">8 puntos</p>
+                                                                                                                                                                                                        <div class="play_again">
+                                                                                                                                                                                                        <button>Volver a jugar</button>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                                                                                                                                                                                        <i class="fas fa-times fa-fw"></i>
+                                                                                                                                                                                                        Close Window
+                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Portfolio Modal 9 -->
+
+                                                                                                                                                                                                        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
+                                                                                                                                                                                                        <div class="modal-dialog modal-xl" role="document">
+                                                                                                                                                                                                        <div class="modal-content">
+                                                                                                                                                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                                                                                                        <span aria-hidden="true">
+                                                                                                                                                                                                        <i class="fas fa-times"></i>
+                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                        <div class="modal-body text-center">
+                                                                                                                                                                                                        <div class="container">
+                                                                                                                                                                                                        <div class="row justify-content-center">
+                                                                                                                                                                                                        <div class="col-lg-8">
+                                                                                                                                                                                                        <!-- Portfolio Modal - Title -->
+                                                                                                                                                                                                        <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
+                                                                                                                                                                                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Video</h2>
+                                                                                                                                                                                                        <!-- Icon Divider -->
+                                                                                                                                                                                                        <div class="divider-custom">
+                                                                                                                                                                                                        <div class="divider-custom-line"></div>
+                                                                                                                                                                                                        <div class="divider-custom-icon">
+                                                                                                                                                                                                        <i class="fas fa-star"></i>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="divider-custom-line"></div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Portfolio Modal - Image -->
+                                                                                                                                                                                                        <iframe width="640" height="401" src="https://www.powtoon.com/embed/d6VnR7GLasQ/" frameborder="0"></iframe>
+                                                                                                                                                                                                        <!-- Portfolio Modal - Text -->
+                                                                                                                                                                                                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                                                                                                                                                                                        <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                                                                                                                                                                                        <i class="fas fa-times fa-fw"></i>
+                                                                                                                                                                                                        Close Window
+                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Bootstrap core JavaScript -->
+                                                                                                                                                                                                        <script src="vendor/jquery/jquery.min.js"></script>
+                                                                                                                                                                                                        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+                                                                                                                                                                                                        <!-- Plugin JavaScript -->
+                                                                                                                                                                                                        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+                                                                                                                                                                                                        <!-- Contact Form JavaScript -->
+                                                                                                                                                                                                        <script src="js/jqBootstrapValidation.js"></script>
+                                                                                                                                                                                                        <script src="js/contact_me.js"></script>
+
+                                                                                                                                                                                                        <!-- Custom scripts for this template -->
+                                                                                                                                                                                                        <script src="js/freelancer.min.js"></script>
+
+                                                                                                                                                                                                        </body>
+
+                                                                                                                                                                                                        </html>
