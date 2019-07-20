@@ -618,6 +618,58 @@
                                     <!-- Termina preguntas con despliegue de retro -->
 
                                     <p></p>
+                                     <!-- Inicio preguntas alternativas -->
+                                     <p>¿cual es tu medio de trasan porte favorito?</p>
+                                      <p></p>
+                                     <input type="radio" name="transporte" value="1">Coche
+                                     <input type="radio" name="transporte" value="2">Avión
+                                     <input type="radio" name="transporte" value="3">Tren
+                                     
+                                     <script language="JavaScript">
+
+
+                                        var resp = new Array;
+
+                                        var faite = new Array;
+
+                                        var score = 0;
+
+
+                                        resp[1] = "1";
+
+                                        function Engine(question, repose)
+
+                                        {
+
+                                            if (repose != resp[question])
+
+                                            {
+
+                                                if (!faite[question])
+
+                                                {
+                                                    faite[question] = -1;
+                                                }
+
+                                            } else {
+
+
+                                                if (!faite[question]) {
+
+                                                    faite[question] = -1;
+
+                                                    score++;
+
+                                                    alert("¡Correcto! Tu puntuación es : " + score);
+
+                                                }
+
+
+                                            }
+
+                                        }
+                                     <!-- termino preguntas alternativas -->
+                                    
 
                                     <button class="btn btn-primary" href="#" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
@@ -1408,7 +1460,7 @@
                                                             <p class="mb-5" align="justify">y la desviación estándar de X es: <img class="img-fluid rounded mb-5" src="img/portfolio/desvest1.png" alt="">   caras   </p>
 
                       
- <div class="divider-custom">
+                                        <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon">
                                             <i class="fas fa-moon"></i>
@@ -1480,7 +1532,7 @@
                                                           <p class="mb-5" align="justify">3.- ¿Cuál es la desviación estándar de la distribución?</p>
                                                     </section>
                                                     <section id="taquesQuestion0b04" class="block iDevice_content">
-                                                        <img class="img-fluid" src="img/portfolio/autos-xs.png" alt=""width="200" height="200" alt="">
+                                                        <img class="img-fluid" src="img/portfolio/autos-xs.png" alt=""width="350" height="350" alt="">
                                                     </section>
                                                     <form name="feedback-form-quesFeedback0b04" action="#" onsubmit="return false" class="feedback-form">
                                                         <div class="block iDevice_buttons feedback-button js-required">
@@ -1493,12 +1545,14 @@
                                                         </div>
                                                         <section id="sec-feedback-quesFeedback0b04" class="feedback js-feedback js-hidden">
                                                             <h4 class="js-sr-av">Retroalimentación</h4>
+                                                             <p></p>
                                                             <p>1.- Se trata de una distribución de probabilidad discreta de la variable aleatoria denominada número de automóviles vendidos. Observe que Juan sólo espera vender cierto rango de automóviles; no espera vender 5 automóviles ni 50. Además, no puede vender medio vehículo. Sólo puede vender 0, 1, 2, 3 o 4 automóviles. Asimismo, los resultados son mutuamente excluyentes: no puede vender un total de 3 y 4 automóviles el mismo sábado.</p>
                                              <img class="img-fluid" src="img/portfolio/vendedor.png" alt=""width="200" height="200" alt="">
+                                              <p></p>
                                              <p>2.- La media de la cantidad de automóviles vendidos se calcula al multiplicar el número de automóviles que vendió por la probabilidad de vender dicho número, y sumar los productos de acuerdo con la fórmula dada anteriormente se tiene que:</p>
                                                <p>&mu; = E(X) = 0·(0.10) + 1·(0.20) + 2·(0.30) + 3·(0.30) + 4·(0.10) = 2.1</p>
                                              <p>¿Cómo interpretar una media de 2.1? Este valor indica que, a lo largo de una gran cantidad de sábados, Juan espera vender un promedio de 2.1 automóviles por día.</p>
-                                            
+                                             <p></p>
                                               <p>3.- La varianza de la distribución, la podemos calcular como Var(X) = &sigma;<sub>2</sub> = (0<sub>2</sub>·0.1 + 1<sub>2</sub>·0.2 + 2<sub>2</sub>·0.3 + 3<sub>2</sub>·0.3 + 4<sub>2</sub>·0.1) - (2.1<sub>2</sub>) = 5.7 - 4.41 = 1.29 </p>
                                              <p>La desviación estándar de la distribución, la podemos calcular como &sigma; =&radic; 1.29 = 1.136</p>
                                               <p>¿Cómo interpretar una desviación estándar de 1.136 automóviles? Si la vendedora María Monsalve también vendió un promedio de 2.1 automóviles los sábados y la desviación estándar de sus ventas fue de 1.91 automóviles, concluiría que hay más variabilidad en las ventas sabatinas de Monsalve que en las de Álvarez (pues 1.91 > 1.136).</p>         
