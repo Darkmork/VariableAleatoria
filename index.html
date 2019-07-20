@@ -619,93 +619,185 @@
 
                                     <p></p>
                                      <!-- Inicio preguntas alternativas -->
-                                    <script type="text/javascript" language="javascript">
-   function bookmarksite(title, url){if (document.all)window.external.AddFavorite(url, title);else if (window.sidebar)window.sidebar.addPanel(title, url, "") }
-   function openWin(url, w, h){var winprop = "width=" + w + ",height=" + h;openwin = window.open(url,'',winprop); }
-   function getVotoEncuesta(){var i = ""; for (i=0; i < document.formEncuesta.Encuesta.length; i++) {if (document.formEncuesta.Encuesta[i].checked) {break;} } xajax_guardarVotoEncuesta(document.formEncuesta.Encuesta[i].value);return true;}
-  </script>
-
-  <script language="JavaScript" type="text/javascript">
-   var ans = new Array;var done = new Array;var score = 0; 
-
-ans[1] = a
-ans[2] = b
-ans[3] = a
-   
-function Engine(question, answer) { if (answer != ans[question]) { if (!done[question]) { done[question] = -1;
-   alert("Escribe aqui el mensaje en caso de que la respuesta sea incorrecta\n\nPuntaje actual: " + score);
-    } else { 
-   alert("Aqui el mensaje en caso de que traten de volver a responder una pregunta o hacer algo incorrecto");
-    } } else { 
-   if (!done[question]) { done[question] = -1; score++;
-   alert("la respuesta sea incorrecta\n\nPuntaje actual: " + score);
-    } else { alert("Aqui el mensaje en caso de que traten de volver a responder una pregunta"); } } } function NextLevel () { 
-if (score >= Aqui pon el numero de la cantidad de respuestas correctas que quieras que el usuario tenga que hacer para aprovar el examen ) { alert("Escribe aqui el mensaje que quieres que aparesca si el usuario aprueva el examen"); self.location="Premio.html" 
-    } else { 
-   alert("Mensaje en caso de que el usuario no aprueve el examen.\n Intentalo de nuevo...") } } 
-  </script>
-  
- <div> 
-  <p>1. ¿Escribe aqui la pregunta?</p>
+                                    
+                                    <script language="JavaScript">
 
 
+                                        var resp = new Array;
+
+                                        var faite = new Array;
+
+                                        var score = 0;
 
 
+                                        resp[1] = "a";
+                                        resp[2] = "a";
+                                        resp[3] = "a";
 
-  <input onclick="Engine(1, this.value)" type="radio" value="a" /> 
-  a
+                                        function Engine(question, repose)
 
-  <input onclick="Engine(1, this.value)" type="radio" value="b" /> 
-  b
+                                        {
 
-  <input onclick="Engine(1, this.value)" type="radio" value="c" /> 
-  x
+                                            if (repose != resp[question])
 
-  <input onclick="Engine(1, this.value)" type="radio" value="d" /> 
-  c
+                                            {
+
+                                                if (!faite[question])
+
+                                                {
+                                                    faite[question] = -1;
+                                                }
+
+                                            } else {
 
 
+                                                if (!faite[question]) {
+
+                                                    faite[question] = -1;
+
+                                                    score++;
+
+                                                    alert("¡Correcto! Tu puntuación es : " + score);
+
+                                                }
 
 
- <p>2. ¿Escribe aqui la pregunta?</p>
+                                            }
+
+                                        }
 
 
+                                        function Nivel() {
 
 
 
-  <input onclick="Engine(2, this.value)" type="radio" value="a" /> 
-  Hola
+                                            if (score = 3 ) {
 
-  <input onclick="Engine(2, this.value)" type="radio" value="b" /> 
-  adios
+                                                alert(score + "/3 " + "Muy bien, lo superaste");
 
-  <input onclick="Engine(2, this.value)" type="radio" value="c" /> 
- c
+                                            }
 
-  <input onclick="Engine(2, this.value)" type="radio" value="d" /> 
-  chao
+                                            if (score = 2) {
+
+                                                alert(score + "/3 " + "Bien, pero puedes hacerlo mejor");
+
+                                            }
+
+                                            if (score = 1) {
+
+                                                alert(score + "/3 " + "Debes intentarlo de nuevo");
+
+                                            }
+
+                                            if (score = 0) {
+
+                                                alert("Su puntuación es: " + score
+
+                                                        + "\nLa puntuación máxima que podía obtener es 3"
+ 
+                                                        + "\nTiene que revizar nuevamente la lección"
+
+                                                        + "\nSu porcentaje de aciertos es  de 0%");
+
+                                            }
+
+                                        }
 
 
+                                    </script>
+
+                                    </head>
 
 
-  <p>3. ¿Escribe aqui la pregunta?</p>
+                                    <body bgcolor="#FFFFFF" text="#000000">
 
+                                        <table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
 
+                                            <tr> 
 
+                                                <td width="50" rowspan="2"><img src="../../imagen/desafio.gif" width="50" height="50"></td>
 
+                                                <td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Prueba relativa a Variable aleatoria discreta</b></font></td>
 
-  <input onclick="Engine(3, this.value)" type="radio" value="a" /> 
-  quien
+                                            </tr>
 
-  <input onclick="Engine(3, this.value)" type="radio" value="b" /> 
-  chao
+                                            <tr> 
 
-  <input onclick="Engine(3, this.value)" type="radio" value="c" /> 
-  imposible
+                                                <td width="515" bgcolor="#336699"> </td>
 
-  <input onclick="Engine(3, this.value)" type="radio" value="d" /> 
-  quien
-   </div> 
+                                            </tr>
+
+                                            <tr bgcolor="#FFFFFF"> 
+
+                                                <td> </td>
+
+                                                <td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Primer 
+
+                                                    mes </font></td>
+
+                                            </tr>
+
+                                            <tr> 
+
+                                                <td height="521"> </td>
+
+                                                <td height="521"> 
+
+                                                    <div align="center">
+
+                                                        <div align="left">
+
+                                                            <FORM NAME="formulario" ACTION="">
+
+                                                                <p><class="mb-5">1. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                    <p> <class="mb-5"> <input name=1 onClick="Engine(1, this.value)" type=radio value=a>a. 2</font></p>
+                                                                        <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                    <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                        <p><class="mb-5">
+
+                                                                                            <p><class="mb-5">2. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                                                <p> <class="mb-5"> <input name=2 onClick="Engine(2, this.value)" type=radio value=a>a. 2</font></p>
+                                                                                                    <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                                                        <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                                            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                                                <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                                                    <p><class="mb-5">
+
+                                                                                                                        <p><class="mb-5">3. Una V.A. toma valores 0,1,2 y 3, los cuales tienen probabilidades 0,125; 0,375; 0,375 y 0,125, respectivamente. ¿Cuál es el valor de la esperanza de la V.A.?</font></p>
+                                                                                                                            <p> <class="mb-5"> <input name=3 onClick="Engine(3, this.value)" type=radio value=a>a. 2</font></p>
+                                                                                                                                <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>b. 1.5</font></p>
+                                                                                                                                    <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=c>c. 0.375</font></p>
+                                                                                                                                        <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=a> d. 1.375</font></p>
+                                                                                                                                            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>e. 1.625</font></p>
+                                                                                                                                                <p><class="mb-5">
+
+                                                                                                                                                   
+
+                                                                                                                                                                                                        <input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+                                                                                                                                                                                                        <input type="button" name="repose" value="Respuestas Correctas"
+
+                                                                                                                                                                                                        onClick="alert('reposes Correctas \n\n 1A \n\n 2A \n\n 3A')">
+
+                                                                                                                                                                                                        <input type="reset" value="Borrar resultados" name="reset">
+
+                                                                                                                                                                                                        </p>
+
+                                                                                                                                                                                                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación  debes reiniciar la página para ellopresione el botón 'F5' </font></p>
+
+                                                                                                                                                                                                        </FORM> 
+
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        </td>
+
+                                                                                                                                                                                                        </tr>
+
+                                                                                                                                                                                                        </table>
                                     
                                      <!-- termino preguntas alternativas -->
                                     
