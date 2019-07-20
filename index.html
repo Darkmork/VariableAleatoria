@@ -671,25 +671,25 @@
 
 
 
-                                            if (score = 3 ) {
+                                            if (score == 3 ) {
 
                                                 alert(score + "/3 " + "Muy bien, lo superaste");
 
                                             }
 
-                                            else if (score = 2) {
+                                            else if (score == 2) {
 
                                                 alert(score + "/3 " + "Bien, pero puedes hacerlo mejor");
 
                                             }
 
-                                           else  if (score = 1) {
+                                           else  if (score == 1) {
 
                                                 alert(score + "/3 " + "Debes intentarlo de nuevo");
 
                                             }
 
-                                            else if (score = 0) {
+                                            else if (score == 0) {
 
                                                 alert("Su puntuación es: " + score
 
@@ -717,7 +717,7 @@
 
                                                 <td width="50" rowspan="2"><img src="img/portfolio/preguntas.png" width="100" height="100"></td>
 
-                                                <td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Prueba relativa a Variable aleatoria discreta</b></font></td>
+                                                <td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Preguntas relativas a Variable aleatoria</b></font></td>
 
                                             </tr>
 
@@ -730,11 +730,6 @@
                                             <tr bgcolor="#FFFFFF"> 
 
                                                 <td> </td>
-
-                                                <td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Primer 
-
-                                                    mes </font></td>
-
                                             </tr>
 
                                             <tr> 
@@ -749,62 +744,39 @@
 
                                                             <FORM NAME="formulario" ACTION="">
 
-                                                                <p><class="mb-5">1. 1.- ¿cuál de los siguientes enunciados corresponde a una variable aleatoria?</font></p>
-                                                                    <p> <class="mb-5"> <input name=1 onClick="Engine(1, this.value)" type=radio value=a>a. Obtener 3 puntos al lanzar un dado</font></p>
-                                                                        <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>b. Número de caras en el lanzamiento de 4 monedas.</font></p>
-                                                                            <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=c>c. Tiempo de caída de un objeto desde la azotea.</font></p>
-                                                                                <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=a> d. Obtener pinta roja al sacar una carta de un naipe inglés.</font></p>
-                                                                                    <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>e. Color rubio del cabello de la persona sentada a mi lado.</font></p>
-                                                                                        <p><class="mb-5">
-
-                                                                                            <p><class="mb-5">2.- Una bolsa contiene 6 monedas, 3 azules y 3 rojas. Si se extraen dos monedas una tras otra sin reposición. ¿Cuál(es) de los siguientes enunciados define una variable aleatoria?</font></p>
-                                                                                            <p><class="mb-5">I) Número de caras obtenidas</font></p>
-                                                                                            <p><class="mb-5">II) Número de monedas de color azul</font></p>   
-                                                                                            <p><class="mb-5">III) Tiempo empleado en realizar en experimento</font></p>
-                                                                                            <p> <class="mb-5"> <input name=2 onClick="Engine(2, this.value)" type=radio value=a>a. Solo I</font></p>
-                                                                                                    <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>b. Solo II</font></p>
-                                                                                                        <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=c>c. Solo I y II</font></p>
-                                                                                                            <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=a> d. Solo I y III</font></p>
-                                                                                                                <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>e. I, II y III</font></p>
-                                                                                                                    <p><class="mb-5">
-
-                                                                                                                        <p><class="mb-5">3.- En una bolsa hay 4 fichas enumeradas del 3 al 6. Se extraen dos de ellas sin reposición y se define la variable aleatoria X, como la suma de los números obtenidos. ¿Cuál(es) de las siguientes proposiciones es (son) verdederas?</font></p>
-                                                                                                                        <p><class="mb-5">I) Es una variable aleatoria discreta</font></p>
-                                                                                            <p><class="mb-5">II) El recorrido de la variable aleatoria es {7, 9, 11}</font></p>   
-                                                                                            <p><class="mb-5">III) El total de resultados posibles de la variable aleatoria son 3</font></p>    
-                                                                                                                        <p> <class="mb-5"> <input name=3 onClick="Engine(3, this.value)" type=radio value=a>a. Solo I</font></p>
-                                                                                                                                <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>b. Solo I y II</font></p>
-                                                                                                                                    <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=c>c. Solo I y III</font></p>
-                                                                                                                                        <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=a> d. Solo II y III</font></p>
-                                                                                                                                            <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>e. I, II y III</font></p>
-                                                                                                                                                <p><class="mb-5">
-
-                                                                                                                                                   
-
-                                                                                                                                                                                                        <input name=Resulta onClick=Nivel() type=button value=Resultados>
-
-                                                                                                                                                                                                        <input type="button" name="repose" value="Respuestas Correctas"
-
-                                                                                                                                                                                                        onClick="alert('reposes Correctas \n\n 1A \n\n 2A \n\n 3A')">
-
-                                                                                                                                                                                                        <input type="reset" value="Borrar resultados" name="reset">
-
-                                                                                                                                                                                                        </p>
-
-                                                                                                                                                                                                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación  debes reiniciar la página para ellopresione el botón 'F5' </font></p>
-
-                                                                                                                                                                                                        </FORM> 
-
-                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                        </td>
-
-                                                                                                                                                                                                        </tr>
-
-                                                                                                                                                                                                        </table>
-                                    
+               <p><class="mb-5">1. 1.- ¿cuál de los siguientes enunciados corresponde a una variable aleatoria?</font></p>
+               <p> <class="mb-5"> <input name=1 onClick="Engine(1, this.value)" type=radio value=a>a. Obtener 3 puntos al lanzar un dado</font></p>
+               <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>b. Número de caras en el lanzamiento de 4 monedas.</font></p>
+               <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=c>c. Tiempo de caída de un objeto desde la azotea.</font></p>
+               <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=a> d. Obtener pinta roja al sacar una carta de un naipe inglés.</font></p>
+               <p> <class="mb-5"><input name=1 onClick="Engine(1, this.value)" type=radio value=b>e. Color rubio del cabello de la persona sentada a mi lado.</font></p>
+               <p><class="mb-5">
+               <p></p>
+               <p><class="mb-5">2.- Una bolsa contiene 6 monedas, 3 azules y 3 rojas. Si se extraen dos monedas una tras otra sin reposición. ¿Cuál(es) de los siguientes enunciados define una variable aleatoria?</font></p>
+               <p><class="mb-5">I) Número de caras obtenidas</font></p>
+               <p><class="mb-5">II) Número de monedas de color azul</font></p>   
+               <p><class="mb-5">III) Tiempo empleado en realizar en experimento</font></p>
+                <p></p>
+               <p> <class="mb-5"> <input name=2 onClick="Engine(2, this.value)" type=radio value=a>a. Solo I</font></p>
+               <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>b. Solo II</font></p>
+               <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=c>c. Solo I y II</font></p>
+               <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=a> d. Solo I y III</font></p>
+               <p> <class="mb-5"><input name=2 onClick="Engine(2, this.value)" type=radio value=b>e. I, II y III</font></p>
+               <p><class="mb-5">
+               <p></p>
+               <p><class="mb-5">3.- En una bolsa hay 4 fichas enumeradas del 3 al 6. Se extraen dos de ellas sin reposición y se define la variable aleatoria X, como la suma de los números obtenidos. ¿Cuál(es) de las siguientes proposiciones es (son) verdederas?</font></p>
+               <p><class="mb-5">I) Es una variable aleatoria discreta</font></p>
+               <p><class="mb-5">II) El recorrido de la variable aleatoria es {7, 9, 11}</font></p>   
+               <p><class="mb-5">III) El total de resultados posibles de la variable aleatoria son 3</font></p>
+                <p></p>
+               <p> <class="mb-5"> <input name=3 onClick="Engine(3, this.value)" type=radio value=a>a. Solo I</font></p>
+               <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>b. Solo I y II</font></p>
+               <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=c>c. Solo I y III</font></p>
+               <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=a> d. Solo II y III</font></p>
+               <p> <class="mb-5"><input name=3 onClick="Engine(3, this.value)" type=radio value=b>e. I, II y III</font></p>
+               <p><class="mb-5">
+ <p></p>
+                              
                                      <!-- termino preguntas alternativas -->
                                     
 
