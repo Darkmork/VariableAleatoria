@@ -707,7 +707,7 @@
 
                                     </script>
 
-                                <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id20" class="form-control" style="background: #bee5eb">
+                                <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id20" class="form-control" style="background: #BCEFFE">
                                         <div class="iDevice emphasis1" >
                                             <p class="mb-5" align="justify"></p>
                                              <p class="mb-5" align="justify"></p>
@@ -875,6 +875,167 @@
                                         </div>
                                     </article>
                                     <!-- Termina preguntas con despliegue de retro -->
+                                    <!-- Inicio preguntas alternativas -->
+                                    <div>
+                            
+                                    
+                                    <script language="JavaScript">
+
+
+                                        var resp = new Array;
+
+                                        var faite = new Array;
+
+                                        var score = 0;
+
+
+                                        resp[1] = "e";
+                                        resp[2] = "e";
+                                        resp[3] = "b";
+
+                                        function Engine1(question, repose)
+
+                                        {
+
+                                            if (repose != resp[question])
+
+                                            {
+
+                                                if (!faite[question])
+
+                                                {
+                                                    faite[question] = -1;
+                                                }
+
+                                            } else {
+
+
+                                                if (!faite[question]) {
+
+                                                    faite[question] = -1;
+
+                                                    score++;
+
+                                                   
+            alert("¡Correcto! Tu puntuación es : " + score);
+
+                                                }
+
+
+                                            }
+
+                                        }
+
+
+                                        function Nivel() {
+
+
+
+                                            if (score == 3 ) {
+
+                                                alert(score + "/3 " + "Muy bien, lo superaste");
+
+                                            }
+
+                                            else if (score == 2) {
+
+                                                alert(score + "/3 " + "Bien, pero puedes hacerlo mejor");
+
+                                            }
+
+                                           else  if (score == 1) {
+
+                                                alert(score + "/3 " + "Debes intentarlo de nuevo");
+
+                                            }
+
+                                            else if (score == 0) {
+
+                                                alert("Su puntuación es: " + score
+
+                                                        + "\nLa puntuación máxima que podía obtener es 3"
+ 
+                                                        + "\nTiene que revizar nuevamente la lección"
+
+                                                        + "\nSu porcentaje de aciertos es  de 0%");
+
+                                            }
+
+                                        }
+
+
+                                    </script>
+
+                                <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id20" class="form-control" style="background: #BCEFFE">
+                                        <div class="iDevice emphasis1" >
+                                            <p class="mb-5" align="justify"></p>
+                                             <p class="mb-5" align="justify"></p>
+                                             
+                                            <header class="iDevice_header"><h5 class="iDeviceTitle">Al presionar el siguiente boton te encontraras con algunas preguntas relativas a la tematica vista anteriormente</h5></header>
+                                            <div class="iDevice_inner">
+                                                <div class="iDevice_content_wrapper">
+                                                    <section id="ta19_94" class="block iDevice_content">
+              
+                                                    </section>
+                                                    <form name="feedback-form-quesFeedback0b01" action="#" onsubmit="return false" class="feedback-form">
+                                                        <div class="block iDevice_buttons feedback-button js-required">
+                                                            <p><script type="text/javascript">var feedbackquesFeedback0b20text = "AUTOEVALUACIÓN";</script>
+                                                            <input type="button" id="feedback-quesFeedback0b20" name="toggle-feedback-quesFeedback0b20" value="AUTOEVALUACIÓN" class="feedbackbutton feedback-toggler" /></p>
+                                                        </div>
+                                                        <section id="sec-feedback-quesFeedback0b20" class="feedback js-feedback js-hidden">
+                                                           
+                                                            <h5 class="js-sr-av">PREGUNTAS DE ALTERNATIVAS</h5>
+                                                
+                                         
+                                      
+                                
+
+                                                            <FORM NAME="formulario" ACTION="">
+
+               <p class="mb-5" align="justify">1.- ¿cuál de los siguientes enunciados corresponde a una variable aleatoria?</font></p>
+               <p class="mb-5" align="justify"> <input name=1 onClick="Engine1(1, this.value)" type=radio value=a>a. Obtener 3 puntos al lanzar un dado</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine1(1, this.value)" type=radio value=b>b. Número de caras en el lanzamiento de 4 monedas.</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine1(1, this.value)" type=radio value=c>c. Tiempo de caída de un objeto desde la azotea.</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine1(1, this.value)" type=radio value=d> d. Obtener pinta roja al sacar una carta de un naipe inglés.</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine1(1, this.value)" type=radio value=e>e. Color rubio del cabello de la persona sentada a mi lado.</font></p>
+               <p class="mb-5" align="justify"></p>
+              <p class="mb-5" align="justify"></p>
+               <p class="mb-5" align="justify">2.- Una bolsa contiene 6 monedas, 3 azules y 3 rojas. Si se extraen dos monedas una tras otra sin reposición. ¿Cuál(es) de los siguientes enunciados define una variable aleatoria?</font></p>
+               <p class="mb-5" align="justify">I) Número de caras obtenidas</font></p>
+               <p class="mb-5" align="justify">II) Número de monedas de color azul</font></p>   
+               <p class="mb-5" align="justify">III) Tiempo empleado en realizar en experimento</font></p>
+               <p class="mb-5" align="justify"></p>
+               <p class="mb-5" align="justify"> <input name=2 onClick="Engine1(2, this.value)" type=radio value=a>a. Solo I</font></p>
+               <p class="mb-5" align="justify"><input name=2 onClick="Engine1(2, this.value)" type=radio value=b>b. Solo II</font></p>
+               <p class="mb-5" align="justify"><input name=2 onClick="Engine1(2, this.value)" type=radio value=c>c. Solo I y II</font></p>
+               <p class="mb-5" align="justify"><input name=2 onClick="Engine1(2, this.value)" type=radio value=d>d. Solo I y III</font></p>
+               <p class="mb-5" align="justify"><input name=2 onClick="Engine1(2, this.value)" type=radio value=e>e. I, II y III</font></p>
+               <p class="mb-5" align="justify"></p>
+              <p class="mb-5" align="justify"></p>
+               <p class="mb-5" align="justify">3.- En una bolsa hay 4 fichas enumeradas del 3 al 6. Se extraen dos de ellas sin reposición y se define la variable aleatoria X, como la suma de los números obtenidos. ¿Cuál(es) de las siguientes proposiciones es (son) verdederas?</font></p>
+               <p class="mb-5" align="justify">I) Es una variable aleatoria discreta</font></p>
+               <p class="mb-5" align="justify">II) El recorrido de la variable aleatoria es {7, 9, 11}</font></p>   
+               <p class="mb-5" align="justify">III) El total de resultados posibles de la variable aleatoria son 3</font></p>
+               <p class="mb-5" align="justify"></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine1(3, this.value)" type=radio value=a>a. Solo I</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine1(3, this.value)" type=radio value=b>b. Solo I y II</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine1(3, this.value)" type=radio value=c>c. Solo I y III</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine1(3, this.value)" type=radio value=d> d. Solo II y III</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine1(3, this.value)" type=radio value=e>e. I, II y III</font></p>
+               <p class="mb-5" align="justify"></p>
+ <p></p>
+ <p></p>
+                              <input name=Resulta onClick=Nivel() type=button value=Resultados>
+<input type="button" name="repose" value="Respuestas Correctas"
+  onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">     
+ <input type="reset" value="Borrar resultados" name="reset">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación relativa a Variable aleatoria reinicia el navegador, para ello presiona el botón 'F5' </font></p>
+</FORM> 
+                                                        </section>
+                                                        </article> 
+                                     
+                               </div>
+                                                <!-- termino preguntas alternativas -->
                                     <!-- termino preguntas - Text -->
                                     <p class="mb-5" align="center"></p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal">
