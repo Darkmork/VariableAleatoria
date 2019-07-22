@@ -1939,10 +1939,9 @@
                                         var score = 0;
 
 
-                                        resp[1] = "a";
+                                        resp[1] = "b";
                                         resp[2] = "d";
-                                        resp[3] = "a";
-                                        resp[4] = "e";
+                                        resp[3] = "c";
 
                                         function Engine3(question, repose)
 
@@ -1982,34 +1981,28 @@
 
 
 
-                                            if (score == 4 ) {
+                                            if (score == 3 ) {
 
-                                                alert(score + "/4 " + "Muy bien, lo superaste");
-
-                                            }
-
-                                            else if (score == 3) {
-
-                                                alert(score + "/4 " + "Bien, pero puedes hacerlo mejor");
+                                                alert(score + "/3 " + "Muy bien, lo superaste");
 
                                             }
 
-                                           else  if (score == 2) {
+                                            else if (score == 2) {
 
-                                                alert(score + "/4 " + "Debes intentarlo de nuevo, casi lo logras");
-
-                                            }
-                                             else  if (score == 1) {
-
-                                                alert(score + "/4 " + "Debes intentarlo de nuevo");
+                                                alert(score + "/3 " + "Bien, pero puedes hacerlo mejor");
 
                                             }
 
+                                           else  if (score == 1) {
+
+                                                alert(score + "/3 " + "Debes intentarlo de nuevo");
+
+                                            }
                                             else if (score == 0) {
 
                                                 alert("Su puntuación es: " + score
 
-                                                        + "\nLa puntuación máxima que podía obtener es 4"
+                                                        + "\nLa puntuación máxima que podía obtener es 3"
  
                                                         + "\nTiene que revizar nuevamente la lección"
 
@@ -2048,30 +2041,55 @@
 
                                                             <FORM NAME="formulario" ACTION="">
 
-               <p class="mb-5" align="justify">1.- En la fabricación de 30 dados se sabe que el 20% de ellos son defectuosos. El proceso de control de calidad consiste en examinar cinco de ellos, uno tras otro sin devolución, si se define la variable aleatoria X como el número de dados defectuosos que se obtienen, entonces ¿Cuál(es) de las siguientes afirmaciones es (son) verdadera(s)</font></p>
-               <p class="mb-5" align="justify">I) La probabilidad de que todos sean defectuosos es 0.6</font></p>
-               <p class="mb-5" align="justify">II) El recorrido de la variable aleatoria es {0, 1, 2, 3, 4, 5}</font></p>   
-               <p class="mb-5" align="justify">III) La probabilidad de obtener todos buenos es 0.8</font></p>
-                <p class="mb-5" align="justify"> <input name=1 onClick="Engine3(1, this.value)" type=radio value=a>a. Solo II</font></p>
-               <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=b>b. Solo I y II</font></p>
-               <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=c>c. I y III</font></p>
-               <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=d> d. I, II y III</font></p>
+               <p class="mb-5" align="justify">1.- La tabla adjunta muestra la función de probabilidad de una variable aleatoria W.</font></p>
+                <div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+                   <table class="table table-bordered table-sm" align="center">
+                                        <tbody>
+                                        <tr>
+                                            <th>w</th>
+                                            <td>-2</td>
+                                            <td>-1</td>
+                                            <td>0/td>
+                                            <td>1</td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <th>P(w)</th>
+                                            <td>0.20</td>
+                                            <td>0.45</td>
+                                            <td>0.30</td>
+                                            <td>0.05</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>  
+		</div>
+		<div class="col-md-2">
+		</div>
+               <p class="mb-5" align="justify">¿Cuál es la probabilidad que P(W &le; 0)</font></p>
+                <p class="mb-5" align="justify"> <input name=1 onClick="Engine3(1, this.value)" type=radio value=a>a. P(W = -2) + P(W = -1)</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=b>b. P(W = -2) + P(W = -1)+ P(W = 0)</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=c>c. 1 - P(W = 0)</font></p>
+               <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=d> d.1 - P(W < 0)</font></p>
                <p class="mb-5" align="justify"><input name=1 onClick="Engine3(1, this.value)" type=radio value=e>e. Ninguna de ellas.</font></p>
                <p class="mb-5" align="justify"></p>
               <p class="mb-5" align="justify"></p>
-               <p class="mb-5" align="justify">2.- Si el experimento aleatorio consiste en lanzar dos veces un dado y se define la variable aleatoria X como el doble de la suma de los números que aparecen, entonces ¿Cuál(es) de las siguientes afirmaciones es (son) verdadera(s)</font></p>
-               <p class="mb-5" align="justify">I) Los valores de la variable aleatoria son {4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24}</font></p>
-               <p class="mb-5" align="justify">II) El recorrido de la función de probabilidad es [4, 24]</font></p>   
-               <p class="mb-5" align="justify">III) P(14) = 1/6</font></p>
+               <p class="mb-5" align="justify">2.- El grafico muestra la función de distribución de probabilidad de una variable aleatoria X.</font></p>
+                <img class="img-fluid" src="img/portfolio/FDDEJ2.png" width="200" height="200" alt="">
+                <p class="mb-5" align="justify">¿Cuál(es) de las siguientes afirmaciones es (son) verdadera(s)</font></p>
+               <p class="mb-5" align="justify">I) P(X = 1) = P(X = 2)</font></p>
+               <p class="mb-5" align="justify">II) P(X &le; 3)= 0.8</font></p>   
+               <p class="mb-5" align="justify">III) P(X &ge; 4) = 1</font></p>
                <p class="mb-5" align="justify"></p>
-               <p class="mb-5" align="justify"> <input name=2 onClick="Engine3(2, this.value)" type=radio value=a>a. Solo II</font></p>
-               <p class="mb-5" align="justify"><input name=2 onClick="Engine3(2, this.value)" type=radio value=b>b. Solo I y II</font></p>
-               <p class="mb-5" align="justify"><input name=2 onClick="Engine3(2, this.value)" type=radio value=c>c. Solo II y III</font></p>
+               <p class="mb-5" align="justify"> <input name=2 onClick="Engine3(2, this.value)" type=radio value=a>a. Solo I</font></p>
+               <p class="mb-5" align="justify"><input name=2 onClick="Engine3(2, this.value)" type=radio value=b>b. Solo II</font></p>
+               <p class="mb-5" align="justify"><input name=2 onClick="Engine3(2, this.value)" type=radio value=c>c. Solo III</font></p>
                <p class="mb-5" align="justify"><input name=2 onClick="Engine3(2, this.value)" type=radio value=d>d. Solo I y III</font></p>
                <p class="mb-5" align="justify"><input name=2 onClick="Engine3(2, this.value)" type=radio value=e>e. I, II y III</font></p>
                <p class="mb-5" align="justify"></p>
               <p class="mb-5" align="justify"></p>
-               <p class="mb-5" align="justify">3.- Se tiene un dado cargado cuyos resultados y probabilidades se muestran en la tabla adjunta:</font></p>
+               <p class="mb-5" align="justify">3.- La función de distribución de probabilidad de una variable aleatoria X está dada por la siguiente tabla</font></p>
                <div class="col-md-2">
 		</div>
 		<div class="col-md-8">
@@ -2079,78 +2097,35 @@
                                         <tbody>
                                         <tr>
                                             <th>x</th>
-                                            <td>1</td>
-                                            <td>2</td>
-                                            <td>3</td>
-                                            <td>4</td>
-                                            <td>5</td>
-                                            <td>6</td>
-                                        </tr>
-                                        <tr>
-                                            <th>P(x)</th>
-                                            <td>0.30</td>
-                                            <td>0.15</td>
-                                            <td>0.05</td>
-                                            <td>0.18</td>
-                                            <td>0.20</td>
-                                            <td>0.12</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>  
-		</div>
-		<div class="col-md-2">
-		</div>
-               <p class="mb-5" align="justify">I) ¿Cuál(es) de las siguientes afirmaciones es (son) verdadera(s)</font></p>
-               <p class="mb-5" align="justify">I) P( X sea un número primo) = 0.7</font></p>
-               <p class="mb-5" align="justify">II) P(X>6) = 0</font></p>   
-               <p class="mb-5" align="justify">III) P(X &ge; 4) = 1 – P( X < 4)</font></p>
-               <p class="mb-5" align="justify"></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=a>a. Solo II</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=b>b. Solo III</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=c>c. Solo I y II</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=d> d. Solo I y III</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=e>e. Solo II y III</font></p>
-               <p class="mb-5" align="justify"></p>
-                 <p>class="mb-5" align="justify"></p>
-               <p class="mb-5" align="justify">4.- La tabla adjunta muestra la función de probabilidad de la variable aleatoria X.</font></p>
-               <div class="col-md-2">
-		</div>
-		<div class="col-md-8">
-                   <table class="table table-bordered table-sm" align="center">
-                                        <tbody>
-                                        <tr>
-                                            <th>x</th>
-                                            <td>-20</td>
-                                            <td>-10</td>
-                                            <td>0</td>
                                             <td>10</td>
                                             <td>20</td>
+                                            <td>30</td>
+                                            <td>40</td>
+                                            <td>50</td>
                                         </tr>
                                         <tr>
                                             <th>P(x)</th>
-                                            <td>0.18</td>
-                                            <td>m</td>
-                                            <td>0.22</td>
-                                            <td>0.33</td>
-                                            <td>0.10</td>
+                                            <td>0.05</td>
+                                            <td>0.30</td>
+                                            <td>0.42</td>
+                                            <td>0.75</td>
+                                            <td>1</td>
                                         </tr>
                                         </tbody>
                                     </table>  
 		</div>
 		<div class="col-md-2">
 		</div>
-               <p class="mb-5" align="justify">I) ¿Cuál(es) de las siguientes afirmaciones es (son) verdadera(s)</font></p>
-               
-               <p class="mb-5" align="justify">I) El valor de m=0.17</font></p>
-               <p class="mb-5" align="justify">II) P(X &ge; 10) = P(X>0)</font></p>   
-               <p class="mb-5" align="justify">III) P(X &ge; -10) = 1 - P(X=-20)</font></p>
+               <p class="mb-5" align="justify">¿Cuál es el valor de P(X > 30)?</font></p>
                <p class="mb-5" align="justify"></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(4, this.value)" type=radio value=a>a. Solo I</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(4, this.value)" type=radio value=b>b. Solo II</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(4, this.value)" type=radio value=c>c. Solo III</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(4, this.value)" type=radio value=d> d. Solo I y II</font></p>
-               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(4, this.value)" type=radio value=e>e. I, II y III</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=a>a. 0.23</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=b>b. 0.42</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=c>c. 0.58</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=d> d. 0.65</font></p>
+               <p class="mb-5" align="justify"><input name=3 onClick="Engine3(3, this.value)" type=radio value=e>e. 1.75</font></p>
                <p class="mb-5" align="justify"></p>
+                 <p>class="mb-5" align="justify"></p>
+              <p class="mb-5" align="justify"></p>
  <p></p>
                               <input name=Resulta onClick=Nivel() type=button value=Resultados>
 <input type="button" name="repose" value="Respuestas Correctas"
