@@ -2308,7 +2308,11 @@
                                     <p class="mb-5" align="justify">Primero encontremos la función de probabilidad de dicha V.A.</p>
                                     <p class="mb-5" align="justify">&Omega;= {Rr, RV, rR, rV, VR, Vr}</p>
                                     <p class="mb-5" align="justify">La función de probabilidad f asociada a la variable aleatoria X: ”Número de bolitas rojas” esta definida por:</p>
-                                     <table class="table table-bordered table-sm" align="center">
+                                    <div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+                    <table class="table table-bordered table-sm" align="center">
                                         <tbody>
                                         <tr>
                                             <th>x</th>
@@ -2324,6 +2328,11 @@
                                         </tr>
                                         </tbody>
                                     </table> 
+		</div>
+		<div class="col-md-3">
+		</div>
+                                    </div> 
+                                    
 
                                     <p class="mb-5" align="justify">Podemos ver que en el espacio muestral que al menos una bolita de las 2 extraídas es de color rojo. Esto lo podemos relacionar con el siguiente calculo</p>
                                     <p class="mb-5" align="justify">E(X)=1·(2/3) + 2·(1/3) = (4/3)</p>
@@ -2586,7 +2595,7 @@
                                             <th>x</th>
                                             <td>5</td>
                                             <td>10</td>
-                                            <td>15/td>
+                                            <td>15</td>
                                             <td>20</td>
                                             <td>25</td>
                                           
@@ -2634,7 +2643,7 @@
  <p></p>
                               <input name=Resulta onClick=Nivel() type=button value=Resultados>
 <input type="button" name="repose" value="Respuestas Correctas"
-  onClick="alert('respuestas Correctas \n\n 1A \n\n 2D  \n\n 3A  \n\n 4E')">     
+  onClick="alert('respuestas Correctas \n\n 1C \n\n 2D  \n\n 3D')">     
  <input type="reset" value="Borrar resultados" name="reset">
 <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación relativa a Variable aleatoria reinicia el navegador, para ello presiona el botón 'F5' </font></p>
 </FORM> 
@@ -2685,14 +2694,13 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image -->
-                                    <title>Autoevaluacion</title>
 
                                     <p class="mb-5" align="justify"><B>Varianza de una V.A.</B></p>
                                     <p class="mb-5" align="justify">El valor esperado de X  describe dónde está centrada la distribución de probabilidad. Utilizando la analogía física de colocar una masa puntual p (x) en el valor x  sobre un eje unidimensional, si el eje estuviera entonces soportado por un punto de apoyo colocado en E(X) , el eje no tendería a ladearse. Esto se ilustra para dos distribuciones diferentes con igual E(x).</p>
                                      <img class="img-fluid rounded mb-5" src="img/portfolio/EX251.png" width="300" height="300" alt=""> <img class="img-fluid rounded mb-5" src="img/portfolio/ex252.png" width="300" height="300" alt="">
                                     <p class="mb-5" align="justify">A pesar de que ambas muestras presentan la misma E(X), la distribución de la izquierda presenta una mayor dispersión o variabilidad de los datos que los de la figura de la derecha. Utilizaremos la Varianza de X para evaluar la cantidad de variabilidad en la distribución X.</p>
                                     <p class="mb-5" align="justify"><B>DEFINICIÓN</B></p>
-                                    <p class="mb-5" align="justify">Sea p (x ) la función masa de probabilidad de X  y E(X)  su valor esperado. En ese caso la varianza  de X, denotada por Var(X) o &sigma;<sub>X</sub><sup>2</sup> simplemente &sigma;<sup>2</sup> </p>
+                                    <p class="mb-5" align="justify">Sea p (x) la función masa de probabilidad de X  y E(X)  su valor esperado. En ese caso la varianza  de X, denotada por Var(X) o &sigma;<sub>X</sub><sup>2</sup> simplemente &sigma;<sup>2</sup> </p>
                                     <img class="img-fluid rounded mb-5" src="img/portfolio/defvarianza.png" alt="">
 
                                     <p class="mb-5" align="justify">y la <b>desviación estándar de X</b> está dada por:</p>
@@ -2705,10 +2713,16 @@
                                         </div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                      <p class="mb-5" align="justify"><B>Ejemplo 1</B></p>
+                                      <p class="mb-5" align="justify"><B>EJEMPLO 1</B></p>
                                      <p class="mb-5" align="justify">En el caso del número de caras al lanzar 3 monedas, la función de masa de probabilidades de X esta dada en la siguiente tabla:</p>
                                     <table border="2" align="center">
-                                                            <table border="2" align="center"> 
+                                                           
+                                        <div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+                      <table class="table table-bordered table-sm" align="center">
+                                        <tbody>
                                                             <tr>
                                                                 <th>x</th>
                                                                 <td>0</td>
@@ -2723,7 +2737,13 @@
                                                                 <td>3/8</td>
                                                                 <td>1/8</td>
                                                             </tr>
+                                        </tbody>
                                                             </table> 
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+                                      
                                      
                                                             <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por <img class="img-fluid rounded mb-5" src="img/portfolio/ejervar1.png" alt=""> caras</p>
                                                             <p class="mb-5" align="justify">Su <b>varianza</b> viene dada por la expresión </p>
@@ -2740,8 +2760,12 @@
                                     </div>
                                       <p class="mb-5" align="justify"><B>Ejemplo 2</B></p>
                                      <p class="mb-5" align="justify">La función de masa de probabilidad del número de cilindros X del siguiente auto que va a ser afinado en un taller mecanico es:</p>
-                                    <table border="2" align="center">
-                                         <table border="2" align="center">                    
+                      <div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+                     <table class="table table-bordered table-sm" align="center">
+                                        <tbody>                    
                                                              <tr>
                                                                 <th>x</th>
                                                                 <td>4</td>
@@ -2754,7 +2778,13 @@
                                                                 <td>0.3</td>
                                                                 <td>0.2</td>
                                                             </tr>
+                                        </tbody>
                                                             </table> 
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+                                        
                                                             <img class="img-fluid rounded mb-5" src="img/portfolio/autocilindros.png" width="250" height="250" alt="">
                                                             <p class="mb-5" align="justify">¿Cuál es su desviación estándar? </p>
                                                             <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por E(X) = &mu; = 4·0.5 + 6· 0.3 + 8·0.2 = 5.4 cilindros</p>
@@ -2770,14 +2800,19 @@
                                     </div>
                                     <!-- fin separador luna-->
                                     <!-- Empieza preguntas con despliegue de retro -->
-                                    <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id04">
+                                    <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id08">
                                         <div class="iDevice emphasis1" >
                                             <header class="iDevice_header"><h3 class="iDeviceTitle">Ejemplo práctico</h3></header>
                                             <div class="iDevice_inner">
                                                 <div class="iDevice_content_wrapper">
                                                     <section id="ta19_94" class="block iDevice_content">
                                                         <p>Juan Alvarez vende automóviles nuevos en Santa Ana Autos. Por lo general, Juan vende la mayor cantidad de automóviles el sábado. Desarrolló la siguiente distribución de probabilidades de la cantidad de automóviles que espera vender un sábado determinado.</p>
-                                                        <table border="2" align="center">
+                                                       <div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+                    <table class="table table-bordered table-sm" align="center">
+                                        <tbody>
                                                             <tr>
                                                                 <th>Nº de autos vendidos (x)</th>
                                                                 <td>0</td>
@@ -2796,25 +2831,30 @@
                                                                 <td>0.10</td>
                                                                
                                                             </tr>
-
-                                                        </table> 
+                                        </tbody>
+                                                        </table>
+		</div>
+		<div class="col-md-3">
+		</div>
+                                                        </div>
+                                                         
                                                         <p class="mb-5" align="justify">1.- ¿De qué tipo de distribución se trata?</p>
                                                          <p class="mb-5" align="justify">2.- ¿Cuántos automóviles espera vender Juan un sábado normal?</p>
                                                           <p class="mb-5" align="justify">3.- ¿Cuál es la desviación estándar de la distribución?</p>
                                                     </section>
-                                                    <section id="taquesQuestion0b04" class="block iDevice_content">
+                                                    <section id="taquesQuestion0b08" class="block iDevice_content">
                                                         <img class="img-fluid" src="img/portfolio/autos-xs.png" alt=""width="350" height="350" alt="">
                                                     </section>
-                                                    <form name="feedback-form-quesFeedback0b04" action="#" onsubmit="return false" class="feedback-form">
+                                                    <form name="feedback-form-quesFeedback0b08" action="#" onsubmit="return false" class="feedback-form">
                                                         <div class="block iDevice_buttons feedback-button js-required">
-                                                            <p><script type="text/javascript">var feedbackquesFeedback0b04text = "Retroalimentación";</script>
+                                                            <p><script type="text/javascript">var feedbackquesFeedback0b08text = "Retroalimentación";</script>
                                                             <p></p>
 
 
                                                             <!-- Ejemplo de id para ocultar Jorge -->
-                                                            <input type="button" id="feedback-quesFeedback0b04" name="toggle-feedback-quesFeedback0b04" value="Retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+                                                            <input type="button" id="feedback-quesFeedback0b08" name="toggle-feedback-quesFeedback0b08" value="Retroalimentación" class="feedbackbutton feedback-toggler" /></p>
                                                         </div>
-                                                        <section id="sec-feedback-quesFeedback0b04" class="feedback js-feedback js-hidden">
+                                                        <section id="sec-feedback-quesFeedback0b08" class="feedback js-feedback js-hidden">
                                                             <h4 class="js-sr-av">Retroalimentación</h4>
                                                              <p></p>
                                                             <p>1.- Se trata de una distribución de probabilidad discreta de la variable aleatoria denominada número de automóviles vendidos. Observe que Juan sólo espera vender cierto rango de automóviles; no espera vender 5 automóviles ni 50. Además, no puede vender medio vehículo. Sólo puede vender 0, 1, 2, 3 o 4 automóviles. Asimismo, los resultados son mutuamente excluyentes: no puede vender un total de 3 y 4 automóviles el mismo sábado.</p>
@@ -2924,7 +2964,7 @@
 
                                     </script>
 
-                                <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id25" class="form-control" style="background: #DCFEF0">
+                                <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id26" class="form-control" style="background: #DCFEF0">
                                         <div class="iDevice emphasis1" >
                                             <p class="mb-5" align="justify"></p>
                                              <p class="mb-5" align="justify"></p>
@@ -2935,12 +2975,12 @@
                                                     <section id="ta19_94" class="block iDevice_content">
               
                                                     </section>
-                                                    <form name="feedback-form-quesFeedback0b25" action="#" onsubmit="return false" class="feedback-form">
+                                                    <form name="feedback-form-quesFeedback0b26" action="#" onsubmit="return false" class="feedback-form">
                                                         <div class="block iDevice_buttons feedback-button js-required">
-                                                            <p><script type="text/javascript">var feedbackquesFeedback0b25text = "AUTOEVALUACIÓN";</script>
-                                                            <input type="button" id="feedback-quesFeedback0b25" name="toggle-feedback-quesFeedback0b25" value="AUTOEVALUACIÓN" class="feedbackbutton feedback-toggler" /></p>
+                                                            <p><script type="text/javascript">var feedbackquesFeedback0b26text = "AUTOEVALUACIÓN";</script>
+                                                            <input type="button" id="feedback-quesFeedback0b26" name="toggle-feedback-quesFeedback0b26" value="AUTOEVALUACIÓN" class="feedbackbutton feedback-toggler" /></p>
                                                         </div>
-                                                        <section id="sec-feedback-quesFeedback0b25" class="feedback js-feedback js-hidden">
+                                                        <section id="sec-feedback-quesFeedback0b26" class="feedback js-feedback js-hidden">
                                                            
                                                             <h5 class="js-sr-av">PREGUNTAS DE ALTERNATIVAS</h5>
                                                 
@@ -3008,7 +3048,7 @@
  <p></p>
                               <input name=Resulta onClick=Nivel() type=button value=Resultados>
 <input type="button" name="repose" value="Respuestas Correctas"
-  onClick="alert('respuestas Correctas \n\n 1A \n\n 2D  \n\n 3A  \n\n 4E')">     
+  onClick="alert('respuestas Correctas \n\n 1A \n\n 2D  \n\n 3A')">     
  <input type="reset" value="Borrar resultados" name="reset">
 <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para Realizar nuevamente la autoevaluación relativa a Variable aleatoria reinicia el navegador, para ello presiona el botón 'F5' </font></p>
 </FORM> 
