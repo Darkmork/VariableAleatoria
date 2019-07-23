@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*estilos*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #666666;
+    line-height: 2.3em;
+    margin:2em;
+}
+
+.opcionMultiple .setPregunta{
+    border: 0px solid #CCC;
+    background: #f8f8f8;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.1em;
+	font-weight: 300;
+}
+
+.opcionMultiple div.setPregunta{
+    /*border: 1px solid #F00;*/
+    /*background-color:#EFEFFF;*/
+    padding:5px;
+    margin-bottom:1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.opcionMultiple div.preguntaTexto{
+    margin:10px;
+    text-align: justify;
+	font-family: 'Open Sans', sans-serif;
+}
+.opcionMultiple div.opciones{
+    /*border: 1px solid #333;*/
+    margin:2px;
+	
+}
+.opcionMultiple div.opciones .opcion{
+    /*border: 1px solid #369;*/
+    display: block;
+    margin:2px;
+    white-space: normal;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:1em;
+}
+.opcionMultiple div#retroalimentacion{
+    font-size:1em;
+	padding-left:10px;
+    padding:5px;
+    background-color: #efeeff;
+}
+.opcionMultiple  .bien{
+    background-image: url('palomita.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    padding-left: 0px !important;/* ancho de la imagen más un poco */
+    margin: 0 10px !important;
+	
+}
+.opcionMultiple  .mal{
+    background-image: url('tache.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    padding-left: 16px !important;/* ancho de la imagen más un poco */
+    
+	
+	
+    /*opacity: 0.75;*/
+}
+
+.opcionMultiple .bienPerdida {
+    background-color: #f1feef;
+    /*opacity: 0.75;*/
+}
+
+.opcionMultiple .retroIndividual {
+    margin: 5px;
+    font-size:1em;
+    width: auto;
+    border-radius: 5px;
+	
+}
+
+.opcionMultiple .retroCorrecta{
+    border-radius: 5px;
+    border: 1px solid #CCC;
+	padding-left:10px;
+	border:1px solid green;
+	color:green;
+}
+
+.opcionMultiple .retroIncorrecta{
+    border-radius: 5px;
+    border: 1px solid #CCC;
+	padding-left:10px;
+	border:1px solid red;
+	color:red;
+}
+
+.actividad {
+    max-width: 250px;
+    background: #b1b1b1;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff!important;
+    margin-bottom: 15px !important;
+	font-size:1.1em;
+}
+.headings-int {
+    font-family: 'Open Sans', sans-serif;
+    color: #6c6b82;
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin-top: 0;
+}
+.under-li {
+    border-bottom: solid #dbdbdb;
+    border-width: 3px;
+    padding-bottom: 9px;
+    width: 80%;
+}
+
+.btnSiguiente{
+	margin-left:6px;
+	margin-bottom:3px;
+	}
+	.icono{
+  font-size: 6em;
+  float: right;
+  color: #b1b1b1;
+
+}
+@media (min-width:900px){
+  .icono {
+
+  
+    display: none;
+}
+.under-li{
+    display: none;
+}
+}
