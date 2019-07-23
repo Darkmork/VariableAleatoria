@@ -5085,130 +5085,101 @@
 		</div>
                                    </div> 
                                  
-                                 <h3 class="white">Televisores</h3>	
-			<!--CONTENEDOR ACORDEON-->
-			<div class="card col-md-12">
-				<div class="panel-group" id="accordion">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<p class="headings-int">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class="glyphicon glyphicon-chevron-down"></span> Planteamiento</a>
-							</p>
-						</div>
-						<div id="collapse1" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-12">
-										<p>
-											 Un embarque de veinte televisores incluye tres unidades defectuosas. Si se inspeccionan tres televisores al azar, indique usted cuál es la probabilidad de que se encuentren dos defectuosos.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<p class="headings-int">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="glyphicon glyphicon-chevron-down"></span> Datos y análisis</a>
-							</p>
-						</div>
-						<div id="collapse2" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-12">
-										<p>
-											 Podemos verificar si se trata de una distribución binomial mediante una lista de chequeo de cada uno de los puntos que caracterizan a esta distribución.<br>
-					 						<table class="table table-hover table-bordered">
-					 						<thead class="tabla-title">
-					 						<tr>
-					 							<td>
-					 								Característica
-					 							</td>
-					 							<td>
-					 								Estatus
-					 							</td>
-					 							<td>
-					 								Observación
-					 							</td>
-					 						</tr>
-					 						</thead>
-					 						<tbody class="tabla-blanco">
-					 						<tr>
-					 							<td>
-					 								Hay un número finito de ensayos.
-					 							</td>
-					 							<td>
-					 								Sí
-					 							</td>
-					 							<td>
-					 								Cada televisor es un ensayo y hay tres de ellos.
-					 							</td>
-					 						</tr>
-					 						<tr>
-					 							<td>
-					 								Cada ensayo tiene sólo dos resultados.
-					 							</td>
-					 							<td>
-					 								Sí
-					 							</td>
-					 							<td>
-					 								Cada televisor puede estar defectuoso o no.
-					 							</td>
-					 						</tr>
-					 						<tr>
-					 							<td>
-					 								La probabilidad de éxito es constante.
-					 							</td>
-					 							<td>
-					 								Sí
-					 							</td>
-					 							<td>
-					 								La probabilidad de que la unidad esté defectuosa es 3/20.
-					 							</td>
-					 						</tr>
-					 						<tr>
-					 							<td>
-					 								Se desea saber la probabilidad de un cierto número de éxitos.
-					 							</td>
-					 							<td>
-					 								Sí
-					 							</td>
-					 							<td>
-					 								Se desea saber la probabilidad de que X = 2
-					 							</td>
-					 						</tr>
-					 						</tbody>
-					 						</table>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<p class="headings-int">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="glyphicon glyphicon-chevron-down"></span> Sustitución y solución</a>
-							</p>
-						</div>
-						<div id="collapse3" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-12">
-										<p>
-											Una vez que hemos confirmado que se trata de una distribución binomial, aplicamos la expresión P(x) = nCx p<sup>x</sup>q<sup>(n-x)</sup>, de modo que… <br><br>
-											P(2) = <sub>3</sub>C<sub>2</sub> (3/20)<sup>2</sup>(17/20)<sup>1</sup> = 3 (0.0225)(0.85) = 0.057375<br><br>
-											El resultado obtenido es la probabilidad de que aparezcan dos aparatos de televisión defectuosos. Si queremos pasarlo a porcentaje, el valor se debe multiplicar por 100 %.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--CONTENEDOR ACORDEON-->
+                                 <!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingOne1">
+      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+        aria-controls="collapseOne1">
+        <h5 class="mb-0">
+          Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingTwo2">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+        aria-expanded="false" aria-controls="collapseTwo2">
+        <h5 class="mb-0">
+          Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingThree3">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+        aria-expanded="false" aria-controls="collapseThree3">
+        <h5 class="mb-0">
+          Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+</div>
+<!-- Accordion wrapper -->
                                
                                   <button class="btn btn-primary" href="#" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
