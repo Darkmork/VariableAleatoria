@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*******************************************/
+/***** ETIQUETAS GENERALES *****************/
+/*******************************************/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #666666;
+    line-height: 2.3em;
+    margin:2em;
+}
+
+button{
+    margin: 1px;
+}
+
+div{
+    /*margin:3px;*/
+}
+
+footer {
+    clear: both;
+}
+/****** ESCRIBIENDO *************/
+input[type="text"]{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+input[type="text"].incorrecto{
+    border:1px solid #F00;
+    color:#600;
+    background-color: transparent;
+    background-image: url(tache.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+input[type="text"].correcto{
+    border:1px solid #0C0;
+    color:#030;
+    background-color: transparent;
+    background-image: url(palomita.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+p{
+    /*font-size: 12px;*/
+    /*line-height: 3em;*/
+}
+/****** FIN ESCRIBIENDO *************/
+
+
+/*******************************************/
+/***** CLASES GENERALES *****************/
+/*******************************************/
+
+.main{
+    margin: 0 auto;
+    padding: 30px;
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.container{
+    text-align: left;
+}
+
+.instrucciones{
+   font-weight: bold;
+   font-weight: 600;
+   margin-bottom: 1.5em;
+}
+
+.barraInferior{
+    text-align: center;
+    clear: both;
+}
+
+.bien{
+    background: #eeffee url("palomita.png") no-repeat top right; 
+}
+
+.mal{
+    background: #ffeeee url("tache.png") no-repeat top right;
+}
+
+
+#dialog, #dialog span, .ui-widget{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.mostrarRetro{
+    display:block;
+}
+
+.ocultarRetro{
+    display:none;
+}
+
+.retroalimentacionFinal{
+  
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*******************************************/
+/***** RESPONSIVE 480 *****************/
+/*******************************************/
+
+@media (max-width: 480px) {
+    html{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        margin:0.5em;
+    }
+    p{
+        font-size: 12px;
+    }
+}
