@@ -94,11 +94,13 @@ p{
 }
 
 .bien{
-    background: #eeffee url("palomita.png") no-repeat top right; 
+    background: #9FF781 url("../img/palomita.png") no-repeat top right; 
+    /*#eeffee*/
 }
 
 .mal{
-    background: #ffeeee url("tache.png") no-repeat top right;
+    background: #FA5882 url("../img/tache.png") no-repeat top right;
+    /* #ffeeee*/
 }
 
 
