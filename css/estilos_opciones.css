@@ -52,7 +52,7 @@ body{
     background-color: #efeeff;
 }
 .opcionMultiple  .bien{
-    background-image: url('palomita.png') !important;
+    background-image: url('img/palomita.png') !important;
     background-repeat: no-repeat !important;
     background-position: left center !important;
     padding-left: 0px !important;/* ancho de la imagen más un poco */
@@ -60,7 +60,7 @@ body{
 	
 }
 .opcionMultiple  .mal{
-    background-image: url('tache.png') !important;
+    background-image: url('img/tache.png') !important;
     background-repeat: no-repeat !important;
     background-position: left center !important;
     padding-left: 16px !important;/* ancho de la imagen más un poco */
