@@ -3828,7 +3828,7 @@
                 <div class="retroalimentacionFinal">
                     
 					 
-                    <span class="retroRango ocultarRetro" data-inicial="0" data-final="1">Analiza a detalle los enunciados. Revisa si en la información proporcionada te están dando todos los valores. Una vez que te hayas asegurado de que tienes todos los elementos, entonces aplica la fórmula P(x) = nCx pxq(n-x); sustituye y resuelve. Mucho cuidado con las operaciones básicas, a veces ahí puede estar el problema. ¡Inténtalo nuevamente, puedes lograrlo!</span>
+                    <span class="retroRango ocultarRetro" data-inicial="0" data-final="1">Analiza a detalle los enunciados. Revisa si en la información proporcionada te están dando toda la información. Una vez que te hayas asegurado de que tienes todos los elementos, resuelve. ¡Inténtalo nuevamente, puedes lograrlo!</span>
 					<span class="retroRango ocultarRetro" data-inicial="2" data-final="2">¡Excelente trabajo! El cálculo de la distribución binomial es un concepto que dominas a la perfección. ¡Bien hecho!</span>
                    
                 </div>
@@ -3877,7 +3877,7 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title -->
                                     <img class="img-fluid rounded mb-5" src="img/portfolio/funcion.png" width="100" height="100" alt="">
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Función de probabilidad</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DISTRIBUCIÓN BINOMIAL</h2>
                                     <!-- Icon Divider -->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -3887,9 +3887,189 @@
                                         <div class="divider-custom-line"></div>
                                     </div LINE-HEIGHT:10px>
                                     <!-- Portfolio Modal - Image -->
-                                    <p class="mb-5" align="justify">Situación Inicial</p>
-                                    <p class="mb-5" align="justify">vamos a determinar la estrecha relación que existe entre las probabilidades y las funciones. Para ello, vamos a suponer que tenemos un dado cargado cuyas probabilidades son las siguientes:</p>
-                                     
+                                    <p class="mb-5" align="justify"><B>Situación Inicial</B></p>
+                                    <p class="mb-5" align="justify">Supongamos que se esta jugando con una moneda cargada, donde la probabilidad de que salga cara es (1/3) y que salga sello es (2/3) y se define la variable aleatoria X:”Número de caras en <B>n</B> lanzamientos”</p>
+                                    <p class="mb-5" align="justify">Si ahora nos fijáramos exclusivamente en el suceso que salga 1 cara.</p> 
+                                    <p class="mb-5" align="justify">Si se lanza la moneda  1 vez, la probabilidad de éxito es:  (1/3)</p> 
+                                    <p class="mb-5" align="justify">Si se lanza 2 monedas, la probabilidad de éxito es:(1/3)·(2/3) + (2/3)·(1/3) = 2·(1/3)·(2/3) = (4/9) </p> 
+                                    <p class="mb-5" align="justify">Si se lanza 3 monedas, la probabilidad de éxito es:(1/3)·(2/3)·(2/3) + (2/3)·(1/3)·(2/3) + (2/3)·(2/3)·(1/3) = 3·(1/3)·(2/3)<sup>2</sup></p> 
+                                    <p class="mb-5" align="justify">Si se lanza 4 monedas, la probabilidad de éxito es:(1/3)·(2/3)·(2/3)·(2/3) + (2/3)·(1/3)·(2/3)·(2/3) + (2/3)·(2/3)·(1/3)·(2/3) + (2/3)·(2/3)·(2/3)·(1/3)= 4·(1/3)·(2/3)<sup>3</sup></p>
+                                    
+                                    <p class="mb-5" align="justify">Si generalizamos a n lanzamientos, obtenemos que la probabailidad de éxito estará dado por: n·(1/3)·(2/3)<sup>n-1</sup></p> 
+                                    <p class="mb-5" align="justify"></p> 
+                                    <p class="mb-5" align="justify">De forma similar se puede cambiar las reglas del juego y puede ganar con 2 caras.</p> 
+                                    <p class="mb-5" align="justify">Si se lanza 2 monedas, la probabilidad de éxito es: (1/3)·(1/3) = (1/3)<sup>2</sup>·(2/3)<sup>0</sup></p>
+                                    <p class="mb-5" align="justify">Si se lanza 3 monedas, la probabilidad de éxito es: (1/3)·(1/3)·(2/3) + (2/3)·(1/3)·(1/3) + (1/3)·(2/3)·(1/3) = 3·(1/3)<sup>2</sup>·(2/3)<sup>1</sup></p>
+                                    <p class="mb-5" align="justify">Si se lanza 4 monedas, la probabilidad de éxito es: (1/3)·(1/3)·(2/3)·(2/3) + (1/3)·(2/3)·(1/3)·(2/3) + (2/3)·(1/3)·(2/3)·(1/3)+ (1/3)·(2/3)·(2/3)·(1/3)+ (1/3)·(2/3)·(1/3)·(1/3)+ (2/3)·(2/3)·(1/3)·(1/3) = 6·(1/3)<sup>2</sup>·(2/3)<sup>2</sup></p>
+                                    <p class="mb-5" align="justify">De forma similar se puede comprobar que para 5 lanzamientos la probabilidad de éxito es: 10·(1/3)<sup>2</sup>·(2/3)<sup>3</sup></p>
+                                    <p class="mb-5" align="justify">Si se realiza el proceso para 6 lanzamientos se ontendrá: 15·(1/3)<sup>2</sup>·(2/3)<sup>4</sup></p>
+                                    <p class="mb-5" align="justify">Si se realiza el proceso para 7 lanzamientos se ontendrá: 21·(1/3)<sup>2</sup>·(2/3)<sup>5</sup></p>
+                                    <p class="mb-5" align="justify">Si generalizamos para n lanzamientos, tendremos que la probabilidad de éxito estará dada por un término formado por el producto de una constante y dos potencias, donde las potencias serán la probabilidad de éxito elevado al número de veces de cara que se quiere obtener y la probabilidad de fracaso elevado a la diferencia entre los lanzamientos y el número de caras deseadas para obtener el éxito.</p>
+                                    <p class="mb-5" align="justify">Los números que aparecen en dicho desarrollo  1, 3, 6, 10, 15, 21 siguen una regla de formación según los números combinatorios:</p>
+                                   <img class="img-fluid rounded mb-5" src="img/portfolio/combinatoriosnc2.png" alt="">
+                                    <p class="mb-5" align="justify">Asi, si realizamos un el experimento anterior n veces y queremos obtener 2 caras, la probabilidad viene dada por:</p>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/binomial2.png" alt="">
+                                    <p class="mb-5" align="justify">La <em><b>distribución binomial</b></em> es unas de las distribuciones de probabilidad discreta más importantes.  Recordemos que en una distribución de probabilidad discreta, la variable aleatoria asigna un valor numérico a cada resultado en el espacio muestral del experimento. La <em><b>distribución binomial</b></em> tiene que ver con una clase especial de experimento llamado <em><b>experimento binomial</b></em>.</p> 
+                                    <p class="mb-5" align="justify">Existen muchos y variados experimentos que se ajustan exacta o aproximadamente a la siguiente lista de requerimientos:</p> 
+                                    <p class="mb-5" align="justify">1. El experimento consta de una secuencia de <b>n</b> experimentos más pequeños llamados ensayos, donde <b>n</b> se fija antes del experimento.</p> 
+                                    <p class="mb-5" align="justify">2. Cada ensayo puede dar por resultado uno de los mismos dos resultados posibles (ensayos dicotómicos), los cuales se denotan como éxito (E) y fracaso (F).</p> 
+                                    <p class="mb-5" align="justify">3. Los ensayos son independientes, de modo que el resultado en cualquier ensayo particular no influye en el resultado de cualquier otro ensayo.</p> 
+                                    <p class="mb-5" align="justify"> 4. La probabilidad de éxito es constante de un ensayo a otro; esta probabilidad se denota por <b>p</b>.</p> 
+                                    <p class="mb-5" align="justify">Un experimento que satisface las condiciones antes mencionadas se llaman experimentos binomiales.</p> 
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"><b>EJEMPLO 1</b></p>
+                                    <!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="Planteamiento">
+      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+        aria-controls="collapseOne1">
+        <h5 class="mb-0">
+          Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        Un embarque de veinte televisores incluye tres unidades defectuosas. Si se inspeccionan tres televisores al azar, indique si este experimento cumple con ser un experimento Binomial. 
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="Datos y análisis">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+        aria-expanded="false" aria-controls="collapseTwo2">
+        <h5 class="mb-0">
+          Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+      data-parent="#accordionEx">
+      <div class="card-body">
+       <div class="col-md-12">
+										<p>
+											 Podemos verificar si se trata de una distribución binomial mediante una lista de chequeo de cada uno de los puntos que caracterizan a esta distribución.<br>
+					 						<table class="table table-hover table-bordered">
+					 						<thead class="tabla-title">
+					 						<tr>
+					 							<td>
+					 								Característica
+					 							</td>
+					 							<td>
+					 								Cumple condición
+					 							</td>
+					 							<td>
+					 								Observación
+					 							</td>
+					 						</tr>
+					 						</thead>
+					 						<tbody class="tabla-blanco">
+					 						<tr>
+					 							<td>
+					 								Hay un número finito de ensayos.
+					 							</td>
+					 							<td>
+					 								Sí
+					 							</td>
+					 							<td>
+					 								Cada televisor es un ensayo y hay tres de ellos.
+					 							</td>
+					 						</tr>
+					 						<tr>
+					 							<td>
+					 								Cada ensayo tiene sólo dos resultados.
+					 							</td>
+					 							<td>
+					 								Sí
+					 							</td>
+					 							<td>
+					 								Cada televisor puede estar defectuoso o no.
+					 							</td>
+					 						</tr>
+					 						<tr>
+					 							<td>
+					 								La probabilidad de éxito es constante.
+					 							</td>
+					 							<td>
+					 								Sí
+					 							</td>
+					 							<td>
+					 								La probabilidad de que la unidad esté defectuosa es 3/20.
+					 							</td>
+					 						</tr>
+					 						<tr>
+					 							<td>
+					 								Los ensayos son independientes 
+					 							</td>
+					 							<td>
+					 								Sí
+					 							</td>
+					 							<td>
+					 								lo que sucede a uno no afecta si el otro sea defectuoso
+					 							</td>
+					 						</tr>
+					 						</tbody>
+					 						</table>
+										</p>
+									</div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="Conclusión">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+        aria-expanded="false" aria-controls="collapseThree3">
+        <h5 class="mb-0">
+          Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        El problema anterior cumple las condiciones para ser un experimento binomial.
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+</div>
+<!-- Accordion wrapper -->
+                                    
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+                                    <p class="mb-5" align="justify"></p>
+                                    
+                                   
+                                    
+                                    
+                                    
                                     <div class="row">
 		<div class="col-md-3">
 		</div>
