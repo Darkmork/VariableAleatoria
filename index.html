@@ -3687,9 +3687,13 @@
                                          <img class="img-fluid" src="img/portfolio/bernoulli3.png" alt="">
                                          <p class="mb-5" align="justify">Para una Variable aleatoria de <b>Bernoulli</b>, tenemos que su <b>función de masa de probabilidad</b> viene dada por:</p>
                                          <img class="img-fluid" src="img/portfolio/bernoulli4.png" alt="">
+                                         <p class="mb-5" align="justify">Y su <b>gráfico de función de masa de probabilidad es</b> </p>
+                                         <img class="img-fluid" src="img/portfolio/graficobernoulli.png" width="350" height="350" alt="">
                                          <p class="mb-5" align="justify">Y su <b>función de distribución</b> </p>
-                                            <img class="img-fluid" src="img/portfolio/bernoulli5.png" alt="">
-                                            <p class="mb-5" align="justify"><b>Esperanza de una Variable aleatoria de Bernoulli</b></p>
+                                         <img class="img-fluid" src="img/portfolio/bernoulli5.png" alt="">
+                                         <p class="mb-5" align="justify">Y su <b>grafico de función de distribución</b> es </p>
+                                         <img class="img-fluid" src="img/portfolio/distrbernoulli.png" width="350" height="350" alt="">
+                                    <p class="mb-5" align="justify"><b>Esperanza de una Variable aleatoria de Bernoulli</b></p>
                                              <p class="mb-5" align="justify">E(X) = 0·q + 1·p =p</p>
                                              <p class="mb-5" align="justify"><b>Varianza y desviación estandar de una distribución de bernoulli</b></p>
                                              <p class="mb-5" align="justify">&sigma;<sup>2</sup> = (0<sup>2</sup>·q + 1<sup>2</sup>·p) - p<sup>2</sup> </p>
@@ -3697,7 +3701,7 @@
                                              <p class="mb-5" align="justify">&sigma;<sup>2</sup> = p·( 1 -  p)</p>
                                               <p class="mb-5" align="justify">&sigma;<sup>2</sup> = p·q</p>
                                               <p class="mb-5" align="justify">Por ende su desviación estandar es &sigma; = &Sqrt;p·q</p>
-                                              <p class="mb-5" align="justify"><B>EJEMPLO 2</B></p>
+                                              <p class="mb-5" align="justify">En el ejemplo anterior podemos ver que </p>
                                               <p class="mb-5" align="justify">Se sabe que una máquina produce un 3 % de piezas defectuosas. Elegimos una pieza al azar para comprobar si no presenta defectos. ¿Cómo se distribuye la variable X que vale 1 si la pieza no es defectuosa y 0 si es defectuosa?, ¿cuáles son su esperanza y su desviación estandar?</p>
                                               <p class="mb-5" align="justify">Podemos darnos cuenta que como se plantea el problema  X sigue una distribución Bernoulli con parámetro 0.97, la esperanza y la desviación estandar son respectivamente,E(X) = 0.97 y &sigma; = &Sqrt;0.97·0.03 = 0.17</p>
                                              
@@ -3710,10 +3714,10 @@
                                             <div class="iDevice_inner">
                                                 <div class="iDevice_content_wrapper">
                                                     <section id="ta19_94" class="block iDevice_content">
-                                                        <p>El supervisor de una planta de manufacturas tiene a 3 hombres y 3 mujeres a su carago. Debe elegir dos trabajadores para una tarea especial. Como no desea actuar con prejuicio en la selección del personal, decide elegir dos trabajadores al azar. Si Y es el números de mujeres en el grupo elegido, encuentre la distribución de probabilidad para Y.</p>
+                                                        <p>Se ha observado estudiando 2000 accidentes de tránsito con impacto frontal y cuyos conductores no tenian cinturón de seguridad, que 300 individuos quedaron con secuelas. Describe el experimento usando conceptos deuna función de probabilidad de Bernoulli</p>
                                                     </section>
                                                     <section id="taquesQuestion0b21" class="block iDevice_content">
-                                                        <img class="img-fluid" src="img/portfolio/trabajadores.png" alt=""width="200" height="200" alt="">
+                                                        <img class="img-fluid" src="img/portfolio/accidente.png" alt=""width="200" height="200" alt="">
                                                     </section>
                                                     <form name="feedback-form-quesFeedback0b21" action="#" onsubmit="return false" class="feedback-form">
                                                         <div class="block iDevice_buttons feedback-button js-required">
@@ -3727,10 +3731,9 @@
                                                         <section id="sec-feedback-quesFeedback0b21" class="feedback js-feedback js-hidden">
                                                             <h4 class="js-sr-av">Retroalimentación</h4>
                                                             <p></p>
-                                                            <p>El supervisor puede elegir 2 trabajadores de 6, es decir combinaciones de 6 elementos tomados de 2 en 2, lo que nos da un total de 15 maneras distintas de eleccción. En consecuencia, &Omega; tiene 15 elementos, que suponemos tienen la misma probabilidad. Los valores de Y con probabilidad distinta de cero son 0, 1 y 2.</p>
-                                                            <p>De aca podemos obtener la probabilidad de cada de unos de estos eventos.</p>
-                                                            <img class="img-fluid" src="img/portfolio/ejemploretro1.png" alt=""width="200" height="200" alt="">
-                                                            <p>De estas probabilidades podmos ver que lo más probable es que salga un trabajador de cada sexo.</p>
+                                                            <p>La noción frecuentista de probabilidad, nos permite aproximar la probabiñidad de tener secuelas mediante el calculo de P(Tener secuelas)= 300/2000 = 0.15 =15%</p>
+                                                            <p>Entonces podemos definir una variable de Bernoulli, definida como X: Tener secuelas tras un accidente sin cinturón.</p>
+                                                            <p> de donde obtenemos que P(X = 1) = 0.15 y la P(X = 0) = 0.85</p>
                                                         </section>
                                                     </form>
                                                 </div>
