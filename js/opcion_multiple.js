@@ -13,7 +13,7 @@ $(function() {
     var retroIndividual = false; //true : muestra la retro individual por reactivo// false no muestra nada
     var mostrarRetroFinal = true; //true : muestra la retro final // false no muestra nada
     var MAX_INTENTOS_POR_PREGUNTA = 1; //
-    var MAX_PREGUNTAS = 6; // maximo de preguntas a visualizar
+    var MAX_PREGUNTAS = 3; // maximo de preguntas a visualizar
     var idActividad = "#opcionMultiple"; // 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     var ATRIBUTO_CORRECTO = "data-correcta";
