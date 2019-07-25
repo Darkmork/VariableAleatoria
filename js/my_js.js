@@ -18,7 +18,7 @@ $(document).ready(function () {
         $($idClass).addClass("d-none");
     }
     
-    Prueba("#opcionMultiple", "#bancoPreguntas")
+  
 });
 
 
