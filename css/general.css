@@ -85,8 +85,8 @@ p{
 .instrucciones{
    font-weight: bold;
    font-weight: 600;
-   margin-bottom: 1.5em;
-}
+   margin-bottom: 1em;
+} /*1.5em*/
 
 .barraInferior{
     text-align: center;
