@@ -4542,7 +4542,7 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                         </div>
                                                                                     </div>
                                                                              </div>
-                                                                                <!-- INICIO COPIA 7 a 9 -->
+                                                                                
                                                                                  <!-- Portfolio Modal 14 -->
 
                                                 <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-labelledby="portfolioModal14Label" aria-hidden="true">
@@ -4559,7 +4559,7 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                         <div class="col-lg-8">
                                                                             <!-- Portfolio Modal - Title -->
                                                                             <img class="img-fluid rounded mb-5" src="img/portfolio/varianza.png" width="100" height="100" alt="">
-                                                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VARIANZA y desviación estanndar de una V.A.</h2>
+                                                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VARIANZA y desviación estándar de una distribución binomial.</h2>
                                                                             <!-- Icon Divider -->
                                                                             <div class="divider-custom">
                                                                                 <div class="divider-custom-line"></div>
@@ -4570,16 +4570,12 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                             </div>
                                                                             <!-- Portfolio Modal - Image -->
 
-                                                                            <p class="mb-5" align="justify"><B>Varianza de una V.A.</B></p>
-                                                                            <p class="mb-5" align="justify">El valor esperado de X  describe dónde está centrada la distribución de probabilidad. Utilizando la analogía física de colocar una masa puntual p (x) en el valor x  sobre un eje unidimensional, si el eje estuviera entonces soportado por un punto de apoyo colocado en E(X) , el eje no tendería a ladearse. Esto se ilustra para dos distribuciones diferentes con igual E(x).</p>
-                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/EX251.png" width="300" height="300" alt=""> <img class="img-fluid rounded mb-5" src="img/portfolio/ex252.png" width="300" height="300" alt="">
-                                                                            <p class="mb-5" align="justify">A pesar de que ambas muestras presentan la misma E(X), la distribución de la izquierda presenta una mayor dispersión o variabilidad de los datos que los de la figura de la derecha. Utilizaremos la Varianza de X para evaluar la cantidad de variabilidad en la distribución X.</p>
-                                                                            <p class="mb-5" align="justify"><B>DEFINICIÓN</B></p>
-                                                                            <p class="mb-5" align="justify">Sea p (x) la función masa de probabilidad de X  y E(X)  su valor esperado. En ese caso la varianza  de X, denotada por Var(X) o &sigma;<sub>X</sub><sup>2</sup> simplemente &sigma;<sup>2</sup> </p>
-                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/defvarianza.png" alt="">
-
-                                                                            <p class="mb-5" align="justify">y la <b>desviación estándar de X</b> está dada por:</p>
-                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/defdesv.png" alt="">
+                                                                            <p class="mb-5" align="justify"><B>Varianza de una Disrtribución de probabilidad Binomial</B></p>
+                                                                            <p class="mb-5" align="justify">Con n =1, la distribución binomial llega a ser la distribución de Bernoulli. El valor esperado para una distribución de Bernoulli  es E(X)=p, así que el número esperado de los <b>n</b> en cualquiera de ellos es <b>p</b>, ya que ellos son independientes entre si.</p>
+                                                                           <p class="mb-5" align="justify">Como un experimento binomial se compone de n ensayos de Bernoulli, podemos intuir que X &#126; B(n; p), su esperanza será E(X) = n·p, el producto del número de ensayos y la probabilidad de éxito en cada ensayo. La expresión para la Var(X) no resulta tan intuitiva para calcular.</p>
+                                                                            <p class="mb-5" align="justify"><B>PROPOSICIÓN</B></p>
+                                                                            <p class="mb-5" align="justify"> SI X &#126; B(n; p), entonces <b>E(X)= n·p</b>, <b>Var(X) =  &sigma;<sup>2</sup> = n·p·(1 - p) = n·p·q</b> y <b>&sigma; = &Sqrt;n·p·q</b> </p>
+                                                                            <p class="mb-5" align="justify">Por tanto, para calcular la esperanza y varianza de una variable aleatoria binomial no se requiere calcular las sumas como debemos hacerlo en un V.A. discreta </p>
                                                                             <!-- Icon Divider -->
                                                                             <div class="divider-custom">
                                                                                 <div class="divider-custom-line"></div>
@@ -4589,43 +4585,14 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                 <div class="divider-custom-line"></div>
                                                                             </div>
                                                                             <p class="mb-5" align="justify"><B>EJEMPLO 1</B></p>
-                                                                            <p class="mb-5" align="justify">En el caso del número de caras al lanzar 3 monedas, la función de masa de probabilidades de X esta dada en la siguiente tabla:</p>
-                                                                            <div class="row">
-                                                                                <div class="col-md-3">
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <table class="table table-bordered table-sm" align="center">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <th>x</th>
-                                                                                                <td>0</td>
-                                                                                                <td>1</td>
-                                                                                                <td>2</td>
-                                                                                                <td>3</td> 
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th>P(x)</th>
-                                                                                                <td>1/8</td>
-                                                                                                <td>3/8</td>
-                                                                                                <td>3/8</td>
-                                                                                                <td>1/8</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table> 
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                </div>
-
-                                                                            </div>
-
-
-                                                                            <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por <img class="img-fluid rounded mb-5" src="img/portfolio/ejervar1.png" alt=""> caras</p>
-                                                                            <p class="mb-5" align="justify">Su <b>varianza</b> viene dada por la expresión </p>
-                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/ejervar11.png" alt=""> 
-                                                                            <p class="mb-5" align="justify">y la desviación estándar de X es: <img class="img-fluid rounded mb-5" src="img/portfolio/desvest1.png" alt="">   caras   </p>
-
-
-                                                                            <div class="divider-custom">
+                                                                            <p class="mb-5" align="justify">Si el 65% de las compras realizadas en una multitenda son realizadas con la tarjeta de la tienda y X es el número entre 10 compras seleccionadas al azar relaizadas con tarjeta de la tienda, entonces X &#126; B(10; 0.65) </p>
+                                                                            <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por E(X) = 10·0.65 = 6.5 compras realizas en promedio</p>
+                                                                            <p class="mb-5" align="justify">Su <b>varianza</b> viene dada por la expresión &sigma;<sup>2</sup> = 10·0.65·0.35 = 2.275</p>
+                                                                            <p class="mb-5" align="justify">y la desviación estándar de X es: &sigma; = &Sqrt;(2.275) = 1.51 compras realizadas con la tarjeta de la tienda </p>
+                                                                           <p class="mb-5" align="justify">Otra vez, aun cuando X no puede tomar sólo valores enteros, E(X) no tiene que ser un número entero. Esto indica que si se realiza un gran número de experimento binomiales independinetes, cada uno con n=10 y p=0.65, entonces el número promedio de las E(x) se acercarán a 6.5.</p>
+                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/creditcard.png" width="200" height="200" alt="">
+                                                                           
+                                                                           <div class="divider-custom">
                                                                                 <div class="divider-custom-line"></div>
                                                                                 <div class="divider-custom-icon">
                                                                                     <i class="fas fa-moon"></i>
@@ -4633,37 +4600,14 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                 <div class="divider-custom-line"></div>
                                                                             </div>
                                                                             <p class="mb-5" align="justify"><B>EJEMPLO 2</B></p>
-                                                                            <p class="mb-5" align="justify">La función de masa de probabilidad del número de cilindros X del siguiente auto que va a ser afinado en un taller mecanico es:</p>
-                                                                            <div class="row">
-                                                                                <div class="col-md-3">
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <table class="table table-bordered table-sm" align="center">
-                                                                                        <tbody>                    
-                                                                                            <tr>
-                                                                                                <th>x</th>
-                                                                                                <td>4</td>
-                                                                                                <td>6</td>
-                                                                                                <td>8</td> 
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th>P(x)</th>
-                                                                                                <td>0.5</td>
-                                                                                                <td>0.3</td>
-                                                                                                <td>0.2</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table> 
-                                                                                </div>
-                                                                                <div class="col-md-3">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/autocilindros.png" width="250" height="250" alt="">
-                                                                            <p class="mb-5" align="justify">¿Cuál es su desviación estándar? </p>
-                                                                            <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por E(X) = &mu; = 4·0.5 + 6· 0.3 + 8·0.2 = 5.4 cilindros</p>
-                                                                            <p class="mb-5" align="justify">Su <b>varianza</b> viene dada por la expresión Var(X) = &sigma;<sub>2</sub> = (4<sub>2</sub>·0.5 + 6<sub>2</sub>·0.3 + 8<sub>2</sub>·0.2) - (5.4<sub>2</sub>) = 31.6 - 29.16 = 2.44</p>
-                                                                            <p class="mb-5" align="justify">y su desviación estándar de X es:&radic;2.44 = 1.562 cilindros   </p>
+                                                                           <p class="mb-5" align="justify">Una limusina de aeropuerto puede transportar hasta cuatro pasajeros en cualquier viaje. La compañía aceptará un máximo de seis reservaciones para un viaje y un pasajero debe tener una reservación. Según registros previos, 20% de los que reservan no se presentan para el viaje. suponiendo independencia en los casos. Si se hacen seis reservaciones, ¿cuál es el número esperado de lugares disponibles cuando la limusina parte?
+                                                                            <p class="mb-5" align="justify"> segun el planteamiento anterior y considerando X: Número de personas que se suben a la limusina.  X &#126; B(6; 0.80) </p>
+                                                                            <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por E(X) = 6·0.80 = 4.8 personas se suben a la limusina en promedio</p>
+                                                                            <p class="mb-5" align="justify">Su <b>varianza</b> viene dada por la expresión &sigma;<sup>2</sup> = 6·0.80·0.20 = 0.96</p>
+                                                                            <p class="mb-5" align="justify">y la desviación estándar de X es: &sigma; = &Sqrt;(0.96) = 0.98 personas </p>
+                                                                           <p class="mb-5" align="justify">Otra vez, aun cuando X no puede tomar sólo valores enteros, E(X) no tiene que ser un número entero. Esto indica que si se realiza un gran número de experimento binomiales independinetes, cada uno con n=6 y p=0.80, entonces el número promedio de las E(x) se acercarán a 4.8.</p>
+                                                                            <img class="img-fluid rounded mb-5" src="img/portfolio/limusina.png" width="200" height="200" alt="">
+                                                                           
                                                                             <!-- separador luna -->
                                                                             <div class="divider-custom">
                                                                                 <div class="divider-custom-line"></div>
@@ -4673,6 +4617,24 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                 <div class="divider-custom-line"></div>
                                                                             </div>
                                                                             <!-- fin separador luna-->
+                                                                           <p class="mb-5" align="justify"><B>EJEMPLO 3</B></p>
+                                                                          <p class="mb-5" align="justify">La probabilidad de que un articulo defectuoso producido por una fabrica sea defectuoso es de 0.02. Se envio un cargamento de 10000 articulos a unos almacenes. Calcular el número esperado de articulos defectuosos, que llegan a los alamacenes, su varianza y desviación estándar.</p>
+                                                                          <p class="mb-5" align="justify"> segun el planteamiento anterior y considerando X: Número de articulos defectuosos en un cargamento.  X &#126; B(10000; 0.02) </p>  
+                                                                          <p class="mb-5" align="justify">su <b>esperanza</b> viene dada por E(X) = 10000·0.02 = 200 articules defectusos se esperan en el caragamento</p>
+                                                                            <p class="mb-5" align="justify">Su <b>varianza</b> viene dada por la expresión &sigma;<sup>2</sup> = 10000·0.02·0.98 = 196</p>
+                                                                            <p class="mb-5" align="justify">y la desviación estándar de X es: &sigma; = &Sqrt;(196) = 14 articulos </p>
+                                                                          <img class="img-fluid rounded mb-5" src="img/portfolio/carga.png" width="200" height="200" alt="">
+                                                                           
+                                                                            <!-- separador luna -->
+                                                                            <div class="divider-custom">
+                                                                                <div class="divider-custom-line"></div>
+                                                                                <div class="divider-custom-icon">
+                                                                                    <i class="fas fa-moon"></i>
+                                                                                </div>
+                                                                                <div class="divider-custom-line"></div>
+                                                                            </div>
+                                                                            <!-- fin separador luna-->
+                                                                            
                                                                             <!-- Empieza preguntas con despliegue de retro -->
                                                                             <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id08">
                                                                                 <div class="iDevice emphasis1" >
@@ -5322,15 +5284,8 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                             <div class="row justify-content-center">
                                                                                                 <div class="col-lg-8">
                                                                                                     <!-- Portfolio Modal - Title -->
-                                                                                                     <p class="mb-5">Se trata de un aparato de Galton virtual.Una bola colocada en la posición P cae, sobre un conjunto de posiciones fijas (azules), dispuestas en forma triangular, y al impactar sobre cada posición toma, de forma aleatoria, continúa su camino descendente hacia la derecha o hacia la izquierda. De esta forma vuelve a impactar en otra posición y el proceso se repite hasta llegar a la fila inferior.</p>
- <p class="mb-5">En ese momento se registra la posición a la que ha llegado.</p>
-<p class="mb-5">Las probabilidades de impactar en las distintas posiciones, P(k), con k = 0, 1, 2, ..., N, siguen una distribución binomial B(N, p).</p>
-<p class="mb-5">Este es un applet creado con Geogebra</p>
-
-
-<iframe scrolling="no" title="Maquina de Galton" src="https://www.geogebra.org/material/iframe/id/wydnatfe/width/700/height/641/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false/at/preferhtml5" width="700px" height="641px" style="border:0px;"> </iframe>
-
-
+                                                                                                    <img class="img-fluid rounded mb-5" src="img/portfolio/video.png" width="100" height="100" alt="">
+                                                                                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Video</h2>
                                                                                                     <!-- Icon Divider -->
                                                                                                     <div class="divider-custom">
                                                                                                         <div class="divider-custom-line"></div>
@@ -5340,7 +5295,15 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                                         <div class="divider-custom-line"></div>
                                                                                                     </div>
                                                                                                     <!-- Portfolio Modal - Image -->
-                                                                                                    <iframe width="640" height="401" src="https://www.powtoon.com/embed/d6VnR7GLasQ/" frameborder="0"></iframe>
+                                                                                                    <p class="mb-5">Se trata de un aparato de Galton virtual.Una bola colocada en la posición P cae, sobre un conjunto de posiciones fijas (azules), dispuestas en forma triangular, y al impactar sobre cada posición toma, de forma aleatoria, continúa su camino descendente hacia la derecha o hacia la izquierda. De esta forma vuelve a impactar en otra posición y el proceso se repite hasta llegar a la fila inferior.</p>
+ <p class="mb-5">En ese momento se registra la posición a la que ha llegado.</p>
+<p class="mb-5">Las probabilidades de impactar en las distintas posiciones, P(k), con k = 0, 1, 2, ..., N, siguen una distribución binomial B(N, p).</p>
+<p class="mb-5">Este es un applet creado con Geogebra</p>
+
+
+<iframe scrolling="no" title="Maquina de Galton" src="https://www.geogebra.org/material/iframe/id/wydnatfe/width/700/height/641/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false/at/preferhtml5" width="700px" height="641px" style="border:0px;"> </iframe>
+
+
                                                                                                     <!-- Portfolio Modal - Text -->
                                                                                                     <p class="mb-5">El siguiente video muestra un resumen relativo a todo lo relativo a variable aleatoria discreta.</p>
                                                                                                     <button class="btn btn-primary" href="#" data-dismiss="modal">
