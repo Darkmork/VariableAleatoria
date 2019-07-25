@@ -5,7 +5,7 @@
  */
 
 
-$(function() {
+$(function () {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     var eScormActividad = false; // true si se toma en cuenta como objetivo del scorm, false si no
     var intentosOM = 2; // 0 = ilimitados de la actividad
@@ -25,15 +25,15 @@ $(function() {
     var totalInicialBanco = seccionPreguntas.children.length;
     var listaInicialBanco = seccionPreguntas.children;
     var pActual = 0;
-	var mezclarPreguntas = true;
-	var mezclarRespuestas = true;
-	
-	if (mezclarPreguntas) {
-		Array.prototype.forEach.call(listaInicialBanco, function() {//Revuelve todas las preguntas
-			seccionPreguntas.appendChild(listaInicialBanco[Math.floor(Math.random() * totalInicialBanco)]);
-		});
-	}
-    while(seccionPreguntas.children.length > MAX_PREGUNTAS) {
+    var mezclarPreguntas = true;
+    var mezclarRespuestas = true;
+
+    if (mezclarPreguntas) {
+        Array.prototype.forEach.call(listaInicialBanco, function () {//Revuelve todas las preguntas
+            seccionPreguntas.appendChild(listaInicialBanco[Math.floor(Math.random() * totalInicialBanco)]);
+        });
+    }
+    while (seccionPreguntas.children.length > MAX_PREGUNTAS) {
         seccionPreguntas.removeChild(seccionPreguntas.lastChild);
     }
 
@@ -41,21 +41,21 @@ $(function() {
     var listaFinalPreguntas = seccionPreguntas.children;
     totalPreguntasActividad = listaFinalPreguntas.length;
 
-    console.log("listaFinalPreguntas::"+totalPreguntasActividad);
+    console.log("listaFinalPreguntas::" + totalPreguntasActividad);
 
-    Array.prototype.forEach.call(listaFinalPreguntas, function(pregunta) {
+    Array.prototype.forEach.call(listaFinalPreguntas, function (pregunta) {
         var contenedorOpciones = pregunta.querySelector(".opciones");
         var contenedorOpcionesHijos = contenedorOpciones.children;
         contenedorOpciones.intentos = 0;
-        Array.prototype.forEach.call(contenedorOpcionesHijos, function(opcion) {
+        Array.prototype.forEach.call(contenedorOpcionesHijos, function (opcion) {
             opcion.addEventListener("click", alApretarOpcion);
             opcion.padre = contenedorOpciones;
         });
-		if (mezclarRespuestas) {
-			Array.prototype.forEach.call(contenedorOpcionesHijos, function(opcion, indice, opciones) {
-				contenedorOpciones.appendChild(opciones[Math.floor(Math.random() * opciones.length)]);
-			});
-		}
+        if (mezclarRespuestas) {
+            Array.prototype.forEach.call(contenedorOpcionesHijos, function (opcion, indice, opciones) {
+                contenedorOpciones.appendChild(opciones[Math.floor(Math.random() * opciones.length)]);
+            });
+        }
 
     });
 
@@ -74,22 +74,25 @@ $(function() {
             boton.removeAttribute("disabled");
             buenas++;
             contestadas++;
-            
+
             pActual++;
             mostrar_botones();
-            if (retroIndividual) {mostrar_retro("correcta")}//fin if
+            if (retroIndividual) {
+                mostrar_retro("correcta")
+            }//fin if
             //revisar();
-        }
-		else {
+        } else {
             boton.className += " mal";
             if (++boton.padre.intentos >= MAX_INTENTOS_POR_PREGUNTA) {
                 desactivarSet(boton.padre);
                 //revisar();
                 contestadas++;
-                
+
                 pActual++;
                 mostrar_botones();
-                if (retroIndividual) {mostrar_retro("incorrecta")}//fin if
+                if (retroIndividual) {
+                    mostrar_retro("incorrecta")
+                }//fin if
             }
         }//fin else
     }//
@@ -103,18 +106,18 @@ $(function() {
         ocultar_elemento("" + idActividad + " .retroCorrecta");
         ocultar_elemento("" + idActividad + " .retroIncorrecta");
         ocultar_elemento("" + idActividad + " .setPregunta");
-        $("" + idActividad + " .setPregunta:eq(" + pActual + ")" ).show(); // mostramos el elemento actual a visualizar
+        $("" + idActividad + " .setPregunta:eq(" + pActual + ")").show(); // mostramos el elemento actual a visualizar
 
     }//fin
 
     //muestra un elemento del arreglo de preguntas
     function mostrar_elemento(indice, arreglo) {
-        arreglo.each(function( index ) {
+        arreglo.each(function (index) {
             //console.log("indice: "+indice + " de "+index);
-          if (index == indice) { //si es el elemento deseado
-            $( this ).show(); //mostrar
-            return true;
-          }//fin if
+            if (index == indice) { //si es el elemento deseado
+                $(this).show(); //mostrar
+                return true;
+            }//fin if
         });
         return false;
     }//fin
@@ -125,9 +128,8 @@ $(function() {
         console.log("Actual:: " + pActual + " totalPreguntasActividad:" + totalPreguntasActividad);
         if (pActual >= totalPreguntasActividad) {
             mostrar_barra();
-        }
-		else {
-             //console.log("mostrar boton "+pActual);
+        } else {
+            //console.log("mostrar boton "+pActual);
             //var setActual = $( ".setPregunta:eq("+pActual+")" );
             var setActual = listaFinalPreguntas[pActual - 1]; //obtenemos el elemento actual
             //console.log("pelemento: "+setActual);
@@ -136,7 +138,7 @@ $(function() {
             divBoton.className = "btn btn-primary btnSiguiente";
             divBoton.innerHTML = "Siguiente";
             divBoton.addEventListener("click", siguiente); //agregamos un evento
-             
+
             setActual.appendChild(divBoton); //agregamos el elemento con sus cacarteristicas a la pregunta   
         }//fin else
 
@@ -162,8 +164,7 @@ $(function() {
         var pos = pActual - 1;
         if (mensaje == "correcta") {
             $("" + idActividad + " .setPregunta:eq(" + pos + ") .retroCorrecta").show();
-        }
-		else {
+        } else {
             $("" + idActividad + " .setPregunta:eq(" + pos + ") .retroIncorrecta").show();
         }
     }//fin 
@@ -175,7 +176,7 @@ $(function() {
     }
 
     function desactivarSet(conjunto) {
-        Array.prototype.forEach.call(conjunto.children, function(boton) {
+        Array.prototype.forEach.call(conjunto.children, function (boton) {
             //console.log(boton);
             desactivar(boton);
             if (boton.getAttribute(ATRIBUTO_CORRECTO) === "true" && boton.className.indexOf("bien") < 0) {
@@ -186,7 +187,7 @@ $(function() {
 
     function revisar() {
         if (contestadas === MAX_PREGUNTAS) {
-           // console.log("calcular");
+            // console.log("calcular");
             //retro.mostrar("Obtuviste: " + buenas + " de " + MAX_PREGUNTAS + ".");
             retroalimentar("Mensaje", "Obtuviste: " + buenas + " de " + MAX_PREGUNTAS + ".");
             console.log("Mensaje", "Obtuviste: " + buenas + " de " + MAX_PREGUNTAS + ".");
@@ -194,10 +195,10 @@ $(function() {
             if (mostrarRetroFinal) {
                 retroFinalEvaluacion(buenas);
             }//
-            
+
             intentosRealizadosOM++;//
             //deshabilitamos botonos si sobrepaso el limite de intentos
-            if ( (intentosOM > 0) && (intentosRealizadosOM >= intentosOM) ) {
+            if ((intentosOM > 0) && (intentosRealizadosOM >= intentosOM)) {
                 $(idActividad + " button#btnOMReiniciar").hide();
                 $(idActividad + " button#btnOMRevisar").hide();
             }//fin if
@@ -212,48 +213,47 @@ $(function() {
                 enviarDatosSCORM();//
             }//fin eScormActividad 
 
-        }
-		else {//
-            retroalimentar("AtenciÃ³n", "Por favor, seleccione todas sus respuestas." + contestadas +  " " + MAX_PREGUNTAS);
+        } else {//
+            retroalimentar("AtenciÃ³n", "Por favor, seleccione todas sus respuestas." + contestadas + " " + MAX_PREGUNTAS);
         }//fin else
 
 
     }//fin revisar
 
     //acciones de boton revisar
-    $("" + idActividad + " button#btnOMRevisar").button().click(function(event) {
+    $("" + idActividad + " button#btnOMRevisar").button().click(function (event) {
         //console.log("Revisar");
         revisar();
     });
 
     //acciones de boton reiniciar
-    $("" + idActividad + " button#btnOMReiniciar").button().click(function(event) {
+    $("" + idActividad + " button#btnOMReiniciar").button().click(function (event) {
         console.log("********************************************");
-        console.log(" intentos:"+intentosRealizadosOM+" de " + intentosOM  );
-        if ( (intentosOM > 0) && (intentosRealizadosOM <= intentosOM) ) {
+        console.log(" intentos:" + intentosRealizadosOM + " de " + intentosOM);
+        if ((intentosOM > 0) && (intentosRealizadosOM <= intentosOM)) {
 
-            $("" + idActividad + " .setPregunta .opciones .opcion").each(function(i, element) {
-                    $(element).attr('disabled',false);
-                    $(element).removeClass('bien');
-                    $(element).removeClass('mal');
-                    $(element).removeClass('bienPerdida');
+            $("" + idActividad + " .setPregunta .opciones .opcion").each(function (i, element) {
+                $(element).attr('disabled', false);
+                $(element).removeClass('bien');
+                $(element).removeClass('mal');
+                $(element).removeClass('bienPerdida');
             });
 
             $("" + idActividad + " .retroalimentacionFinal .retroRango").removeClass('verRetro').addClass('ocultarRetro');
 
-            Array.prototype.forEach.call(listaFinalPreguntas, function(pregunta) {
+            Array.prototype.forEach.call(listaFinalPreguntas, function (pregunta) {
                 var contenedorOpciones = pregunta.querySelector(".opciones");
                 var contenedorOpcionesHijos = contenedorOpciones.children;
                 contenedorOpciones.intentos = 0;
-                Array.prototype.forEach.call(contenedorOpcionesHijos, function(opcion) {
+                Array.prototype.forEach.call(contenedorOpcionesHijos, function (opcion) {
                     opcion.addEventListener("click", alApretarOpcion);
                     opcion.padre = contenedorOpciones;
                 });
-				if (mezclarRespuestas) {
-					Array.prototype.forEach.call(contenedorOpcionesHijos, function(opcion, indice, opciones) {
-						contenedorOpciones.appendChild(opciones[Math.floor(Math.random() * opciones.length)]);
-	                });
-				}
+                if (mezclarRespuestas) {
+                    Array.prototype.forEach.call(contenedorOpcionesHijos, function (opcion, indice, opciones) {
+                        contenedorOpciones.appendChild(opciones[Math.floor(Math.random() * opciones.length)]);
+                    });
+                }
             });
 
             buenas = 0;
@@ -273,13 +273,13 @@ $(function() {
         //
     });
 
-     //muestra la retro final en caja dialog
+    //muestra la retro final en caja dialog
     function retroFinalEvaluacion(calificacion) {
         var listaRetrosFinales = $(idActividad + " .retroalimentacionFinal .retroRango");
-            console.log("----");
-            listaRetrosFinales.each(function(i, element) {
-                console.log(calificacion + " " + parseFloat($(element).attr("data-inicial")) + " " + parseFloat($(element).attr("data-final")) );
-            if (calificacion >= parseFloat($(element).attr("data-inicial"))  && calificacion <= parseFloat($(element).attr("data-final"))  ) {
+        console.log("----");
+        listaRetrosFinales.each(function (i, element) {
+            console.log(calificacion + " " + parseFloat($(element).attr("data-inicial")) + " " + parseFloat($(element).attr("data-final")));
+            if (calificacion >= parseFloat($(element).attr("data-inicial")) && calificacion <= parseFloat($(element).attr("data-final"))) {
                 //return i; // si coindice regresa el texto
                 //$(element).removeClass('ocultarRetro').addClass('verRetro');
                 $("#modalRetro").show();
