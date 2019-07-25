@@ -195,12 +195,12 @@ $( document ).ready(function() {
         var tituloTexto = "";
         switch(titulo){
             case "Mensaje": //clase_mensaje=" alert-info"; 
-                            icono = "icon-info.png";
+                            icono = "../img/icon-info.png";
                             clase_mensaje = "";
                             tituloTexto = titulosRetroalimentacion[1];
                             break;
             case "Alerta":  //clase_mensaje=" alert-danger"; 
-                            icono = "icon-attention.png"; 
+                            icono = "../img/icon-attention.png"; 
                             clase_mensaje = "";
                             tituloTexto = titulosRetroalimentacion[0];
                             break;
