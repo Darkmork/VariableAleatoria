@@ -5,7 +5,7 @@
  */
 
 
-$(function () {
+function () {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     var eScormActividad = false; // true si se toma en cuenta como objetivo del scorm, false si no
     var intentosOM = 2; // 0 = ilimitados de la actividad
@@ -289,4 +289,4 @@ $(function () {
 
     }//fin retroFinalEvaluacion
 //
-});
+};
