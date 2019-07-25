@@ -5,7 +5,7 @@
  */
 
 
-function () {
+function Prueba($idActividad, $bancoPreguntas) {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     var eScormActividad = false; // true si se toma en cuenta como objetivo del scorm, false si no
     var intentosOM = 2; // 0 = ilimitados de la actividad
@@ -14,14 +14,16 @@ function () {
     var mostrarRetroFinal = true; //true : muestra la retro final // false no muestra nada
     var MAX_INTENTOS_POR_PREGUNTA = 1; //
     var MAX_PREGUNTAS = 3; // maximo de preguntas a visualizar
-    var idActividad = "#opcionMultiple"; // 
+//    var idActividad = "#opcionMultiple"; // 
+    var idActividad = $idActividad;
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     var ATRIBUTO_CORRECTO = "data-correcta";
     var buenas = 0;
     var contestadas = 0;
     var totalPreguntasActividad = 0;
     var intentosRealizadosOM = 0;
-    var seccionPreguntas = document.body.querySelector("#bancoPreguntas");
+    var seccionPreguntas = document.body.querySelector($bancoPreguntas);
+//    var seccionPreguntas = document.body.querySelector("#bancoPreguntas");
     var totalInicialBanco = seccionPreguntas.children.length;
     var listaInicialBanco = seccionPreguntas.children;
     var pActual = 0;
