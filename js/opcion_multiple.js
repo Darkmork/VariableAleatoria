@@ -9,7 +9,7 @@ $(function() {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     var eScormActividad = false; // true si se toma en cuenta como objetivo del scorm, false si no
     var intentosOM = 2; // 0 = ilimitados de la actividad
-    var indiceActividad = 1; // indice incremental de acuerdo al numero de actividades dentro de un solo objeto, 1 si es unica
+    var indiceActividad = 2; // indice incremental de acuerdo al numero de actividades dentro de un solo objeto, 1 si es unica
     var retroIndividual = true; //true : muestra la retro individual por reactivo// false no muestra nada
     var mostrarRetroFinal = true; //true : muestra la retro final // false no muestra nada
     var MAX_INTENTOS_POR_PREGUNTA = 1; //
