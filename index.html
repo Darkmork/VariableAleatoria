@@ -4877,16 +4877,16 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                                 var resp = new Array;
                                                                                                 var faite = new Array;
                                                                                                 var score = 0;
-                                                                                                resp[1] = "e";
-                                                                                                resp[2] = "b";
+                                                                                                resp[1] = "d";
+                                                                                                resp[2] = "c";
                                                                                                 resp[3] = "e";
-                                                                                                resp[4] = "d";
-                                                                                                resp[5] = "e";
-                                                                                                resp[6] = "a";
+                                                                                                resp[4] = "e";
+                                                                                                resp[5] = "c";
+                                                                                                resp[6] = "c";
                                                                                                 resp[7] = "d";
-                                                                                                resp[8] = "d";
-                                                                                                resp[9] = "c";
-                                                                                                resp[10] = "c";
+                                                                                                resp[8] = "e";
+                                                                                                resp[9] = "b";
+                                                                                                resp[10] = "b";
                                                                                                 
                                                                                                 function Engine13(question, repose)
 
@@ -4922,29 +4922,29 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
 
 
 
-                                                                                                if (score == 15) {
+                                                                                                if (score == 10) {
 
-                                                                                                alert(score + "/15 " + "Muy bien, lo superaste");
+                                                                                                alert(score + "/10 " + "Muy bien, lo superaste");
                                                                                                }
 
-                                                                                                else if (score < 15 && score > 11) {
+                                                                                                else if (score < 10 && score > 7) {
 
-                                                                                                alert(score + "/15 " + "Bien, pero puedes hacerlo mejor");
+                                                                                                alert(score + "/10 " + "Bien, pero puedes hacerlo mejor");
                                                                                                }
 
-                                                                                                else  if (score <= 11 && score > 7) {
+                                                                                                else  if (score <= 7 && score > 5) {
 
-                                                                                                alert(score + "/15 " + "Debes intentarlo de nuevo");
+                                                                                                alert(score + "/10 " + "Debes intentarlo de nuevo");
                                                                                                 }
-                                                                                                else  if (score <= 7 && score > 3) {
+                                                                                                else  if (score <= 5 && score > 2) {
 
-                                                                                                alert(score + "/15 " + "mal resultado, debes intentarlo nuevamente");
+                                                                                                alert(score + "/10 " + "mal resultado, debes intentarlo nuevamente");
                                                                                                 }
-                                                                                                else if (score < 4) {
+                                                                                                else if (score < 3) {
 
                                                                                                 alert("Su puntuación es: " + score
 
-                                                                                                        + "\nLa puntuación máxima que podía obtener es 15"
+                                                                                                        + "\nLa puntuación máxima que podía obtener es 10"
 
                                                                                                         + "\nTiene que revizar nuevamente el modulo");
                                                                                                 }
@@ -4980,67 +4980,61 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
 
                                                                                                                     <FORM NAME="formulario" ACTION="">
 
-                                                                                                                        <p class="mb-5" align="justify">1.- Una caja contienen dos tarjetas numeradas con el 1 y el 2 y se define la variable aleatoria X: suma de los valores obtenidos en 2 extracciones, con reposición. ¿cuál de las siguientes proposiciones es(son) verdadera(s)</p>
-                                                                                                                        <p class="mb-5" align="justify">I) X es una variable aleatoria discreta</p>
-                                                                                                                        <p class="mb-5" align="justify">II) El espacio muestral tiene 3 elementos</p>   
-                                                                                                                        <p class="mb-5" align="justify">III) Rec X = {2, 3, 4} </p>
-                                                                                                                        <p class="mb-5" align="justify"> <input name=1 onClick="Engine13(1, this.value)" type=radio value=a>a. Solo I</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=b>b. Solo II</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=c>c. Solo III</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=d> d.Solo I y II</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=e>e. 20.I, I y III</p>
+                                                                                                                        <p class="mb-5" align="justify">1.- Una evaluación consta de 4 preguntas, cada una con cinco alternativas, de las cuales solo una es correcta. Si se responde cada pregunta al azar y cada alternativa tiene la misma probabilidad de ser escogida, calcula la probabilidad de responder en forma correcta tres preguntas.</p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=1 onClick="Engine13(1, this.value)" type=radio value=a>a. 40.96%</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=b>b. 25%</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=c>c. 0.64%</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=d> d. 2.56%</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=1 onClick="Engine13(1, this.value)" type=radio value=e>e. 10%</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">2.- Al lanzar un dado de seis caras no cargado y considerando la variable aleatoria X: Número de divisores del puntaje obtenido en la cara superior, ¿Cuál de los siguientes valores tiene una sola preimagen?</p>
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(2, this.value)" type=radio value=a>a. 2</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=b>b. 3</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=c>c. 4</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=d>d. 5</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=e>e. 7</p>
+                                                                                                                        <p class="mb-5" align="justify">2.- En un campeonato de tenis, se calcula que un jugador tiene una probabilidad de 0.6 de ganar un partido. ¿Qué expresión permite calcular la probabilidad de ganar 4 de los 6 partidos.</p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(2, this.value)" type=radio value=a>a. <img class="img-fluid rounded mb-5" src="img/portfolio/evapreg2a.png"  alt=""></p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=b>b. <img class="img-fluid rounded mb-5" src="img/portfolio/evapreg2b.png"  alt=""></p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=c>c. <img class="img-fluid rounded mb-5" src="img/portfolio/evapreg2c.png"  alt=""></p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=d>d. <img class="img-fluid rounded mb-5" src="img/portfolio/evapreg2d.png"  alt=""></p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(2, this.value)" type=radio value=e>e. <img class="img-fluid rounded mb-5" src="img/portfolio/evapreg2e.png"  alt=""></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">3.- La siguiente tabla muestra la distribución de una variable aleatoria discreta.</p>
-                                                                                                                        
-                                                                                                                        <p class="mb-5" align="justify">¿Cuál es el valor de f(2)?</p>
-                                                                                                                        <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=a>a. 0.14</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=b>b. 0.80</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=c>c. 0.16</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=d> d. 0.32</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=e>e. 0.28</p>
+                                                                                                                        <p class="mb-5" align="justify">3.- Se dice que el 50% de los accidentes ocurridos en una empresa se atribuyen a errores humanos. Si en un periodo ocurren 4 accidentes, ¿cuál es la probabilidad de que dos de ellos se atribuyan a errores humanos? </p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=a>a. 0.5</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=b>b. 0.25</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=c>c. 0.75</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=d> d. 0.125</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=3 onClick="Engine13(3, this.value)" type=radio value=e>e. 0.375</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">4.- El siguiente gráfico representa la función de probabilidad asociada a la variable aleatoria X: resultado obtenido al lanzar un dado. ¿Cuál de las siguientes afirmaciones es <b>verdadera</b> con respecto al gráfico?</p>
+                                                                                                                        <p class="mb-5" align="justify">4.- En una asignatura dada, la probabilidad de aprobarla es 0.7. Entonces, la probabilidad de que a lo más 5 estudiantes de entre 6 aprueben la asignatura es:</p>
                                                                                                                         <img class="img-fluid" src="img/portfolio/ejercicio4eval.png" alt=""width="300" height="300" alt="">
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(4, this.value)" type=radio value=a>a. Los resultados son equiprobables</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=b>b. La distribución es simétrica</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=c>c. P(X > 2) 0.7</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=d>d. P(3 &le; X < 5) = 0.4</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=e>e. La probabilidad de obtener un par es igual a la de obtener un impar</p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(4, this.value)" type=radio value=a>a. 0.0007</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=b>b. 0.0504</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=c>c. 0.3025</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=d>d. 0.1176</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(4, this.value)" type=radio value=e>e. 0.8824</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">5.-Sea F(X) la función de distribución de la variable aleatoria X, entonces f(3) es igual a :</p>
+                                                                                                                        <p class="mb-5" align="justify">5.-Suponga que el equipo de futbol Huachipato, gana cuatro de cinco partidos cuando juega de local, siguiendo una distribución Binomial. Si juega 10 partidos como local durante un campeonato, la probabilidad que gane más de 5 y menos de 8 partidos es: </p>
                                                                                                                         <img class="img-fluid" src="img/portfolio/ejercicio5eval.png" alt="">
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(5, this.value)" type=radio value=a>a. 0.875</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=b>b. 0.75</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=c>c. 0.5</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=d>d. 0.375</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=e>e. 0.125</p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(5, this.value)" type=radio value=a>a. 0.08808</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=b>b. 0.20132</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=c>c. 0.28940</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=d>d. 0.59139</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(5, this.value)" type=radio value=e>e. 0.61781</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">6.- Se tiene una función de probabilidad f: A &rarr; [0, 1], donde <img class="img-fluid" src="img/portfolio/ejercicio6eval.png" alt=""> , y A={4, 5, 6, 7, 8}, ¿cuál es el valor aproximado de F(7)?</p>
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(6, this.value)" type=radio value=a>a. 0.75</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=b>b. 1</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=c>c. 1.5</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=d>d. 2</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=e>e. 2.5</p>
+                                                                                                                        <p class="mb-5" align="justify">6.- Una función de probabilidad binomial tiene la forma : <img class="img-fluid" src="img/portfolio/evalpreg6.png" alt="">, ¿cuál es el número de ensayos y la probabilidad de éxito asociado?</p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(6, this.value)" type=radio value=a>a. 100 y 3 respectivamente</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=b>b. 100 y 0.003 respectivamente</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=c>c. 100 y 0.03 respectivamente</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=d>d. 5 y 0.003 respectivamente</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(6, this.value)" type=radio value=e>e. 5 y 0.03 respectivamente</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">7.- Según el gráfico de la función de distribución F(X), se puede afirmar que:</p>
-                                                                                                                        <img class="img-fluid" src="img/portfolio/ejerciciosprob7.png" alt=""width="300" height="300" alt="">
-                                                                                                                        <p class="mb-5" align="justify">I) 1 – F(3) = f(4)</p>
-                                                                                                                        <p class="mb-5" align="justify">II) f(1) = F(1)</p>   
-                                                                                                                        <p class="mb-5" align="justify">III) F(3) – F(1) = F(2) </p>
+                                                                                                                        <p class="mb-5" align="justify">7.- Una variable aleatoria X tiene una distribución binomial con los siguientes parámetros, n = 15 y p = 0.5; entonces: ¿cuál de las siguientes afirmaciones es (son) verdadera(s)</p>
+                                                                                                                       
+                                                                                                                        <p class="mb-5" align="justify">I) La probabilidad que hayan exactamente 3 aciertos es igual a la probabilidad que hayan exactamente 12 fracasos</p>
+                                                                                                                        <p class="mb-5" align="justify">II) La probabilidad que hayan exactamente 3 aciertos es igual a la probabilidad que hayan exactamente 12 aciertos</p>   
+                                                                                                                        <p class="mb-5" align="justify">III) La probabilidad que hayan al menos 4 exitos es igual a la probabilidad que como máximo existan 4 fracasos </p>
                                                                                                                         <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(7, this.value)" type=radio value=a>a. Solo I</p>
                                                                                                                         <p class="mb-5" align="justify"><input name=2 onClick="Engine13(7, this.value)" type=radio value=b>b. Solo II</p>
                                                                                                                         <p class="mb-5" align="justify"><input name=2 onClick="Engine13(7, this.value)" type=radio value=c>c. Solo III</p>
@@ -5048,32 +5042,27 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                                                         <p class="mb-5" align="justify"><input name=2 onClick="Engine13(7, this.value)" type=radio value=e>e. I, II y III</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">8.- ¿Cuál(es) de las siguientes proposiciones es (son) verdadera(s)?</p>
-                                                                                                                        <p class="mb-5" align="justify">I) El valor esperado E(X) de una variable aleatoria X no puede ser 0.</p>
-                                                                                                                        <p class="mb-5" align="justify">II) El valor esperado E(X) de una variable aleatoria X no siempre es un valor que pertenece al recorrido de la variable aleatoria</p>   
-                                                                                                                        <p class="mb-5" align="justify">III) El valor esperado E(X) de la variable aleatoria X es un valor que pertenece al intervalo [0, 1] </p>
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(8, this.value)" type=radio value=a>a. Solo I</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=b>b. Solo II</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=c>c. Solo III</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=d>d. Solo I y II</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=e>e. I, II y III</p>
+                                                                                                                        <p class="mb-5" align="justify">8.- Una variable aleatoria puede tomar los valores 0 y 1 con probabilidades 0.6 y 0.4, respectivamente. . ¿Cuánto vale su varianza?  </p>
+                                                                                                                       <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(8, this.value)" type=radio value=a>a. 0.6</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=b>b. 0.4</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=c>c. 0.36</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=d>d. 0.16</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(8, this.value)" type=radio value=e>e. 0.24</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">9.- Sea X: número de puntos obtenidos al lanzar un dado de seis caras. ¿Cuál es el valor de E(X)?</p>
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(9, this.value)" type=radio value=a>a. 1</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=b>b. 2.5</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=c>c. 3</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=d>d. 3.5</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=e>e. 4</p>
+                                                                                                                        <p class="mb-5" align="justify">9.- Se lanza una moneda; si sale cara se ganan $1000 y si sale sello se pierden $800. Si jugáramos 100 veces a este juego, la ganancia esperada sería de: </p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(9, this.value)" type=radio value=a>a. 1000</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=b>b. 20000</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=c>c. 10000</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=d>d. -800</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(9, this.value)" type=radio value=e>e. -8000</p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
-                                                                                                                        <p class="mb-5" align="justify">10.- tres cartas de una baraja están numeradas del 1 al 3. Se extrae una carta, se anota su número y se devuelve al mazo; luego, se saca otra carta y se suma el valor de ambas. Sea la variable aleatoria X: Suma de los números de ambas cartas. ¿Cuál es el valor de E(X)?</p>
-                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(10, this.value)" type=radio value=a>a. 2</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(10, this.value)" type=radio value=b>b. 3</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(10, this.value)" type=radio value=c>c. 4</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(10, this.value)" type=radio value=d>d. 5</p>
-                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(10, this.value)" type=radio value=e>e. Otro valor</p>
-                                                                                                                        <p class="mb-5" align="justify"></p>
+                                                                                                                        <p class="mb-5" align="justify">10.- Un naturalista, apostado en el observatorio de un parque natural, sabe que la probabilidad de avistar una sola vez una especie rara de pájaro en un día cualquiera está en torno al 0,15.  Si se quiere determinar la probabilidad de que acudiendo 20 días aviste en total 8 días ese pájaro, ¿cuál será la distribución que deberá de emplear para calcularla?</p>
+                                                                                                                        <p class="mb-5" align="justify"> <input name=2 onClick="Engine13(10, this.value)" type=radio value=a>a. Bernoulli</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(10, this.value)" type=radio value=b>b. Binomial</p>
+                                                                                                                        <p class="mb-5" align="justify"><input name=2 onClick="Engine13(10, this.value)" type=radio value=c>c. ninguna de ellas</p>
+                                                                                                                       <p class="mb-5" align="justify"></p>
                                                                                                                         <p class="mb-5" align="justify"></p>
                                                                                                                       
 
@@ -5081,7 +5070,7 @@ onClick="alert('respuestas Correctas \n\n 1B \n\n 2E  \n\n 3A')">
                                                                                                                         <p></p>
                                                                                                                         <input name=Resulta onClick=Nivel() type=button value=Resultados>
                                                                                                                         <input type="button" name="repose" value="Respuestas Correctas"
-                                                                                                                               onClick="alert('respuestas Correctas \n\n 1E   6A   11 C \n\n 2B   7D   12D \n\n 3E   8D   13C  \n\n 4D   9C   14C  \n\n 5E  10C  15C')">     
+                                                                                                                               onClick="alert('respuestas Correctas \n\n 1D   6C  \n\n 2C   7D  \n\n 3E   8E    \n\n 4E   9B  \n\n 5C  10B')">     
                                                                                                                         <input type="reset" value="Borrar resultados" name="reset">
                                                                                                                         <p>* Para Realizar nuevamente la evaluación relativa a Variable aleatoria reinicia el navegador, para ello presiona el botón 'F5' </p>
                                                                                                                     </FORM> 
