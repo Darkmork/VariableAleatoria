@@ -526,13 +526,31 @@
                             <!-- Portfolio Modal - Text -->
                             <div>
                                 
-                                <p class="mb-5 textoLargo" align="justify"> Para un espacio muestral dado &omega; de algún experimento, una variable aleatoria (va) es cualquier regla que asocia un número con cada resultado en &omega;. En lenguaje matemático, una variable aleatoria es una función cuyo dominio es el espacio muestral y cuyo rango es el conjunto de números reales. </p>
+                                <p class="mb-5 textoLargo" align="justify"> Para un experimento aleatorio y su espacio muestral &Omega;, una variable aleatoria (va) es una función X que asigna a cada uno de los elementos &omega; &isin; &Omega;, un número real X(&omega;). </p>
                                 <img class="img-fluid" src="img/portfolio/va.png" alt=""width="350" height="350" alt="">
                                 <p class="mb-5 textoLargo" align="justify"> Una variable aleatoria es una función que asigna a cada valor del espacio muestral un valor numérico real.
                                     La V.A. asigna un número a cada suceso elemental del espacio muestral, es decir, cuantifica una característica. Dichos valores forman el recorrido de la variable.
                                     Normalmente se usan letras mayúsculas, y del final de abecedario, (X, Y, o Z) para denotar variables aleatorias.
                                     De un experimento aleatorio es posible definir más de una variable aleatoria.
                                 </p>
+                                 <p class="mb-5 textoLargo" align="justify">Según como sean los recorridos de las variables aleatorias, éstas se pueden clasificar en discretas y continuas.  </p>
+                                 <p class="mb-5" align="justify">Una variable aleatoria es <b>Discreta</b> cuando sólo puede tomar unos ciertos valores enteros.</p>
+                                 </div>
+                                <p class="mb-5" align="justify"><B> EJEMPLO 1</B></p>
+                                <p class="mb-5 textoLargo" align="justify"> Considere el experimento aleatorio “Lanzar 4 monedas” y la variable aleatoria  X: Cantidad de caras obtenidas, entonces:</p>
+                                <img class="img-fluid" src="img/portfolio/monedas.png" alt=""width="200" height="250" alt="">
+                                <p class="mb-5" align="justify"> Dom X= { CCCC, CCCS, CCSC, CCSS, CSCC, CSCS, CSSC, CSSS, SCCC, SCCS, SCSC, SCSS, SSCC, SSCS, SSSC, SSSS}</p>
+                                <p class="mb-5" align="justify">Rec X:{0, 1, 2, 3, 4}</p>
+                                <p class="mb-5" align="justify"><B> EJEMPLO 2</B></p>
+                                <p class="mb-5 textoLargo" align="justify"> Considere el experimento aleatorio “Sacar 2 bolitas de una urna que tiene 2 bolitas rojas y 1 verdes, con reposición” y la variable aleatoria  X: Cantidad de bolitas rojas obtenidas, entonces:</p>
+                                <img class="img-fluid" src="img/portfolio/monedas.png" alt=""width="200" height="250" alt="">
+                                <p class="mb-5" align="justify"> Dom X= {RR, RV, VR, VV}</p>
+                                <p class="mb-5" align="justify">Rec X:{0, 1, 2}</p>
+                            </div>
+                                 
+                                 <p class="mb-5" align="justify">Una variable aleatoria es <b>Continua</b> cuando puede tomar, al menos teóricamente, todos los valores posibles dentro de un cierto intervalo de la recta real</p>
+                                <p class="mb-5" align="justify"></p>
+                                
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                     <div class="divider-custom-icon">
@@ -541,10 +559,15 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <p class="mb-5" align="justify"><B> EJEMPLO 1</B></p>
-                                <p class="mb-5 textoLargo" align="justify"> Considere el experimento aleatorio “Lanzar 4 monedas” y la variable aleatoria  X: Cantidad de caras obtenidas, entonces:</p>
+                                <p class="mb-5 textoLargo" align="justify"> Considere el experimento aleatorio “Lanzar 2 monedas” y la variable aleatoria  X: Distancia entre las monedas, entonces:</p>
                                 <img class="img-fluid" src="img/portfolio/monedas.png" alt=""width="200" height="250" alt="">
-                                <p class="mb-5" align="justify"> Dom X= { CCCC, CCCS, CCSC, CCSS, CSCC, CSCS, CSSC, CSSS, SCCC, SCCS, SCSC, SCSS, SSCC, SSCS, SSSC, SSSS}</p>
-                                <p class="mb-5" align="justify">Rec X:{0, 1, 2, 3, 4}</p>
+                                <p class="mb-5" align="justify">  Dom X:todas las psociones que hay entre las 2 monedas </p>
+                                <p class="mb-5" align="justify">Rec: todas las distancias que hay entre las 2 monedas, estos valores podrían ir entre 0 e infinito. De donde obtenemos que, Rec X: [0, &infin;[</p>
+                                <p class="mb-5" align="justify"><B> EJEMPLO 2</B></p>
+                                <p class="mb-5 textoLargo" align="justify">Si consideramos la variable aleatoria X:Altura de las personas chilenas mayores de 20 años </p>
+                                <img class="img-fluid" src="img/portfolio/monedas.png" alt=""width="200" height="250" alt="">
+                                <p class="mb-5" align="justify"> Dom X= { todos los chilenos mayores de 20 años }</p>
+                                <p class="mb-5" align="justify">Rec X: podrian ser todas las estaturas de estos individuos, supongamos que el más pequeño mide aproxiamdamente 1m y el más grande aproximadamente 2.2mts, entonces el Rec X: ]1, 2.2[</p>
                             </div>
                             <!-- Empieza preguntas con despliegue de retro -->
                             <article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id01">
@@ -553,7 +576,7 @@
                                     <div class="iDevice_inner">
                                         <div class="iDevice_content_wrapper">
                                             <section id="ta19_94" class="block iDevice_content">
-                                                <p>El supervisor de una planta de manufacturas tiene a 3 hombres y 3 mujeres a su carago. Debe elegir dos trabajadores para una tarea especial. Como no desea actuar con prejuicio en la selección del personal, decide elegir dos trabajadores al azar. Si Y es el números de mujeres en el grupo elegido, encuentre la distribución de probabilidad para Y.</p>
+                                                <p>El supervisor de una planta de manufacturas tiene a 3 hombres y 3 mujeres a su cargo. Debe elegir dos trabajadores para una tarea especial. Como no desea actuar con prejuicio en la selección del personal, decide elegir dos trabajadores al azar. Si Y es el números de mujeres en el grupo elegido, encuentre la distribución de probabilidad para Y.</p>
                                             </section>
                                             <section id="taquesQuestion0b01" class="block iDevice_content">
                                                 <img class="img-fluid" src="img/portfolio/trabajadores.png" alt=""width="200" height="200" alt="">
