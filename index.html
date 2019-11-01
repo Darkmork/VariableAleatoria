@@ -999,32 +999,32 @@ alert(question + repose)
                                         <script language="JavaScript">
 
 
-                                            var resp = new Array;
-                                            var faite = new Array;
-                                            var score = 0;
-                                            resp[1] = "d";
-                                            resp[2] = "e";
+                                            var resp1 = new Array;
+                                            var faite1 = new Array;
+                                            var score1 = 0;
+                                            resp1[1] = "d";
+                                            resp1[2] = "e";
                                             function Engine1(question, repose)
 
                                             {
 
-                                            if (repose != resp[question])
+                                            if (repose != resp1[question])
 
                                             {
 
-                                            if (!faite[question])
+                                            if (!faite1[question])
 
                                             {
-                                            faite[question] = - 1;
+                                            faite1[question] = - 1;
                                             }
 
                                             } else {
 
 
-                                            if (!faite[question]) {
+                                            if (!faite1[question]) {
 
-                                            faite[question] = - 1;
-                                            score++;
+                                            faite1[question] = - 1;
+                                            score1++;
                                             alert("¡Correcto! Tu puntuación es : " + score);
                                             }
 
@@ -1038,17 +1038,17 @@ alert(question + repose)
 
 
 
-                                            if (score == 2) {
+                                            if (score1 == 2) {
 
-                                            alert(score + "/2 " + "Muy bien, lo superaste");
+                                            alert(score1 + "/2 " + "Muy bien, lo superaste");
                                             }
-                                            else if (score == 1) {
+                                            else if (score1 == 1) {
 
-                                            alert(score + "/2 " + "Bien, pero puedes hacerlo mejor");
+                                            alert(score1 + "/2 " + "Bien, pero puedes hacerlo mejor");
                                             }
-                                            else if (score == 0) {
+                                            else if (score1 == 0) {
 
-                                            alert("Su puntuación es: " + score
+                                            alert("Su puntuación es: " + score1
 
                                                     + "\nLa puntuación máxima que podía obtener es 2"
 
